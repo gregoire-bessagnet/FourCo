@@ -1,114 +1,129 @@
-
-   {
-        "users": [
-            {
-                "ID": 1,
-                "firstname": "lala",
-                "lastname": "jaja",
-                "age": 92,
-                "promoId": 1
-            },
-            {
-                "ID": 2,
-                "firstname": "tata",
-                "lastname": "sasa",
-                "age": 112,
-                "promoId": 1
-            }
-        ],
-        "promos": [
-            {
-                "ID": 1,
-                "name": "février JS 2017",
-                "schoolId": 1
-            },
-            {
-                "ID": 2,
-                "name": "février PHP 2017",
-                "schoolId": 1
-            }
-        ],
-        "schools": [
-            {
-                "ID": 1,
-                "name": "Bordeaux St-Michel"
-            },
-            {
-                "ID": 2,
-                "name": "Bordeaux Le Coq"
-            }
-        ],
-        "questions": [
-            {
-                "ID": 1,
-                "title": "Comment manger des nouilles en codant en Angular JS ?",
-                "content": "jaja c'était pour rire mdr xptdr lol lmao XD",
-                "userId": 1
-            },
-            {
-                "ID": 2,
-                "title": "Oh si c'est rigolo",
-                "content": "trop marrant ce qu'il a écrit lala !",
-                "userId": 2
-            }
-        ],
-        "answers": [
-            {
-                "ID": 1,
-                "content": "omg ...",
-                "userId": 2,
-                "questionId": 1
-            },
-            {
-                "ID": 2,
-                "content": "pff",
-                "userId": 2,
-                "questionId": 1,
-                "answerId": 1
-            },
-            {
-                "ID": 3,
-                "content": "merci !!!",
-                "userId": 1,
-                "questionId": 2
-            }
-        ],
-        "tags": [
-            {
-                "ID": 1,
-                "name": "JS"
-            },
-            {
-                "ID": 2,
-                "name": "PHP"
-            }
-        ],
-        "user_tag": [
-            {
-                "userId": 1,
-                "tagId": 1
-            },
-            {
-                "userId": 2,
-                "tagId": 1
-            },
-            {
-                "userId": 2,
-                "tagId": 2
-            }
-        ],
-        "question_tag": [
-            {
-                "questionId": 1,
-                "tagId": 1
-            },
-            {
-                "questionId": 1,
-                "tagId": 2
-            },
-            {
-                "questionId": 2,
-                "tagId": 2
-            }
-        ]
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "lala",
+      "lastname": "jaja",
+      "age": 92,
+      "mail": "sasa@jaja",
+      "social1": "cracra",
+      "social2": "frafra",
+      "social3": "tratra",
+      "mattermost": "srasra",
+      "promoId": 1
+    },
+    {
+      "id": 2,
+      "firstname": "tata",
+      "lastname": "sasa",
+      "age": 112,
+      "mail": "sasa@jaja",
+      "social1": "cracra",
+      "social2": "frafra",
+      "social3": "tratra",
+      "mattermost": "srasra",
+      "promoId": 1
     }
+  ],
+  "promos": [
+    {
+      "id": 1,
+      "name": "février JS 2017",
+      "schoolId": 1
+    },
+    {
+      "id": 2,
+      "name": "février PHP 2017",
+      "schoolId": 1
+    }
+  ],
+  "schools": [
+    {
+      "id": 1,
+      "name": "Bordeaux St-Michel",
+      "location": "55 rue lala 666666 Hell"
+    },
+    {
+      "id": 2,
+      "name": "Bordeaux Le Coq",
+      "location": "44 rue tata 777777 Heaven"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "title": "Comment manger des nouilles en codant en Angular JS ?",
+      "content": "jaja c'était pour rire mdr xptdr lol lmao XD",
+      "userId": 1,
+      "date": "44/44/44",
+      "likes": 55
+    },
+    {
+      "id": 2,
+      "title": "Oh si c'est rigolo",
+      "content": "trop marrant ce qu'il a écrit lala !",
+      "userId": 2,
+      "date": "44/44/44",
+      "likes": 55
+    }
+  ],
+  "answers": [
+    {
+      "id": 1,
+      "content": "omg ...",
+      "userId": 2,
+      "questionId": 1
+    },
+    {
+      "id": 2,
+      "content": "pff",
+      "userId": 2,
+      "questionId": 1,
+      "answerId": 1
+    },
+    {
+      "id": 3,
+      "content": "merci !!!",
+      "userId": 1,
+      "questionId": 2
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "JS"
+    },
+    {
+      "id": 2,
+      "name": "PHP"
+    }
+  ],
+  "user_tag": [
+    {
+      "userId": 1,
+      "tagId": 1
+    },
+    {
+      "userId": 2,
+      "tagId": 1
+    },
+    {
+      "userId": 2,
+      "tagId": 2
+    }
+  ],
+  "question_tag": [
+    {
+      "questionId": 1,
+      "tagId": 1
+    },
+    {
+      "questionId": 1,
+      "tagId": 2
+    },
+    {
+      "questionId": 2,
+      "tagId": 2
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<div>
+    <ul>
+        <li>Nom : {{$ctrl.list.lastname}}</li>
+        <li>Prénom : {{$ctrl.list.firstname}}</li>
+        <li>Age : {{$ctrl.list.age}}</li>
+    </ul>
+
+    <ul>
+        <li>mail : {{$ctrl.list.mail}}
+        <li>social : {{$ctrl.list.social1}}</li>
+        <li>social : {{$ctrl.list.social2}}</li>
+        <li>social : {{$ctrl.list.social3}}</li>
+        <li>mattermost : {{$ctrl.list.mattermost}}</li>
+    </ul>
+
+    <ul>
+        <li>École : {{$ctrl.list.school["0"].name}}</li>
+        <li>promo : {{$ctrl.list.promo.name}}</li>
+        <li>localisation : {{$ctrl.list.school["0"].location}}</li>
+    </ul>
+
+    <ul>
+        <li>Tags :</li>
+        <li ng-repeat="tag in $ctrl.list.tags">{{tag.tag.name}}</li>
+    </ul>
+
+</div>
