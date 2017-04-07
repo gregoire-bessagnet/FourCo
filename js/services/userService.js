@@ -1,18 +1,20 @@
-const URL = "http://localhost:3000/";
+const URL_USER = "http://localhost:3000/";
 
-angular.module("services",[])
+angular.module("services")
 
     .service("UserService", function ($http) {
 
-
+        this.getUser = () => {
+            return $http.get(URL_USER + "users/1")
+        }
         this.getUserPromo = () => {
-            return $http.get(URL + "users/2?_expand=promo")
+            return $http.get(URL_USER + "users/2?_expand=promo")
         }
         this.getSchool = (value) => {
-            return $http.get(URL + "schools?id=" + value)
+            return $http.get(URL_USER + "schools?id=" + value)
         }
         this.getUserTags = (value) => {
-            return $http.get(URL + "user_tag?userId=" + value + "&_expand=tag")
+            return $http.get(URL_USER + "user_tag?userId=" + value + "&_expand=tag")
         }
 
 
