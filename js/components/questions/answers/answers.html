@@ -1,0 +1,11 @@
+<h1>{{$ctrl.answ.title}}</h1>
+<p>{{$ctrl.answ.content}}</p>
+<p>{{$ctrl.answ.user.firstname + " " + $ctrl.answ.user.lastname}}<p>
+<p>{{$ctrl.answ.date}}</p>
+
+<ul ng-repeat="answer in $ctrl.answ.answers">
+    <li>{{answer.content}}</li>
+    <li>{{answer.date}}</li>
+    <li>{{answer.hour}}</li>
+    <li>{{answer.user.firstname + " " + answer.user.lastname}}</li>
+</ul>

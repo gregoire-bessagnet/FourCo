@@ -21,8 +21,6 @@ angular.module("components")
             this.getQuest = () => {
                 QuestionService.getQuestions().then((items) => {
                     this.quest = items.data
-                    console.log(this.quest)
-
                 }).catch((err) => { });
             };
         }]
