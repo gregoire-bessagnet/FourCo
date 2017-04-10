@@ -1,9 +1,9 @@
-<h1>{{$ctrl.answ.title}}</h1>
-<p>{{$ctrl.answ.content}}</p>
-<p>{{$ctrl.answ.user.firstname + " " + $ctrl.answ.user.lastname}}<p>
-<p>{{$ctrl.answ.date}}</p>
+<h1>{{$ctrl.question.title}}</h1>
+<p>{{$ctrl.question.content}}</p>
+<p>{{$ctrl.question.user.firstname + " " + $ctrl.question.user.lastname}}<p>
+<p>{{$ctrl.question.date}}</p>
 
-<ul ng-repeat="answer in $ctrl.answ.answers">
+<ul ng-repeat="answer in $ctrl.question.answers">
     <li>{{answer.content}}</li>
     <li>{{answer.date}}</li>
     <li>{{answer.hour}}</li>

@@ -1,17 +1,17 @@
 angular.module("components")
 
-    .component("answers", {
+  .component("answers", {
 
-        // templateUrl: '/js/components/questions/answers/answers.html',
-        template: '<div>COUCOU</div>',
-        bindings: {
-             answ: '<',
-        },
+    templateUrl: '/js/components/questions/answers/answers.html',
 
-        controller: function () {
+    bindings: {
+      question: '<',
+    },
 
-            this.$onInit = () => {
-                console.log(this.answ)
-            }
-        }
-    });
+    controller: function () {
+
+      this.$onInit = () => {
+        console.log(this.question);
+      }
+    }
+  });

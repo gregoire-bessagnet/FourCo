@@ -2,44 +2,29 @@
 
 angular.module("app")
 
-
-  //   $stateProvider
-
-  //     .state({
-  //       name: 'answers',
-  //       url: '/answers',
-  //       component: 'answers'
-  //       // resolve: {
-
-  //       //   answ: function (AnswersServices) {
-  //       //     AnswersServices.getQuestion(1).then((items) => {
-  //       //       var answ = items.data;
-  //       //       AnswersServices.getAnswers(answ.id).then((items) => {
-  //       //         answ.answers = items.data;
-  //       //         return answ;
-  //       //       }).catch((err) => { });
-  //       //     }).catch((err) => { });
-  //       //   }
-  //       // }
-  //     })
-
-  //     .state({
-  //       name: 'user',
-  //       url: '/user',
-  //       component: 'userProfile'
-  //     });
-
-  //   $urlRouterProvider.otherwise('/');
-  // });
-
   .config(function ($stateProvider, $urlRouterProvider) {
 
-      $stateProvider
-        .state({
-          name: 'answers',
-          url: '/answers',
-          component: 'answers'
-        });
+    $stateProvider
+      .state({
+        name: 'home',
+        url: '/home',
+        component: 'home'
+      })
+      .state({
+        name: 'answers',
+        url: '/answers',
+        component: 'answers',
+        resolve: {
+          question: function (AnswersService) {
+            return AnswersService.getQuestion(1);
+          }
+        }
+      })
+      .state({
+        name: 'user',
+        url: '/user',
+        component: 'userProfile'
+      });
 
-      $urlRouterProvider.otherwise('/');
-    });
+    $urlRouterProvider.otherwise('/home');
+  });
