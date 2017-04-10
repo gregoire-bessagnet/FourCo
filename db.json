@@ -72,20 +72,26 @@
       "id": 1,
       "content": "omg ...",
       "userId": 2,
-      "questionId": 1
+      "questionId": 1,
+      "date": "44/44/44",
+      "hour": "21:02"
     },
     {
       "id": 2,
       "content": "pff",
       "userId": 2,
       "questionId": 1,
-      "answerId": 1
+      "answerId": 1,
+      "date": "44/44/44",
+      "hour": "21:02"
     },
     {
       "id": 3,
       "content": "merci !!!",
       "userId": 1,
-      "questionId": 2
+      "questionId": 2,
+      "date": "44/44/44",
+      "hour": "21:02"
     }
   ],
   "tags": [

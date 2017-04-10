@@ -14,6 +14,7 @@ angular.module("components")
 
             this.$onInit = () => {
                 this.getUser();
+                console.log(this)
             };
 
             this.getUser = () => {
@@ -24,7 +25,6 @@ angular.module("components")
 
                     UserService.getSchool(this.list.promo.schoolId).then((items) => {
                         this.list.school = items.data
-                        console.log(this.list)
                     }).catch((err) => { });
 
                     UserService.getUserTags(this.list.id).then((items) => {
