@@ -2,30 +2,16 @@ angular.module("components")
 
     .component("answers", {
 
-        templateUrl: '/js/components/questions/answers/answers.html',
-
+        // templateUrl: '/js/components/questions/answers/answers.html',
+        template: '<div>COUCOU</div>',
         bindings: {
-            answ: '<',
-
+             answ: '<',
         },
 
-        controller: ['AnswersServices', function (AnswersServices) {
-
-            this.answ = [];
+        controller: function () {
 
             this.$onInit = () => {
-                this.getAnsw();
-                console.log(this)
-
+                console.log(this.answ)
             }
-
-            this.getAnsw = () => {
-                AnswersServices.getQuestion(1).then((items) => {
-                    this.answ = items.data;
-                    AnswersServices.getAnswers(this.answ.id).then((items) => {
-                        this.answ.answers = items.data
-                    }).catch((err) => { });
-                }).catch((err) => { });
-            }
-        }]
-    })
+        }
+    });
