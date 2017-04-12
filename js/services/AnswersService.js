@@ -2,15 +2,29 @@ const URL_ANSWER = "http://localhost:3000/"
 
 angular.module("services")
 
-    .service("AnswersServices", function ($http) {
+    .service("AnswersService", function ($http, $q) {
 
+        this.getQuestion = (id) => {
 
-        this.getAnswers = (value) => {
-            return $http.get(URL_ANSWER + "answers?questionId=" + value + "&_expand=user")
-        };
+            var defer = $q.defer();
 
-        this.getQuestion = (value) => {
-            return $http.get(URL_ANSWER + "questions/" + value + "?_expand=user")
+            $http.get(URL_ANSWER + "questions/" + id + "?_expand=user").then((response) => {
+
+                var question = response.data;
+
+                $http.get(URL_ANSWER + "answers?questionId=" + id + "&_expand=user").then((response) => {
+
+                    question.answers = response.data;
+                    defer.resolve(question);
+
+                }).catch((response) => {
+                    defer.reject(response.statusText);
+                });
+            }).catch((response) => {
+                defer.reject(response.statusText);
+            });
+
+            return defer.promise;
         }
 
     });

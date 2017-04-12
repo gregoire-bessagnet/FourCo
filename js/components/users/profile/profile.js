@@ -6,9 +6,8 @@ angular.module("components")
 
         bindings: {
             list: '<',
-
         },
-        controller: ['UserService', function (UserService) {
+        controller: ['UserService', function (UserService,QuestionService) {
 
             this.list = [];
 
@@ -19,7 +18,7 @@ angular.module("components")
 
             this.getUser = () => {
 
-                UserService.getUserPromo().then((items) => {
+                UserService.getUserPromo(1).then((items) => {
 
                     this.list = items.data
 

@@ -2,6 +2,6 @@
 
 <ul>
     <li ng-repeat="question in $ctrl.quest">
-        question de : <a ui-sref="profile">{{question.user.firstname + " " + question.user.lastname}}</a><br>question : {{question.title}}<br> précision : {{question.content}} <br> date :{{question.date}}<br> likes :{{question.likes}}<br><a ui-sref="answers">VOIR PLUS</a>
+        question de : <a ui-sref="profile">{{question.user.firstname + " " + question.user.lastname}}</a><br>question : {{question.title}}<br> précision : {{question.content}} <br> date :{{question.date}}<br> likes :{{question.likes}}<br><a ui-sref="answers({questionId: question.id})">VOIR PLUS</a>
     </li>
 </ul>
