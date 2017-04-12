@@ -1,13 +1,13 @@
 <h1>{{$ctrl.question.title}}</h1>
 <p>{{$ctrl.question.content}}</p>
-<p>{{$ctrl.question.user.firstname + " " + $ctrl.question.user.lastname}}</p>
+<p><a ui-sref="profile({userId:$ctrl.question.user.id})">{{$ctrl.question.user.firstname + " " + $ctrl.question.user.lastname}}</a></p>
 <p>{{$ctrl.question.date}}</p>
 
 <ul ng-repeat="answer in $ctrl.question.answers">
     <li>{{answer.content}}</li>
     <li>{{answer.date}}</li>
     <li>{{answer.hour}}</li>
-    <li>{{answer.user.firstname + " " + answer.user.lastname}}</li>
+    <li><a ui-sref="profile({userId:answer.user.id})">{{answer.user.firstname + " " + answer.user.lastname}}</a></li>
 </ul>
 
 <a ui-sref="home">retour accueil</a>

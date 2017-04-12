@@ -22,8 +22,13 @@ angular.module("app")
       })
       .state({
         name: 'profile',
-        url: '/profile',
-        component: 'userProfile'
+        url: '/profile/:userId',
+        component: 'userProfile',
+        resolve:{
+          user: function (UserService,$stateParams) {
+            return UserService.getUser($stateParams.userId);
+          }
+        }
       })
 
       .state({
