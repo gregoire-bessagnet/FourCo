@@ -27,4 +27,14 @@ angular.module("services")
             return defer.promise;
         }
 
+        this.likeQuestion = (id, question) => {
+
+            $http.put(URL_ANSWER + "questions/" + id, { "title": question.title, "date": question.date, "content": question.content, "userId": question.userId, "likes": question.likes + 1 })
+        }
+
+        this.likeAnswer = (id, answer) => {
+            $http.put(URL_ANSWER + "answers/" + id, { "date": answer.date, "content": answer.content, "userId": answer.userId,"questionId":answer.questionId, "likes": answer.likes + 1 })
+
+        }
+
     });

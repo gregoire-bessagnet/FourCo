@@ -1,9 +1,13 @@
 <form>
-    <label>Prénom {{$ctrl.alert.firstname}}<input type="text" ng-model="$ctrl.reg.firstname" placeholder="Prénom" ></label>
-    <label>Nom {{$ctrl.alert.lastname}}<input type="text" ng-model="$ctrl.reg.lastname" placeholder="Nom" ></label>
-    <label>Age {{$ctrl.alert.age}}<input type="text" ng-model="$ctrl.reg.age" placeholder="Age"></label>
-    <label>Mail {{$ctrl.alert.mail}}<input type="email" ng-model="$ctrl.reg.mail" placeholder="Mail"></label>
-    <label>social {{$ctrl.alert.social1}}<input type="text" ng-model="$ctrl.reg.social1" placeholder="social"></label>
+    <label>Prénom * {{$ctrl.alert.firstname}}<input type="text" ng-model="$ctrl.reg.firstname" placeholder="Prénom" ></label>
+    <label>Nom *{{$ctrl.alert.lastname}}<input type="text" ng-model="$ctrl.reg.lastname" placeholder="Nom" ></label>
+    <label>Age *{{$ctrl.alert.age}}<input type="text" ng-model="$ctrl.reg.age" placeholder="Age"></label>
+    <label>Mail *{{$ctrl.alert.mail}}<input type="email" ng-model="$ctrl.reg.mail" placeholder="Mail"></label>
+    <label>social1 <input type="text" ng-model="$ctrl.reg.social1" placeholder="social1"></label>
+    <label>social2 <input type="text" ng-model="$ctrl.reg.social2" placeholder="social2"></label>
+    <label>social3 <input type="text" ng-model="$ctrl.reg.social3" placeholder="social3"></label>
+    <label>mattermost <input type="text" ng-model="$ctrl.reg.mattermost" placeholder="mattermost"></label>
+    <label>promo * {{$ctrl.alert.promo}}<select ng-model="$ctrl.reg.promoId" ng-options="promo.id as (promo.name + ' ' + promo.school.name) for promo in $ctrl.promos"><option></option></select></label>
     <button ng-click="$ctrl.submit()">submit</button>
 </form>
 <a ui-sref="home">retour accueil</a>

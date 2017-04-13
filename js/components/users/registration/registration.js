@@ -11,9 +11,18 @@ angular.module("components")
                 lastname: "",
                 age: "",
                 mail: "",
-                social1: ""
+                social1: "",
+                promoId: 0
             };
             this.alert = [];
+            this.promos = [];
+
+            this.$onInit = () => {
+                RegistrationServices.getPromos().then((response) =>{
+                    this.promos = response.data;
+                    console.log(this.promos)
+                }).catch((err) => { });
+            }
 
             this.submit = () => {
                 this.postUser();
@@ -22,19 +31,19 @@ angular.module("components")
             this.postUser = () => {
                     
                 if (this.reg.firstname == "") {
-                    this.alert.firstname = "RENTRE UN PRENOM";
+                    this.alert.firstname = "chanp obligatoire";
                 }
                 if (this.reg.lastname == "") {
-                    this.alert.lastname = "RENTRE UN NOM";
+                    this.alert.lastname = "chanp obligatoire";
                 }
                 if (this.reg.age == "") {
-                    this.alert.age = "RENTRE TON AGE";
+                    this.alert.age = "chanp obligatoire";
                 }
                 if (this.reg.mail == "") {
-                    this.alert.mail = "RENTRE TON MAIL"
+                    this.alert.mail = "chanp obligatoire"
                 }
-                if (this.reg.firstname == "") {
-                    this.alert.social1 = "RENTRE TON SOCIAL"
+                if (this.reg.promoId == 0){
+                    this.alert.promo = "chanp obligatoire"
                 }
                 else {
                     RegistrationServices.postUsers(this.reg)

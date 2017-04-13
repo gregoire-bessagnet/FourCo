@@ -2,12 +2,14 @@
 <p>{{$ctrl.question.content}}</p>
 <p><a ui-sref="profile({userId:$ctrl.question.user.id})">{{$ctrl.question.user.firstname + " " + $ctrl.question.user.lastname}}</a></p>
 <p>{{$ctrl.question.date}}</p>
+<p>{{$ctrl.question.likes}}<button type="button" ng-click="$ctrl.likeQuestion()">j'aime</button></p>
 
 <ul ng-repeat="answer in $ctrl.question.answers">
     <li>{{answer.content}}</li>
     <li>{{answer.date}}</li>
     <li>{{answer.hour}}</li>
     <li><a ui-sref="profile({userId:answer.user.id})">{{answer.user.firstname + " " + answer.user.lastname}}</a></li>
+    <li>{{answer.likes}}<button type="button" ng-click="$ctrl.likeAnswer(answer)">j'aime</button></li>
 </ul>
 
 <a ui-sref="home">retour accueil</a>

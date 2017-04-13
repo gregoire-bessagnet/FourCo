@@ -8,10 +8,17 @@ angular.module("components")
             question: '<',
         },
 
-        controller: function () {
+        controller: function (AnswersService) {
 
             this.$onInit = () => {
                 console.log(this)
+            }
+
+            this.likeQuestion = ()=>{
+                AnswersService.likeQuestion(this.question.id,this.question);
+            }
+            this.likeAnswer = (answer) => {
+                AnswersService.likeAnswer(answer.id,answer);
             }
         }
     })
