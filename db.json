@@ -67,7 +67,7 @@
       "date": "44/44/44",
       "content": "jaja c'était pour rire mdr xptdr lol lmao XD",
       "userId": 1,
-      "likes": 57,
+      "likes": 60,
       "id": 1
     },
     {
@@ -75,7 +75,7 @@
       "date": "44/44/44",
       "content": "trop marrant ce qu'il a écrit lala !",
       "userId": 2,
-      "likes": 58,
+      "likes": 81,
       "id": 2
     },
     {
@@ -93,7 +93,7 @@
       "content": "omg ...",
       "userId": 2,
       "questionId": 1,
-      "likes": 3,
+      "likes": 5,
       "id": 1
     },
     {
@@ -101,7 +101,7 @@
       "content": "pff",
       "userId": 2,
       "questionId": 1,
-      "likes": 2,
+      "likes": 4,
       "id": 2
     },
     {
@@ -109,7 +109,7 @@
       "content": "merci !!!",
       "userId": 1,
       "questionId": 2,
-      "likes": 1,
+      "likes": 2,
       "id": 3
     }
   ],
