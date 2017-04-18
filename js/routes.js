@@ -44,5 +44,26 @@ angular.module("app")
         component: 'registration'
       })
 
+      .state({
+        name: 'formulaireQ',
+        url: '/formulaireQ',
+        component: 'postQuestion'
+      })
+      .state({
+        name: 'retourHome',
+        url: '/home',
+        component: 'home'
+      })
+      .state({
+        name: 'validerQ',
+        url: '/home',
+        component: 'home',
+        resolve:{
+          questions: function (QuestionService, $stateParams){
+            return QuestionService.getQuestions($stateParams.questionId);
+          }
+        }
+      })
+
     $urlRouterProvider.otherwise('/home')
   })
