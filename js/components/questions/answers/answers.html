@@ -11,10 +11,9 @@
     <button ng-click="$ctrl.submit()">Valider</button>
 </form>
 
-<ul ng-repeat="answer in $ctrl.question.answers">
+<ul ng-repeat="answer in $ctrl.question.answers | orderBy: 'date' : true">
     <li>{{answer.content}}</li>
-    <li>{{answer.date | date : 'dd.MM.yyyy'}}</li>
-    <li>{{answer.hour}}</li>
+    <li>{{answer.date | date: 'dd.MMM.yyyy HH:mm'}}</li>
     <li><a ui-sref="profile({userId:answer.user.id})">{{answer.user.firstname + " " + answer.user.lastname}}</a></li>
     <li>{{answer.likes}}<button type="button" ng-click="$ctrl.likeAnswer(answer)">j'aime</button></li>
 </ul>
