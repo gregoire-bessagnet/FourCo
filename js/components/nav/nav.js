@@ -8,18 +8,12 @@ angular.module("components")
             query:'<'
         }, 
 
-        controller: function (NavService) {
+        controller: function (navService) {
 
             this.$onInit = () => {
                 console.log(this)
             }
-
-            this.likeQuestion = ()=>{
-                AnswersService.likeQuestion(this.question.id,this.question);
-            }
-            this.likeAnswer = (answer) => {
-                AnswersService.likeAnswer(answer.id,answer);
-            }
         }
+    });
 
-    })
+    

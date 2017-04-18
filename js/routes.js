@@ -11,6 +11,13 @@ angular.module("app")
       })
 
       .state({
+        name: 'nav',
+        url: '/home',
+        component: 'nav'
+      })
+
+
+      .state({
         name: 'answers',
         url: '/answers/:questionId',
         component: 'answers',

@@ -3,9 +3,9 @@ const URL_USER = "http://localhost:3000/";
 angular.module("services")
 
     .service("UserService", function ($http, $q) {
-
+         
         this.getUser = (id) => {
-
+            
             var defer = $q.defer();
 
             $http.get(URL_USER + "users/" + id + "?_expand=promo").then((response) => {
@@ -13,7 +13,7 @@ angular.module("services")
                 var user = response.data;
                 console.log(user)
 
-
+                
                 $http.get(URL_USER + "schools?id=" + user.promo.schoolId).then((response) => {
                     user.school = response.data;
                     defer.resolve(user);
