@@ -5,7 +5,7 @@ angular.module("services")
     .service("QuestionService", function ($http) {
 
         this.getQuestions = () => {
-            return $http.get(URL_QUEST + "?_expand=user")
+            return $http.get(URL_QUEST)
         }
 
     });

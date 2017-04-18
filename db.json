@@ -63,37 +63,44 @@
   ],
   "questions": [
     {
-      "title": "Comment manger des nouilles en codant en Angular JS ?",
-      "date": "44/44/44",
-      "content": "jaja c'était pour rire mdr xptdr lol lmao XD",
-      "userId": 1,
-      "likes": 61,
+      "title": "ahahah",
+      "content": "ahahaha",
+      "date": "2017-04-17T19:27:24.243Z",
       "id": 1
     },
     {
-      "title": "Oh si c'est rigolo",
-      "date": "44/44/44",
-      "content": "trop marrant ce qu'il a écrit lala !",
-      "userId": 2,
-      "likes": 58,
+      "title": "Angularjs",
+      "content": "Je comprend rien de rien. Sacha",
+      "date": "2017-04-17T19:29:34.185Z",
       "id": 2
     },
     {
-      "title": "Wow FourCo est vraiment géniale, n'est-ce pas ?",
-      "date": "44/44/44",
-      "content": "Mama le système de like il est trop bien !",
-      "userId": 1,
-      "likes": 69,
+      "title": "PHP",
+      "content": "coucou Greg",
+      "date": "2017-04-18T08:54:47.609Z",
       "id": 3
+    },
+    {
+      "title": "Angularjs",
+      "content": "je déteste",
+      "date": "2017-04-18T08:55:44.038Z",
+      "id": 4
+    },
+    {
+      "title": "script",
+      "content": "j'aime pas",
+      "date": "2017-04-18T08:56:44.961Z",
+      "id": 5
     }
   ],
+
   "answers": [
     {
       "date": "44/44/44",
       "content": "omg ...",
       "userId": 2,
       "questionId": 1,
-      "likes": 6,
+      "likes": 10,
       "id": 1
     },
     {
@@ -101,7 +108,7 @@
       "content": "pff",
       "userId": 2,
       "questionId": 1,
-      "likes": 4,
+      "likes": 5,
       "id": 2
     },
     {
@@ -109,7 +116,7 @@
       "content": "merci !!!",
       "userId": 1,
       "questionId": 2,
-      "likes": 1,
+      "likes": 3,
       "id": 3
     }
   ],

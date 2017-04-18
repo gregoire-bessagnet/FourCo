@@ -1,7 +1,8 @@
 <a ui-sref="registration">INSCRIT TOI !</a>
+<a ui-sref="formulaireQ">Pose ta question</a>
 
 <ul>
-    <li ng-repeat="question in $ctrl.quest">
-        question de : <a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a><br>question : {{question.title}}<br> précision : {{question.content}} <br> date :{{question.date}}<br> likes :{{question.likes}}<br><a ui-sref="answers({questionId: question.id})">VOIR PLUS</a>
+    <li ng-repeat="question in $ctrl.quest | orderBy: 'date' : true">
+        question de : <a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a><br>question : {{question.title}}<br> précision : {{question.content}} <br> date :{{question.date | date: 'dd.MMM.yyyy HH:mm'}}<br> likes :{{question.likes}}<br><a ui-sref="answers({questionId: question.id})">VOIR PLUS</a>
     </li>
 </ul>
