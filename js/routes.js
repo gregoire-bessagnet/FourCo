@@ -27,13 +27,25 @@ angular.module("app")
           }
         }
       })
+
       .state({
         name: 'profile',
         url: '/profile/:userId',
         component: 'userProfile',
-        resolve:{
-          user: function (UserService,$stateParams) {
+        resolve: {
+          user: function (UserService, $stateParams) {
             return UserService.getUser($stateParams.userId);
+          }
+        }
+      })
+
+      .state({
+        name: 'usersList',
+        url: '/usersList',
+        component: 'usersList',
+        resolve: {
+          users: function (UsersService, $stateParams) {
+            return UsersService.getUsers();
           }
         }
       })
@@ -49,11 +61,13 @@ angular.module("app")
         url: '/formulaireQ',
         component: 'postQuestion'
       })
-      .state({
+
+    .state({
         name: 'retourHome',
         url: '/home',
         component: 'home'
       })
+
       .state({
         name: 'validerQ',
         url: '/home',
