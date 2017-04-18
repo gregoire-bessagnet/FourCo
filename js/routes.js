@@ -12,10 +12,9 @@ angular.module("app")
 
       .state({
         name: 'nav',
-        url: '/home',
+        url: '/nav',
         component: 'nav'
       })
-
 
       .state({
         name: 'answers',

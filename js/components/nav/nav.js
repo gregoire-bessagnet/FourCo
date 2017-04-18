@@ -5,7 +5,7 @@ angular.module("components")
         templateUrl: '/js/components/nav/nav.html',
 
         bindings:{
-            query:'<'
+            query: '<'
         }, 
 
         controller: function (navService) {
@@ -14,23 +14,9 @@ angular.module("components")
                 console.log(this)
             }
 
-        searchquestion.filter('searchFor', function(){
-            return function(arr, query){
-                if(!query){
-                return arr;
-        }
-        var result = [];
-        query = query.toLowerCase();
-        angular.forEach(arr, function(item){
-            if(item.title.toLowerCase().indexOf(query) !== -1){
-            result.push(item);
-        }
-        });
-        return result;
-    };
-});
-
-        }
-    });
-
+            this.getSearchquestion = (query)=>{
+                AnswersService.getSearchquestion(this.question.id, this.question);
+            }
+    }
+})
     

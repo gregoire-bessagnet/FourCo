@@ -79,7 +79,7 @@
       "date": "44/44/44",
       "content": "jaja c'était pour rire mdr xptdr lol lmao XD",
       "userId": 1,
-      "likes": 62,
+      "likes": 63,
       "id": 1
     },
     {
@@ -120,6 +120,12 @@
       "content": "bonsoir",
       "date": "2017-04-18T12:52:39.606Z",
       "id": 6
+    },
+    {
+      "title": "kk",
+      "content": "j",
+      "date": "2017-04-18T13:27:18.552Z",
+      "id": 7
     }
   ],
   "answers": [

@@ -1,9 +1,16 @@
+<div id="logo">logo</div>
+
+<div id="search">
+    <input type="text" name="query" ng-model="$ctrl.query">
+</div>
+
+
 <a ui-sref="registration">INSCRIT TOI !</a><br>
 <a ui-sref="usersList">Liste des utilisateurs</a>
 <a ui-sref="formulaireQ">Pose ta question</a>
 
 <ul>
-    <li ng-repeat="question in $ctrl.quest | orderBy: 'date' : true">
+    <li ng-repeat="question in $ctrl.quest | filter : {content : $ctrl.query}">
         question de : <a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a><br>question : {{question.title}}<br> précision : {{question.content}} <br> date :{{question.date | date: 'dd.MMM.yyyy HH:mm'}}<br> likes :{{question.likes}}<br><a ui-sref="answers({questionId: question.id})">VOIR PLUS</a>
     </li>
 </ul>
