@@ -98,9 +98,11 @@
       "id": 2
     },
     {
-      "title": "PHP",
-      "content": "coucou Greg",
-      "date": "2017-04-18T08:54:47.609Z",
+      "title": "Wow FourCo est vraiment géniale, n'est-ce pas ?",
+      "date": "44/44/44",
+      "content": "Mama le système de like il est trop bien !",
+      "userId": 1,
+      "likes": 69,
       "id": 3
     },
     {
@@ -152,6 +154,38 @@
       "questionId": 2,
       "likes": 2,
       "id": 3
+    },
+    {
+      "date": "2017-04-18T14:20:34.759Z",
+      "content": "tretretre",
+      "userId": "1",
+      "questionId": 3,
+      "likes": null,
+      "id": 4
+    },
+    {
+      "date": "2017-04-18T14:22:55.641Z",
+      "content": "bleblebleh",
+      "userId": "1",
+      "questionId": 3,
+      "likes": 2,
+      "id": 5
+    },
+    {
+      "content": "chichi chouchou",
+      "userId": "1",
+      "questionId": 3,
+      "date": "2017-04-18T14:28:51.891Z",
+      "likes": 0,
+      "id": 6
+    },
+    {
+      "content": "akiko",
+      "userId": "1",
+      "questionId": 2,
+      "date": "2017-04-18T14:30:47.034Z",
+      "likes": 0,
+      "id": 7
     }
   ],
   "tags": [

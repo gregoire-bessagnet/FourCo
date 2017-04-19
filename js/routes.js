@@ -49,13 +49,13 @@ angular.module("app")
         }
       })
 
-      .state({
+    .state({
         name: 'registration',
         url: '/registration',
         component: 'registration'
       })
 
-      .state({
+    .state({
         name: 'formulaireQ',
         url: '/formulaireQ',
         component: 'postQuestion'
@@ -66,8 +66,8 @@ angular.module("app")
         url: '/home',
         component: 'home'
       })
-
-      .state({
+      
+    .state({
         name: 'validerQ',
         url: '/home',
         component: 'home',
@@ -77,6 +77,5 @@ angular.module("app")
           }
         }
       })
-
     $urlRouterProvider.otherwise('/home')
   })

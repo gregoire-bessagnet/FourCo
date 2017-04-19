@@ -23,6 +23,8 @@ angular.module("components")
                     this.quest = items.data
                 }).catch((err) => { });
             };
+
+            
         }]
     })
 

@@ -10,6 +10,21 @@ angular.module("components")
 
         controller: function (AnswersService) {
 
+            this.submit = () => {
+                this.postAnswers();
+            }
+
+            this.postAnswers = () => {
+                this.answer = {
+                    content: this.answer.content,
+                    userId: "1",
+                    questionId: this.question.id,
+                    date: new Date(), 
+                    likes: 0
+                }
+                AnswersService.postAnswers(this.answer)
+            }
+
             this.likeQuestion = ()=>{
                 AnswersService.likeQuestion(this.question.id,this.question);
             }

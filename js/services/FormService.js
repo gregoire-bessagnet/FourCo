@@ -10,6 +10,5 @@ angular.module("services")
                     var data = response.data;
                 });
         }
-        
     }]);
 
