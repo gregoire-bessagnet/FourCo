@@ -85,24 +85,6 @@
       "userId": 1,
       "likes": 69,
       "id": 3
-    },
-    {
-      "title": "Enzo",
-      "content": "bonjour",
-      "date": "2017-04-18T12:51:24.807Z",
-      "id": 4
-    },
-    {
-      "title": "enzo",
-      "content": "enzo enzo",
-      "date": "2017-04-18T12:51:49.666Z",
-      "id": 5
-    },
-    {
-      "title": "bonsoir",
-      "content": "bonsoir",
-      "date": "2017-04-18T12:52:39.606Z",
-      "id": 6
     }
   ],
   "answers": [

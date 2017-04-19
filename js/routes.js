@@ -56,18 +56,12 @@ angular.module("app")
       })
 
       .state({
-        name: 'retourHome',
-        url: '/home',
-        component: 'home'
-      })
-
-      .state({
         name: 'validerQ',
         url: '/home',
         component: 'home',
         resolve: {
-          questions: function (QuestionService, $stateParams) {
-            return QuestionService.getQuestions($stateParams.questionId);
+          questions: function (QuestionService) {
+            return QuestionService.getQuestions();
           }
         }
       })

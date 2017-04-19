@@ -1,9 +1,19 @@
-<a ui-sref="registration">INSCRIT TOI !</a><br>
-<a ui-sref="usersList">Liste des utilisateurs</a>
-<a ui-sref="formulaireQ">Pose ta question</a>
+<nav>
+    <div class="nav-wrapper">
+        <a class="brand-logo"><img src="/image/logo.jpg" alt="image"></a>
+        <ul id="nav-mobile" class="right hide-on-led-and-down">
+            <li><a class="waves-effect waves-light btn" ui-sref="registration">INSCRIT TOI !</a></li>
+            <li><a class="waves-effect waves-light btn" ui-sref="usersList">Liste des utilisateurs</a></li>
+            <li><a class="waves-effect waves-light btn" ui-sref="formulaireQ">Pose ta question</a></li>
+        </ul>
+    </div>
+</nav>
 
-<ul>
-    <li ng-repeat="question in $ctrl.quest | orderBy: 'date' : true">
-        question de : <a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a><br>question : {{question.title}}<br> précision : {{question.content}} <br> date :{{question.date | date: 'dd.MMM.yyyy HH:mm'}}<br> likes :{{question.likes}}<br><a ui-sref="answers({questionId: question.id})">VOIR PLUS</a>
-    </li>
-</ul>
+<div>
+    <ul>
+        <li ng-repeat="question in $ctrl.quest | orderBy: 'date' : true">
+            question de : <a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a><br>question
+            : {{question.title}}<br> précision : {{question.content}} <br> date :{{question.date | date: 'dd.MMM.yyyy HH:mm'}}<br>            likes :{{question.likes}}<br><a ui-sref="answers({questionId: question.id})">VOIR PLUS</a>
+        </li>
+    </ul>
+</div>
