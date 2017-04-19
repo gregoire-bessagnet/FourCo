@@ -79,7 +79,7 @@
       "date": "44/44/44",
       "content": "jaja c'était pour rire mdr xptdr lol lmao XD",
       "userId": 1,
-      "likes": 63,
+      "likes": 64,
       "id": 1
     },
     {
@@ -128,6 +128,18 @@
       "content": "j",
       "date": "2017-04-18T13:27:18.552Z",
       "id": 7
+    },
+    {
+      "title": "cc",
+      "content": "ccc",
+      "date": "2017-04-19T12:41:37.948Z",
+      "id": 8
+    },
+    {
+      "title": "coucou",
+      "content": "coucou",
+      "date": "2017-04-19T15:10:48.989Z",
+      "id": 9
     }
   ],
   "answers": [
@@ -136,7 +148,7 @@
       "content": "omg ...",
       "userId": 2,
       "questionId": 1,
-      "likes": 10,
+      "likes": 15,
       "id": 1
     },
     {
@@ -144,7 +156,7 @@
       "content": "pff",
       "userId": 2,
       "questionId": 1,
-      "likes": 5,
+      "likes": 6,
       "id": 2
     },
     {
@@ -186,6 +198,22 @@
       "date": "2017-04-18T14:30:47.034Z",
       "likes": 0,
       "id": 7
+    },
+    {
+      "content": "coucou",
+      "userId": "1",
+      "questionId": 1,
+      "date": "2017-04-19T15:11:55.028Z",
+      "likes": 0,
+      "id": 8
+    },
+    {
+      "date": "2017-04-19T15:11:58.429Z",
+      "content": "lol",
+      "userId": "1",
+      "questionId": 1,
+      "likes": 8,
+      "id": 9
     }
   ],
   "tags": [
