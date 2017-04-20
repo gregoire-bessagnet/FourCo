@@ -8,8 +8,9 @@
 <a ui-sref="usersList">Liste des utilisateurs</a> | 
 <a ui-sref="formulaireQ">Pose ta question</a>
 
+
 <ul>
-    <li ng-repeat="question in $ctrl.quest | filter : {content : $ctrl.query}">
+    <li ng-repeat="question in $ctrl.quest | filter : {content : $ctrl.query} | orderBy:'-date'">
         question de : <a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a><br>titre de la question : {{question.title}}<br> contenu de la question : {{question.content}} <br> date :{{question.date | date: 'dd.MMM.yyyy HH:mm'}}<br> likes :{{question.likes}}<br><a ui-sref="answers({questionId: question.id})">VOIR PLUS</a>
     </li>
 </ul>

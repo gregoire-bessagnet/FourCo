@@ -75,14 +75,6 @@
   ],
   "questions": [
     {
-      "title": "Comment manger des nouilles en codant en Angular JS ?",
-      "date": "44/44/44",
-      "content": "jaja c'était pour rire mdr xptdr lol lmao XD",
-      "userId": 1,
-      "likes": 68,
-      "id": 1
-    },
-    {
       "title": "ahahah",
       "date": "2017-04-17T19:27:24.243Z",
       "content": "ahahaha",
@@ -98,48 +90,46 @@
       "id": 2
     },
     {
-      "title": "Wow FourCo est vraiment géniale, n'est-ce pas ?",
-      "date": "44/44/44",
-      "content": "Mama le système de like il est trop bien !",
-      "userId": 1,
-      "likes": 69,
-      "id": 3
-    },
-    {
       "title": "Enzo",
       "content": "bonjour",
       "date": "2017-04-18T12:51:24.807Z",
-      "id": 4
+      "id": 4,
+      "likes": 104
     },
     {
       "title": "enzo",
       "content": "enzo enzo",
       "date": "2017-04-18T12:51:49.666Z",
-      "id": 5
+      "id": 5,
+      "likes": 1
     },
     {
       "title": "bonsoir",
       "content": "bonsoir",
       "date": "2017-04-18T12:52:39.606Z",
-      "id": 6
+      "id": 6,
+      "likes": 10
     },
     {
       "title": "kk",
       "content": "j",
       "date": "2017-04-18T13:27:18.552Z",
-      "id": 7
+      "id": 7,
+      "likes": 20
     },
     {
       "title": "cc",
       "content": "ccc",
       "date": "2017-04-19T12:41:37.948Z",
-      "id": 8
+      "id": 8,
+      "likes": 30
     },
     {
       "title": "coucou",
       "content": "coucou",
       "date": "2017-04-19T15:10:48.989Z",
-      "id": 9
+      "id": 9,
+      "likes": 40
     }
   ],
   "answers": [
