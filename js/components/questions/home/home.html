@@ -8,23 +8,20 @@
 <a ui-sref="usersList">Liste des utilisateurs</a> | 
 <a ui-sref="formulaireQ">Pose ta question</a>
 
+
 <div class="row">
     <div class="col s12">
       <ul class="tabs">
-        <li class="tab col s3"><a href="#test1">Test 1</a></li>
-        <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
-        <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
-        <li class="tab col s3"><a href="#test4">Test 4</a></li>
+        <li class="tab col s3"><a href="#" ng-click="sortBy='date'; reverse=!reverse;">Les plus récentes</a></li>
+        <li class="tab col s3"><a href="#" ng-click="sortBy='likes'; reverse=!reverse;">Les plus pertinentes</a></li>
       </ul>
     </div>
-    <div id="test1" class="col s12">Test 1</div>
-    <div id="test2" class="col s12">Test 2</div>
-    <div id="test3" class="col s12">Test 3</div>
-    <div id="test4" class="col s12">Test 4</div>
-  </div>
+
+
+
 
 <ul>
-    <li ng-repeat="question in $ctrl.quest | filter : {content : $ctrl.query} | orderBy:'-date'">
+    <li ng-repeat="question in $ctrl.quest | filter : {content : $ctrl.query} | orderBy:sortBy:reverse ">
         question de : <a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a><br>titre de la question : {{question.title}}<br> contenu de la question : {{question.content}} <br> date :{{question.date | date: 'dd.MMM.yyyy HH:mm'}}<br> likes :{{question.likes}}<br><a ui-sref="answers({questionId: question.id})">VOIR PLUS</a>
     </li>
 </ul>

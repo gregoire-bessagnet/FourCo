@@ -10,11 +10,11 @@ angular.module("app")
         component: 'home'
       })
 
-      .state({
-        name: 'nav',
-        url: '/nav',
-        component: 'nav'
-      })
+      // .state({
+      //   name: 'nav',
+      //   url: '/nav',
+      //   component: 'nav'
+      // })
 
       .state({
         name: 'answers',
