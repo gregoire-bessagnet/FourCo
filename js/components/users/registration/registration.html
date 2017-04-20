@@ -8,6 +8,7 @@
     <label>social3 <input type="text" ng-model="$ctrl.reg.social3" placeholder="social3"></label>
     <label>mattermost <input type="text" ng-model="$ctrl.reg.mattermost" placeholder="mattermost"></label>
     <label>promo * {{$ctrl.alert.promo}}<select ng-model="$ctrl.reg.promoId" ng-options="promo.id as (promo.name + ' ' + promo.school.name) for promo in $ctrl.promos"><option></option></select></label>
-    <button ng-click="$ctrl.submit()">submit</button>
+    <a ng-if="$ctrl.reg.firstname && $ctrl.reg.lastname && $ctrl.reg.age && $ctrl.reg.mail && $ctrl.reg.mattermost" ng-click="$ctrl.submit()"
+        class="btn-floating btn-large waves-effect waves-light orange"><i class="material-icons">check_circle</i></a>
 </form>
-<a ui-sref="home">retour accueil</a>
+<a class="back-home" ui-sref="home">retour accueil</a>

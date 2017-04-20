@@ -1,0 +1,66 @@
+ /*//////////////////// Page question-réponse ////////////////////*/
+.question-title {
+    text-align: center;
+}
+
+.image-top {
+    background-image: url(../img/img1.jpg);
+    height: 350px;
+    margin-bottom: 40px;
+}
+
+
+.image-user{
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 50px;
+}
+
+.like{
+    float: right;
+    font-size: 20px;
+}
+
+.question-user, .question-date, .answer-date{
+    font-size: 15px;
+    float: left;
+}
+
+.ta-reponse{
+    font-size: 20px;
+}
+
+.btn-like, .btn-validate{
+    background-color: orange;
+    float: right;
+    border-radius: 30px;
+}
+
+
+.question-user{
+    color: orange;
+}
+
+.answer-user{
+    font-size: 20px;
+    color: orange;
+}
+
+.back-home{
+    display: flex;
+    justify-content: center;
+    color: orange;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.bottom-answer{
+    border-bottom: 1px solid black;
+    margin-bottom: 70px;
+}
+
+.post-answer{
+    margin-bottom: 50px;
+    margin-top: 70px;
+}

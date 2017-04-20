@@ -1,21 +1,42 @@
-<h1>{{$ctrl.question.title}}</h1>
-<p>{{$ctrl.question.content}}</p>
-<p><a ui-sref="profile({userId:$ctrl.question.user.id})">{{$ctrl.question.user.firstname + " " + $ctrl.question.user.lastname}}</a></p>
-<p>{{$ctrl.question.date}}</p>
-<p>{{$ctrl.question.likes}}<button type="button" ng-click="$ctrl.likeQuestion()">j'aime</button></p>
+<div class="image-top">
+</div>
 
-<form>    
-    <label>Ta réponse: </label>
-    <input ng-model="$ctrl.answer.content" name="content" type="text" required/>
-    
-    <button ng-click="$ctrl.submit()">Valider</button>
-</form>
+<div class="row">
+    <h3 class="question-title col s8 offset-s2">{{$ctrl.question.title}}</h3>
+</div>
+<div class="row">
+    <p class="question-content col s12">{{$ctrl.question.content}}</p>
+</div>
+<div class="row">
+    <div class="question-date">
+        <div class="image-user"></div><a ui-sref="profile({userId:$ctrl.question.user.id})" class="question-user">{{$ctrl.question.user.firstname + " " + $ctrl.question.user.lastname}}</a>        , {{$ctrl.question.date}}</div>
+    <div class="like">{{$ctrl.question.likes}}
+        <a class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeQuestion()"><i class="material-icons">favorite</i></a>
+    </div>
+</div>
 
-<ul ng-repeat="answer in $ctrl.question.answers | orderBy: 'date' : true">
-    <li>{{answer.content}}</li>
-    <li>{{answer.date | date: 'dd.MMM.yyyy HH:mm'}}</li>
-    <li><a ui-sref="profile({userId:answer.user.id})">{{answer.user.firstname + " " + answer.user.lastname}}</a></li>
-    <li>{{answer.likes}}<button type="button" ng-click="$ctrl.likeAnswer(answer)">j'aime</button></li>
-</ul>
+<div class="row">
+    <form class="post-answer">
+        <label class="ta-reponse">Ta réponse: </label>
+        <input class="input-answer" ng-model="$ctrl.answer.content" name="content" type="text" required/>
+        <a ng-click="$ctrl.submit()" class="waves-effect waves-light btn btn-validate">Valider</a>
+    </form>
+</div>
+<br><br>
 
-<a ui-sref="home">retour accueil</a>
+<div ng-repeat="answer in $ctrl.question.answers | orderBy: 'date' : true">
+    <div class="row">
+        <div class="image-user"></div><a class="answer-user" ui-sref="profile({userId:answer.user.id})">{{answer.user.firstname + " " + answer.user.lastname}}</a>
+    </div>
+    <div class="row">
+        <p class="answer-content">{{answer.content}}</p>
+    </div>
+    <div class="row bottom-answer">
+        <p class="answer-date">{{answer.date | date: 'dd/MM/yyyy HH:mm'}}</p>
+        <p class="like">{{answer.likes}}
+            <a class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeAnswer(answer)"><i class="material-icons">favorite</i></a>
+        </p>
+    </div>
+</div>
+
+<a class="back-home" ui-sref="home">retour accueil</a>
