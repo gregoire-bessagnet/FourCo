@@ -79,7 +79,7 @@
       "date": "44/44/44",
       "content": "jaja c'était pour rire mdr xptdr lol lmao XD",
       "userId": 1,
-      "likes": 64,
+      "likes": 68,
       "id": 1
     },
     {
@@ -214,6 +214,22 @@
       "questionId": 1,
       "likes": 8,
       "id": 9
+    },
+    {
+      "content": "Coucou",
+      "userId": "1",
+      "questionId": 1,
+      "date": "2017-04-19T15:35:17.239Z",
+      "likes": 0,
+      "id": 10
+    },
+    {
+      "content": "dd",
+      "userId": "1",
+      "questionId": 1,
+      "date": "2017-04-20T08:03:55.809Z",
+      "likes": 0,
+      "id": 11
     }
   ],
   "tags": [
