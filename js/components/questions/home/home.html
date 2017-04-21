@@ -24,7 +24,7 @@
 
 <div class="questions">
     <ul>
-        <li class="content" ng-repeat="question in $ctrl.quest | filter : {content : $ctrl.query} | orderBy:sortBy:reverse">
+        <li class="content" ng-repeat="question in $ctrl.quest | filter : {title : $ctrl.query} | orderBy:sortBy:reverse">
                     <span class="user"> question de : <a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a></span><a class="title" ui-sref="answers({questionId: question.id})">
              {{question.title}}</a><br>{{question.date | date: 'dd.MMM.yyyy HH:mm'}}<span class="likes" ><p>{{$ctrl.question.likes}}<button type="button" ng-click="$ctrl.likeQuestion()">j'aime</button></p>{{question.likes}}</span>
         </li>
