@@ -49,31 +49,25 @@ angular.module("app")
         }
       })
 
-    .state({
+      .state({
         name: 'registration',
         url: '/registration',
         component: 'registration'
       })
 
-    .state({
+      .state({
         name: 'formulaireQ',
         url: '/formulaireQ',
         component: 'postQuestion'
       })
 
-    .state({
-        name: 'retourHome',
-        url: '/home',
-        component: 'home'
-      })
-      
-    .state({
+      .state({
         name: 'validerQ',
         url: '/home',
         component: 'home',
-        resolve:{
-          questions: function (QuestionService, $stateParams){
-            return QuestionService.getQuestions($stateParams.questionId);
+        resolve: {
+          questions: function (QuestionService) {
+            return QuestionService.getQuestions();
           }
         }
       })

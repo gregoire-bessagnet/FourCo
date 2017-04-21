@@ -1,4 +1,5 @@
-/*** NAVBAR ***/
+
+                        /*/////////////////// NAVBAR ///////////////////*/
 
 #nav {
     background-color: #ee6e73;
@@ -35,8 +36,24 @@
     color:white;
 }
 
-/*** MAIN CONTENT ***/
-
 #main {
     margin-top : 200px;
+}
+
+                        /*/////////////////// PAGE HOME ///////////////////*/
+
+.content{
+    border-bottom: 1px solid #cccccc;
+}
+.content:hover, .content:active{
+    font-size: 105%;
+}
+.user{
+    float: right;
+}
+.title{
+    color:#58c4b8;
+}
+.title:hover{
+    color: #1fa597;
 }

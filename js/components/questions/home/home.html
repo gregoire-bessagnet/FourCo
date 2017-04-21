@@ -9,7 +9,6 @@
 </div>
 
 
-
 <div class="filtertabs">
 <div class="row">
     <div class="col s12">
@@ -23,8 +22,9 @@
 
 <div class="questions">
     <ul>
-        <li ng-repeat="question in $ctrl.quest | filter : {content : $ctrl.query} | orderBy:sortBy:reverse ">
-            question de : <a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a><br>titre de la question : {{question.title}}<br> contenu de la question : {{question.content}} <br> date :{{question.date | date: 'dd.MMM.yyyy HH:mm'}}<br> likes :{{question.likes}}<br><a ui-sref="answers({questionId: question.id})">VOIR PLUS</a>
+        <li class="content" ng-repeat="question in $ctrl.quest | filter : {content : $ctrl.query} | orderBy:sortBy:reverse">
+                    <span class="user"> question de : <a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a></span><a class="title" ui-sref="answers({questionId: question.id})">
+             {{question.title}}</a><br>{{question.date | date: 'dd.MMM.yyyy HH:mm'}}<span class="likes" ><p>{{$ctrl.question.likes}}<button type="button" ng-click="$ctrl.likeQuestion()">j'aime</button></p>{{question.likes}}</span>
         </li>
     </ul>
 </div>

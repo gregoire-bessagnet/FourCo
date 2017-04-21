@@ -9,12 +9,13 @@ angular.module("components")
 
         },
 
-        controller: ['QuestionService', function (QuestionService) {
+        controller: ['QuestionService' ,function (QuestionService) {
 
             this.quest = [];
+            // this.currentPage = 1;
 
             this.$onInit = () => {
-                this.getQuest();
+                this.getQuest(this.currentPage);
                 console.log(this)
             };
 
@@ -23,8 +24,16 @@ angular.module("components")
                     this.quest = items.data
                 }).catch((err) => { });
             };
+            // this.nextQuest = () => {
+            //     this.currentPage += 1;
+            //     this.getQuest(this.currentPage);
+            // }
 
-            
+            // this.prevQuest = () => {
+            //     this.currentPage -= 1;
+            //     this.getQuest(this.currentPage);
+            // } page A mettre en paramétre à the getQuest et getQuestions
+
         }]
     })
 

@@ -75,67 +75,19 @@
   ],
   "questions": [
     {
-      "title": "ahahah",
-      "date": "2017-04-17T19:27:24.243Z",
-      "content": "ahahaha",
-      "userId": 2,
-      "likes": 59,
-      "id": 1
+      "title": "Wow FourCo est vraiment géniale, n'est-ce pas ?",
+      "date": "44/44/44",
+      "content": "Mama le système de like il est trop bien !",
+      "userId": 1,
+      "likes": 69,
+      "id": 3
     },
     {
-      "title": "Angularjs",
-      "content": "Je comprend rien de rien. Sacha",
-      "date": "2017-04-17T19:29:34.185Z",
-      "likes": 81,
-      "id": 2
-    },
-    {
-      "title": "Enzo",
-      "content": "bonjour",
-      "date": "2017-04-18T12:51:24.807Z",
+      "title": "Probléme avec les services angularjs",
+      "content": "je comprend rien de rien",
+      "date": "2017-04-21T09:46:12.001Z",
       "id": 4,
-      "likes": 104
-    },
-    {
-      "title": "enzo",
-      "content": "enzo enzo",
-      "date": "2017-04-18T12:51:49.666Z",
-      "id": 5,
-      "likes": 1
-    },
-    {
-      "title": "bonsoir",
-      "content": "bonsoir",
-      "date": "2017-04-18T12:52:39.606Z",
-      "id": 6,
-      "likes": 10
-    },
-    {
-      "title": "kk",
-      "content": "j",
-      "date": "2017-04-18T13:27:18.552Z",
-      "id": 7,
-      "likes": 20
-    },
-    {
-      "title": "cc",
-      "content": "ccc",
-      "date": "2017-04-19T12:41:37.948Z",
-      "id": 8,
-      "likes": 30
-    },
-    {
-      "title": "coucou",
-      "content": "coucou",
-      "date": "2017-04-19T15:10:48.989Z",
-      "id": 9,
-      "likes": 40
-    },
-    {
-      "title": "cccc",
-      "content": "cccc",
-      "date": "2017-04-20T15:52:57.794Z",
-      "id": 10
+      "likes": 69,
     }
   ],
   "answers": [
@@ -168,7 +120,7 @@
       "content": "tretretre",
       "userId": "1",
       "questionId": 3,
-      "likes": null,
+      "likes": 1,
       "id": 4
     },
     {
@@ -226,6 +178,14 @@
       "date": "2017-04-20T08:03:55.809Z",
       "likes": 0,
       "id": 11
+    },
+    {
+      "content": "validé validé",
+      "userId": "1",
+      "questionId": 3,
+      "date": "2017-04-20T08:13:30.361Z",
+      "likes": 0,
+      "id": 8
     }
   ],
   "tags": [
