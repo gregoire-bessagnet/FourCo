@@ -64,10 +64,16 @@
         </div>
 
         <a ng-if="$ctrl.reg.firstname && $ctrl.reg.lastname && $ctrl.reg.age && $ctrl.reg.mail && $ctrl.reg.password && $ctrl.reg.password2"
-            ng-click="$ctrl.submit()" class="btn-floating btn-large waves-effect waves-light orange reg-validate"><i class="material-icons">check_circle</i></a>
+            ng-click="$ctrl.postUser()" class="btn-floating btn-large waves-effect waves-light orange reg-validate"><i class="material-icons">check_circle</i></a>
+
+    </form>
+</div>
+
+
+<p>{{$ctrl.errorMessage}}</p>
+<label>email<input type="text" ng-model="$ctrl.user.email"></label>
+<label>mot de passe<input type="text" ng-model="$ctrl.user.password"></label>
+<button ng-click="$ctrl.submit($ctrl.user)">submit</button>
 
         <a class="back-home" ui-sref="home">retour accueil</a>
-    </form>
 
-
-</div>

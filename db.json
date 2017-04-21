@@ -1,27 +1,29 @@
 {
   "users": [
     {
-      "id": 1,
-      "firstname": "lala",
+      "firstname": "sasa",
       "lastname": "jaja",
       "age": 92,
       "mail": "sasa@jaja",
       "social1": "cracra",
-      "social2": "frafra",
+      "social2": "tratra",
       "social3": "tratra",
       "mattermost": "srasra",
-      "promoId": 1
+      "password": "lala",
+      "promoId": 1,
+      "id": 1
     },
     {
       "id": 2,
       "firstname": "tata",
       "lastname": "sasa",
       "age": 112,
-      "mail": "sasa@jaja",
+      "mail": "lala@jaja",
       "social1": "cracra",
       "social2": "frafra",
       "social3": "tratra",
       "mattermost": "srasra",
+      "password": "lala",
       "promoId": 1
     },
     {
@@ -33,6 +35,7 @@
       "promoId": 1,
       "social2": "llll",
       "social3": "llll",
+      "password": "lala",
       "mattermost": "lll",
       "id": 3
     },
@@ -178,6 +181,14 @@
       "date": "2017-04-20T12:51:52.207Z",
       "likes": 0,
       "id": 11
+    },
+    {
+      "content": "lala",
+      "userId": 1,
+      "questionId": 1,
+      "date": "2017-04-21T10:11:07.647Z",
+      "likes": 0,
+      "id": 12
     }
   ],
   "tags": [

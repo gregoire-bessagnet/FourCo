@@ -4,9 +4,13 @@ angular.module("components")
 
         templateUrl: '/js/components/users/registration/registration.html',
 
-        controller: ['RegistrationServices', function (RegistrationServices) {
+        bindings: {
+            redirect: '<'
+        },
 
-            this.$onInit = () => {
+        controller: ['RegistrationServices', 'AuthService','$state', function (RegistrationServices, AuthService, $state) {
+
+        this.$onInit = () => {
                 this.reg = {
                     firstname: "",
                     lastname: "",
@@ -23,14 +27,16 @@ angular.module("components")
                     this.promos = response.data;
                     console.log(this.promos)
                 }).catch((err) => { });
-            };
+      
+
+            }
+
 
             this.$postLink = () => {
                 $('select').material_select();
             };
 
-            this.submit = () => {
-
+            this.postUser = () => {
                 this.alert = [];
 
                 if (this.reg.firstname == "") {
@@ -51,6 +57,20 @@ angular.module("components")
                 if (this.alert.length === 0) {
                     RegistrationServices.postUsers(this.reg)
                 }
+                if (this.reg.promoId == 0) {
+                    this.alert.promo = "chanp obligatoire"
+                } else {
+                    RegistrationServices.postUsers(this.reg)
+                }
             };
+
+            this.submit = (user) => {
+
+                AuthService.connect(user.email, user.password).then(() => {
+                    $state.go(this.redirect ? this.redirect : 'home');
+                }).catch(() => {
+                    this.errorMessage = `Utilisateur introuvable ou mot de passe invalide`;
+                })
+            }
         }]
     })

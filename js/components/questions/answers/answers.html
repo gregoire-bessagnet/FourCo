@@ -15,7 +15,7 @@
     </div>
 </div>
 
-<div class="row">
+<div class="row" ng-if="$ctrl.isAuthenticated != null" >
     <form class="post-answer">
         <label class="ta-reponse">Ta réponse: </label>
         <input class="input-answer" ng-model="$ctrl.answer.content" name="content" type="text" required/>

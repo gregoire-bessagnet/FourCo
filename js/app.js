@@ -1,5 +1,6 @@
-angular.module("app",[
+angular.module("app", [
     "ui.router",
     "components",
-    "services"
+    "services",
+    "ngCookies"
 ])
