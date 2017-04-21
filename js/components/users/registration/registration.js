@@ -6,48 +6,51 @@ angular.module("components")
 
         controller: ['RegistrationServices', function (RegistrationServices) {
 
-            this.reg = {
-                firstname: "",
-                lastname: "",
-                age: "",
-                mail: "",
-                social1: "",
-                promoId: 0
-            };
-            this.alert = [];
-            this.promos = [];
-
             this.$onInit = () => {
-                RegistrationServices.getPromos().then((response) =>{
+                this.reg = {
+                    firstname: "",
+                    lastname: "",
+                    age: "",
+                    mail: "",
+                    social1: "",
+                    promoId: 0
+                };
+                this.alert = [];
+                this.promos = [];
+                this.promo = null;
+
+                RegistrationServices.getPromos().then((response) => {
                     this.promos = response.data;
                     console.log(this.promos)
                 }).catch((err) => { });
-            }
-
-            this.submit = () => {
-                this.postUser();
             };
 
-            this.postUser = () => {
-                    
+            this.$postLink = () => {
+                $('select').material_select();
+            };
+
+            this.submit = () => {
+
+                this.alert = [];
+
                 if (this.reg.firstname == "") {
-                    this.alert.firstname = "chanp obligatoire";
+                    this.alert.firstname = "champ obligatoire";
                 }
                 if (this.reg.lastname == "") {
-                    this.alert.lastname = "chanp obligatoire";
+                    this.alert.lastname = "champ obligatoire";
                 }
                 if (this.reg.age == "") {
-                    this.alert.age = "chanp obligatoire";
+                    this.alert.age = "champ obligatoire";
                 }
                 if (this.reg.mail == "") {
-                    this.alert.mail = "chanp obligatoire"
+                    this.alert.mail = "champ obligatoire"
                 }
-                if (this.reg.promoId == 0){
-                    this.alert.promo = "chanp obligatoire"
+                if (typeof this.promo == "undefined") {
+                    this.alert.promo = "champ obligatoire"
                 }
-                else {
+                if (this.alert.length === 0) {
                     RegistrationServices.postUsers(this.reg)
                 }
-            }
+            };
         }]
     })
