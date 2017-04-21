@@ -1,27 +1,30 @@
-<img src="./../../../../../img/logo_wild_white.png" alt="">
-
 <div id="search">
     <input type="text" name="query" ng-model="$ctrl.query">
 </div>
 
-<a ui-sref="registration">INSCRIS TOI !</a> | 
-<a ui-sref="usersList">Liste des utilisateurs</a> | 
-<a ui-sref="formulaireQ">Pose ta question</a>
+<div class="menu">
+    <a ui-sref="formulaireQ" class="waves-effect waves-light btn">Pose ta question</a>
+    <a ui-sref="usersList" class="waves-effect waves-teal btn-flat">Annuaire</a> 
+    <a ui-sref="registration" class="waves-effect waves-teal btn-flat">Inscription / Connexion</a>
+</div>
 
 
+
+<div class="filtertabs">
 <div class="row">
     <div class="col s12">
       <ul class="tabs">
-        <li class="tab col s3"><a href="#" ng-click="sortBy='date'; reverse=!reverse;">Les plus récentes</a></li>
-        <li class="tab col s3"><a href="#" ng-click="sortBy='likes'; reverse=!reverse;">Les plus pertinentes</a></li>
+        <li class="tab col s6"><a href="#" ng-click="sortBy='date'; reverse=!reverse;">Les plus récentes</a></li>
+        <li class="tab col s6"><a href="#" ng-click="sortBy='likes'; reverse=!reverse;">Les plus pertinentes</a></li>
       </ul>
     </div>
+</div>
+</div>
 
-
-
-
-<ul>
-    <li ng-repeat="question in $ctrl.quest | filter : {content : $ctrl.query} | orderBy:sortBy:reverse ">
-        question de : <a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a><br>titre de la question : {{question.title}}<br> contenu de la question : {{question.content}} <br> date :{{question.date | date: 'dd.MMM.yyyy HH:mm'}}<br> likes :{{question.likes}}<br><a ui-sref="answers({questionId: question.id})">VOIR PLUS</a>
-    </li>
-</ul>
+<div class="questions">
+    <ul>
+        <li ng-repeat="question in $ctrl.quest | filter : {content : $ctrl.query} | orderBy:sortBy:reverse ">
+            question de : <a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a><br>titre de la question : {{question.title}}<br> contenu de la question : {{question.content}} <br> date :{{question.date | date: 'dd.MMM.yyyy HH:mm'}}<br> likes :{{question.likes}}<br><a ui-sref="answers({questionId: question.id})">VOIR PLUS</a>
+        </li>
+    </ul>
+</div>

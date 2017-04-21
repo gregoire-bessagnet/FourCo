@@ -1,0 +1,42 @@
+/*** NAVBAR ***/
+
+#nav {
+    background-color: #ee6e73;
+    height:70px;
+}
+#title_nav {
+    font-size:1.4em;
+    font-weight: bold;
+    color: white;
+    margin-top: -40px;
+    margin-left: 220px;
+}
+
+.logo {
+    display: inline;
+    margin-left: 150px;
+    margin-right:20px;
+    margin-top:10px;
+}
+
+#search {
+    width:200px;
+    margin-top: -55px;
+    margin-left:180px;
+    background-color: white;
+    height: 40px;
+}
+.menu{
+    margin-left: 415px;
+    margin-top: -38px;
+    padding-bottom: 30px;
+}
+.waves-effect {
+    color:white;
+}
+
+/*** MAIN CONTENT ***/
+
+#main {
+    margin-top : 200px;
+}
