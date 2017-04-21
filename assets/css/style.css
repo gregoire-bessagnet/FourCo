@@ -53,6 +53,7 @@
     color: orange;
     font-size: 20px;
     margin-bottom: 20px;
+    padding-top: 40px;
 }
 
 .bottom-answer{
@@ -63,4 +64,18 @@
 .post-answer{
     margin-bottom: 50px;
     margin-top: 70px;
+}
+
+/*//////////////////// Page inscription ////////////////////*/
+
+.inscris-toi{
+    text-align: center;
+    color: orange;
+    margin-bottom: 80px;
+}
+
+
+.reg-validate{
+    display: block;
+    margin: auto;
 }

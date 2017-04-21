@@ -83,7 +83,7 @@
       "date": "44/44/44",
       "content": "Mama le système de like il est trop bien !",
       "userId": 1,
-      "likes": 69,
+      "likes": 71,
       "id": 3
     },
     {
@@ -199,6 +199,14 @@
       "date": "2017-04-20T12:51:52.207Z",
       "likes": 0,
       "id": 11
+    },
+    {
+      "content": "fjksldksmfgclpsdlncs^mq$sfvbgiuopojcnsydunk,c;ràteblrcgn,p;xpzsd=jhcfbgn,xpeqop m",
+      "userId": "1",
+      "questionId": 3,
+      "date": "2017-04-20T17:43:02.170Z",
+      "likes": 0,
+      "id": 12
     }
   ],
   "tags": [
