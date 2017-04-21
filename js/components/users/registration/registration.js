@@ -4,24 +4,34 @@ angular.module("components")
 
         templateUrl: '/js/components/users/registration/registration.html',
 
-        controller: ['RegistrationServices', function (RegistrationServices) {
+        bindings: {
+            redirect: '<'
+        },
 
-            this.reg = {
-                firstname: "",
-                lastname: "",
-                age: "",
-                mail: "",
-                social1: "",
-                promoId: 0
-            };
-            this.alert = [];
-            this.promos = [];
+        controller: ['RegistrationServices', 'AuthService','$state', function (RegistrationServices, AuthService, $state) {
+
 
             this.$onInit = () => {
-                RegistrationServices.getPromos().then((response) =>{
+                RegistrationServices.getPromos().then((response) => {
                     this.promos = response.data;
                     console.log(this.promos)
-                }).catch((err) => { });
+                }).catch((err) => {});
+
+                this.errorMessage = '';
+                this.user = {};
+                
+                console.log(this.redirect)
+                this.reg = {
+                    firstname: "",
+                    lastname: "",
+                    age: "",
+                    mail: "",
+                    social1: "",
+                    promoId: 0
+                };
+                this.alert = [];
+                this.promos = [];
+
             }
 
             this.submit = () => {
@@ -29,7 +39,7 @@ angular.module("components")
             };
 
             this.postUser = () => {
-                    
+
                 if (this.reg.firstname == "") {
                     this.alert.firstname = "chanp obligatoire";
                 }
@@ -42,12 +52,19 @@ angular.module("components")
                 if (this.reg.mail == "") {
                     this.alert.mail = "chanp obligatoire"
                 }
-                if (this.reg.promoId == 0){
+                if (this.reg.promoId == 0) {
                     this.alert.promo = "chanp obligatoire"
-                }
-                else {
+                } else {
                     RegistrationServices.postUsers(this.reg)
                 }
+            }
+            this.submit = (user) => {
+
+                AuthService.connect(user.email, user.password).then(() => {
+                    $state.go(this.redirect ? this.redirect : 'home');
+                }).catch(() => {
+                    this.errorMessage = `Utilisateur introuvable ou mot de passe invalide`;
+                })
             }
         }]
     })

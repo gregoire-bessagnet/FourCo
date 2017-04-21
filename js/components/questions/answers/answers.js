@@ -8,7 +8,12 @@ angular.module("components")
             question: '<',
         },
 
-        controller: function (AnswersService) {
+        controller: function (AnswersService,AuthService) {
+
+            this.$onInit = () => {
+                this.isAuthenticated = AuthService.isAuthenticated();
+                this.currentUser = AuthService.getCurrentUser();
+            }
 
             this.submit = () => {
                 this.postAnswers();
@@ -17,7 +22,7 @@ angular.module("components")
             this.postAnswers = () => {
                 this.answer = {
                     content: this.answer.content,
-                    userId: "1",
+                    userId: this.currentUser.id,
                     questionId: this.question.id,
                     date: new Date(), 
                     likes: 0

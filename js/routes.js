@@ -25,12 +25,21 @@ angular.module("app")
         name: 'profile',
         url: '/profile/:userId',
         component: 'userProfile',
+        authenticate: true,
         resolve: {
           user: function (UserService, $stateParams) {
             return UserService.getUser($stateParams.userId);
           }
         }
       })
+
+      .state({
+        name: 'myProfile',
+        url: '/myProfile/',
+        component: 'myProfile',
+        authenticate: true
+      })
+
 
       .state({
         name: 'usersList',
@@ -46,30 +55,21 @@ angular.module("app")
       .state({
         name: 'registration',
         url: '/registration',
-        component: 'registration'
+        component: 'registration',
+        resolve: {
+          redirect: function ($state) {
+            return $state.transition._targetState._params.redirect;
+          }
+
+        }
       })
 
       .state({
-        name: 'formulaireQ',
-        url: '/formulaireQ',
+        name: 'formQ',
+        url: '/formQ',
+        authenticate:true,
         component: 'postQuestion'
       })
 
-      .state({
-        name: 'retourHome',
-        url: '/home',
-        component: 'home'
-      })
-      
-      .state({
-        name: 'validerQ',
-        url: '/home',
-        component: 'home',
-        resolve:{
-          questions: function (QuestionService, $stateParams) {
-            return QuestionService.getQuestions($stateParams.questionId);
-          }
-        }
-      })
     $urlRouterProvider.otherwise('/home')
   })
