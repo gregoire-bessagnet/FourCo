@@ -4,9 +4,16 @@
 <p>{{$ctrl.question.date}}</p>
 <p>{{$ctrl.question.likes}}<button type="button" ng-click="$ctrl.likeQuestion()">j'aime</button></p>
 
-<ul ng-repeat="answer in $ctrl.question.answers">
+<form>    
+    <label>Ta réponse: </label>
+    <input ng-model="$ctrl.answer.content" name="content" type="text" required/>
+    
+    <button ng-click="$ctrl.submit()">Valider</button>
+</form>
+
+<ul ng-repeat="answer in $ctrl.question.answers | orderBy: 'date' : true">
     <li>{{answer.content}}</li>
-    <li>{{answer.date}}</li>
+    <li>{{answer.date | date: 'dd.MMM.yyyy HH:mm'}}</li>
     <li><a ui-sref="profile({userId:answer.user.id})">{{answer.user.firstname + " " + answer.user.lastname}}</a></li>
     <li>{{answer.likes}}<button type="button" ng-click="$ctrl.likeAnswer(answer)">j'aime</button></li>
 </ul>

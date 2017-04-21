@@ -1,1 +1,26 @@
-                        /*/////////////////// PAGE HOM ///////////////////*/
+                        /*/////////////////// PAGE HOME ///////////////////*/
+
+.content{
+    border-bottom: 1px solid #cccccc;
+    /*text-align: center;*/
+}
+.content:hover, .content:active{
+    font-size: 105%;
+}
+.user{
+    float: right;
+}
+.title{
+    color:#58c4b8;
+}
+.title:hover{
+    color: #1fa597;
+}
+
+
+/*.paginate{
+    text-align: center;
+}*/
+
+
+                      /*////////////////// FORMULAIRE //////////////////*/

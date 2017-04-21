@@ -1,19 +1,20 @@
-<nav>
-    <div class="nav-wrapper">
-        <a class="brand-logo"><img src="/image/logo.jpg" alt="image"></a>
-        <ul id="nav-mobile" class="right hide-on-led-and-down">
-            <li><a class="waves-effect waves-light btn" ui-sref="registration">INSCRIT TOI !</a></li>
-            <li><a class="waves-effect waves-light btn" ui-sref="usersList">Liste des utilisateurs</a></li>
-            <li><a class="waves-effect waves-light btn" ui-sref="formulaireQ">Pose ta question</a></li>
-        </ul>
-    </div>
-</nav>
 
 <div>
     <ul>
-        <li ng-repeat="question in $ctrl.quest | orderBy: 'date' : true">
-            question de : <a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a><br>question
-            : {{question.title}}<br> précision : {{question.content}} <br> date :{{question.date | date: 'dd.MMM.yyyy HH:mm'}}<br>            likes :{{question.likes}}<br><a ui-sref="answers({questionId: question.id})">VOIR PLUS</a>
+        <li class="content" ng-repeat="question in $ctrl.quest | orderBy: date : 'true'| limitTo: itemsPerPage:10">
+                    <span class="user"> question de : <a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a></span><a class="title" ui-sref="answers({questionId: question.id})">
+             {{question.title}}</a><br>{{question.date | date: 'dd.MMM.yyyy HH:mm'}}<span class="likes" ><p>{{$ctrl.question.likes}}<button type="button" ng-click="$ctrl.likeQuestion()">j'aime</button></p>{{question.likes}}</span>
+            <!--<a class="voir btn-floating btn-large waves-effect waves-light red" ui-sref="answers({questionId: question.id})"><i class="material-icons">add</i></a>-->
         </li>
     </ul>
 </div>
+
+<!--<div class="paginate">
+        <ul>
+            <li class="waves-effect"><a ng-click="$ctrl.prevQuest()"><i class="material-icons">chevron_left</i></a></li>
+            <li class="waves-effect"><a ng-click="$ctrl.nextQuest()"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+    </div>-->
+
+
+<!--<br> précision : {{question.content}} <br>-->

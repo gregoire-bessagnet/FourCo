@@ -8,6 +8,10 @@ angular.module("services")
 
             var defer = $q.defer();
 
+            this.postAnswers = (answer) => {
+            return $http.post(URL_ANSWER + "answers", answer)
+        }
+
             $http.get(URL_ANSWER + "questions/" + id + "?_expand=user").then((response) => {
 
                 var question = response.data;

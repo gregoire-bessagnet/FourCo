@@ -2,7 +2,7 @@ angular.module("components")
 
     .component("registration", {
 
-        templateUrl: '/js/components/users/registration/registration.html',
+        templateUrl: '/js/components/questions/question/users/registration/registration.html',
 
         controller: ['RegistrationServices', function (RegistrationServices) {
 

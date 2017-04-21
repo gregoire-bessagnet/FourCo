@@ -11,6 +11,12 @@ angular.module("app")
       })
 
       .state({
+        name: 'nav',
+        url: '/nav',
+        component: 'nav'
+      })
+
+      .state({
         name: 'answers',
         url: '/answers/:questionId',
         component: 'answers',
@@ -65,6 +71,5 @@ angular.module("app")
           }
         }
       })
-
     $urlRouterProvider.otherwise('/home')
   })

@@ -2,7 +2,7 @@ angular.module("components")
 
     .component("userProfile", {
 
-        templateUrl: '/js/components/users/profile/profile.html',
+        templateUrl: '/js/components/questions/question/users/profile/profile.html',
 
         bindings: {
             user: '<',
