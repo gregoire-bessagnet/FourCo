@@ -1,12 +1,13 @@
-<<<<<<< HEAD
 <div id="search">
     <input type="text" name="query" ng-model="$ctrl.query">
 </div>
 
 <div class="menu">
-    <a ui-sref="formulaireQ" class="waves-effect waves-light btn">Pose ta question</a>
+    <a ng-if="$ctrl.isAuthenticated != null" ui-sref="formQ" class="waves-effect waves-light btn">Pose ta question</a>
     <a ui-sref="usersList" class="waves-effect waves-teal btn-flat">Annuaire</a> 
-    <a ui-sref="registration" class="waves-effect waves-teal btn-flat">Inscription / Connexion</a>
+    <a ng-if="$ctrl.isAuthenticated == null" ui-sref="registration" class="waves-effect waves-teal btn-flat">Connexion</a>
+    <a ng-if="$ctrl.isAuthenticated != null" ui-sref="myProfile">Mon Profile</a><br>
+    <button ng-if="$ctrl.isAuthenticated != null" ng-click="$ctrl.disconnect()">Déconnexion</button>
 </div>
 
 
@@ -29,16 +30,6 @@
         </li>
     </ul>
 </div>
-=======
-<a ng-if="$ctrl.isAuthenticated == null" ui-sref="registration">CONNECTE TOI !</a><br>
-<a ng-if="$ctrl.isAuthenticated != null" ui-sref="myProfile">Mon Profile</a><br>
-<a ui-sref="usersList">Liste des utilisateurs</a>
-<a ng-if="$ctrl.isAuthenticated != null" ui-sref="formQ">Pose ta question</a>
 
-<ul>
-    <li ng-repeat="question in $ctrl.quest">
-        question de : <a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a><br>question : {{question.title}}<br> précision : {{question.content}} <br> date :{{question.date | date: 'dd/MM/yyyy HH:mm' }}<br> likes :{{question.likes}}<br><a ui-sref="answers({questionId: question.id})">VOIR PLUS</a>
-    </li>
-</ul>
-<button ng-click="$ctrl.disconnect()">disconnect</button>
->>>>>>> 0b0d91cddf052eb4d71fda66c71e4d4a7fd10fe2
+
+
