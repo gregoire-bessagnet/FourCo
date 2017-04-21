@@ -5,27 +5,36 @@ angular.module("components")
         templateUrl: '/js/components/questions/answers/answers.html',
 
         bindings: {
-            answ: '<',
-
+            question: '<',
         },
 
-        controller: ['AnswersServices', function (AnswersServices) {
-
-            this.answ = [];
+        controller: function (AnswersService,AuthService) {
 
             this.$onInit = () => {
-                this.getAnsw();
-                console.log(this)
-
+                this.isAuthenticated = AuthService.isAuthenticated();
+                this.currentUser = AuthService.getCurrentUser();
             }
 
-            this.getAnsw = () => {
-                AnswersServices.getQuestion(1).then((items) => {
-                    this.answ = items.data;
-                    AnswersServices.getAnswers(this.answ.id).then((items) => {
-                        this.answ.answers = items.data
-                    }).catch((err) => { });
-                }).catch((err) => { });
+            this.submit = () => {
+                this.postAnswers();
             }
-        }]
+
+            this.postAnswers = () => {
+                this.answer = {
+                    content: this.answer.content,
+                    userId: this.currentUser.id,
+                    questionId: this.question.id,
+                    date: new Date(), 
+                    likes: 0
+                }
+                AnswersService.postAnswers(this.answer)
+            }
+
+            this.likeQuestion = ()=>{
+                AnswersService.likeQuestion(this.question.id,this.question);
+            }
+            this.likeAnswer = (answer) => {
+                AnswersService.likeAnswer(answer.id,answer);
+            }
+        }
     })

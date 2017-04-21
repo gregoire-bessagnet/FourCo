@@ -1,0 +1,15 @@
+<h2><b>Ecrit ton sujet</b></h2>
+
+<input type="text" ng-model="$ctrl.name" />
+
+<h2><b>pose ta question</b></h2>
+<textarea type="text" ng-model="$ctrl.body"></textarea>
+
+
+</br>
+</br>
+
+
+<button type="submit" ui-sref="home" ng-click="$ctrl.add($ctrl.questions)" ng-disabled="!$ctrl.name || !$ctrl.body">Valider</button>
+
+<button type="submit" ui-sref="home">Retour à l'acceuil</button>

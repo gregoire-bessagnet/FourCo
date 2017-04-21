@@ -2,20 +2,36 @@ const URL_USER = "http://localhost:3000/";
 
 angular.module("services")
 
-    .service("UserService", function ($http) {
+    .service("UserService", function ($http, $q) {
+         
+        this.getUser = (id) => {
+            
+            var defer = $q.defer();
 
-        this.getUser = () => {
-            return $http.get(URL_USER + "users/1")
-        }
-        this.getUserPromo = () => {
-            return $http.get(URL_USER + "users/2?_expand=promo")
-        }
-        this.getSchool = (value) => {
-            return $http.get(URL_USER + "schools?id=" + value)
-        }
-        this.getUserTags = (value) => {
-            return $http.get(URL_USER + "user_tag?userId=" + value + "&_expand=tag")
-        }
+            $http.get(URL_USER + "users/" + id + "?_expand=promo").then((response) => {
 
+                var user = response.data;
+                console.log(user)
 
-    });
+                
+                $http.get(URL_USER + "schools?id=" + user.promo.schoolId).then((response) => {
+                    user.school = response.data;
+                    defer.resolve(user);
+                }).catch((response) => {
+                    defer.reject(response.statusText);
+                });
+
+                $http.get(URL_USER + "user_tag?userId=" + id + "&_expand=tag").then((response) => {
+                    user.tags = response.data;
+                }).catch((response) => {
+                    defer.reject(response.statusText);
+                });
+
+            }).catch((response) => {
+                defer.reject(response.statusText);
+            });
+
+            return defer.promise;
+        }
+    })
+

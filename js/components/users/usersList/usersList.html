@@ -1,0 +1,10 @@
+<div id="search">
+    <input type="text" name="query" ng-model="$ctrl.query">
+</div>
+
+<ul ng-repeat="user in $ctrl.users | filter : $ctrl.query">
+  <li>{{user.firstname +" "+ user.lastname}}</li>
+  <li>{{user.age}}</li>
+  <li>{{user.promo.name}}</li>
+</ul>
+<a ui-sref="home">accueil</a>

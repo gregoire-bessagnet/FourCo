@@ -1,0 +1,138 @@
+                        /*/////////////////// NAVBAR ///////////////////*/
+
+#nav {
+    background-color: #ee6e73;
+    height:70px;
+}
+#title_nav {
+    font-size:1.4em;
+    font-weight: bold;
+    color: white;
+    margin-top: -40px;
+    margin-left: 220px;
+}
+
+.logo {
+    display: inline;
+    margin-left: 150px;
+    margin-right:20px;
+    margin-top:10px;
+}
+
+#search {
+    width:200px;
+    margin-top: -55px;
+    margin-left:180px;
+    background-color: white;
+    height: 40px;
+}
+.menu{
+    margin-left: 415px;
+    margin-top: -38px;
+    padding-bottom: 30px;
+}
+.waves-effect {
+    color:white;
+}
+
+#main {
+    margin-top : 200px;
+}
+
+                        /*/////////////////// PAGE HOME ///////////////////*/
+
+.content{
+    border-bottom: 1px solid #cccccc;
+}
+.content:hover, .content:active{
+    font-size: 105%;
+}
+.user{
+    float: right;
+}
+.title{
+    color:#58c4b8;
+}
+.title:hover{
+    color: #1fa597;
+}
+
+ /*//////////////////// Page question-réponse ////////////////////*/
+
+.question-title {
+    text-align: center;
+}
+
+.image-top {
+    background-image: url(../img/img1.jpg);
+    height: 350px;
+    margin-bottom: 40px;
+}
+
+.image-user{
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 50px;
+}
+
+.like{
+    float: right;
+    font-size: 20px;
+}
+
+.question-user, .question-date, .answer-date{
+    font-size: 15px;
+    float: left;
+}
+
+.ta-reponse{
+    font-size: 20px;
+}
+
+.btn-like, .btn-validate{
+    background-color: orange;
+    float: right;
+    border-radius: 30px;
+}
+
+.question-user{
+    color: orange;
+}
+
+.answer-user{
+    font-size: 20px;
+    color: orange;
+}
+
+.back-home{
+    display: flex;
+    justify-content: center;
+    color: orange;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+
+.bottom-answer{
+    border-bottom: 1px solid black;
+    margin-bottom: 70px;
+}
+
+.post-answer{
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
+
+/*//////////////////// Page inscription ////////////////////*/
+.inscris-toi{
+    text-align: center;
+    color: orange;
+    margin-bottom: 80px;
+}
+
+.reg-validate{
+    display: block;
+    margin: auto;
+}
+

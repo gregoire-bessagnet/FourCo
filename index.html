@@ -3,37 +3,63 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="/node_modules/angular-material/angular-material.js"></script>
     
-    <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
-    <script type="text/javascript" src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
 
 </head>
 
 <body ng-app="app">
 
-    <main></main>
+<div id="nav">
 
+    <a href="/">
+        <img src="./assets/img/logo_wild_white.png" width="50px" class="logo">
+        <h1 id="title_nav">Wild Exchange</h1>
+    </a>
+</div>
 
+    <div class="container">
+        <main></main>
+    </div>
+   
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.js"></script>
+    <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="node_modules/angular-cookies/angular-cookies.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/routes.js"></script>    
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script type="text/javascript" src="js/run.js"></script>
     <script type="text/javascript" src="js/components/index.js"></script>
     <script type="text/javascript" src="js/components/main/main.js"></script>
     <script type="text/javascript" src="js/components/nav/nav.js"></script>
     <script type="text/javascript" src="js/components/questions/home/home.js"></script>
-    <script type="text/javascript" src="js/components/questions/postQ/postQ.js"></script>
+    <script type="text/javascript" src="js/components/questions/postQ/formQ.js"></script>
     <script type="text/javascript" src="js/components/questions/question/question.js"></script>
     <script type="text/javascript" src="js/components/questions/answers/answers.js"></script>
-    <script type="text/javascript" src="js/components/users/registration/registration.js"></script>
+    <script type="text/javascript" src="js/components/users/usersList/usersList.js"></script>
     <script type="text/javascript" src="js/components/users/sign/sign.js"></script>
     <script type="text/javascript" src="js/components/users/profile/profile.js"></script>
+    <script type="text/javascript" src="js/components/users/registration/registration.js"></script>
+    <script type="text/javascript" src="js/components/users/myProfile/myProfile.js"></script>
     <script type="text/javascript" src="js/components/pagination/pagination.js"></script>
     <script type="text/javascript" src="js/services/index.js"></script>
     <script type="text/javascript" src="js/services/userService.js"></script>
+    <script type="text/javascript" src="js/services/FormService.js"></script>
+    <script type="text/javascript" src="js/services/AuthService.js"></script>
+    <script type="text/javascript" src="js/services/UsersList.js"></script>
+    <script type="text/javascript" src="js/services/navService.js"></script>
     <script type="text/javascript" src="js/services/QuestionService.js"></script>
     <script type="text/javascript" src="js/services/AnswersService.js"></script>
     <script type="text/javascript" src="js/services/registrationServices.js"></script>
+    <script type="text/javascript" src="js/services/MyProfileService.js"></script>
 
 </body>
 

@@ -9,20 +9,36 @@ angular.module("components")
 
         },
 
-        controller: ['QuestionService', function (QuestionService) {
+        controller: ['QuestionService', 'AuthService', function (QuestionService, AuthService) {
 
-            this.quest = [];
 
             this.$onInit = () => {
+                this.quest = [];
                 this.getQuest();
                 console.log(this)
             };
+            this.isAuthenticated = AuthService.isAuthenticated();
+
 
             this.getQuest = () => {
                 QuestionService.getQuestions().then((items) => {
                     this.quest = items.data
-                }).catch((err) => { });
+                }).catch((err) => {});
             };
+
+            this.disconnect = () => {
+                AuthService.disconnect();
+                this.isAuthenticated = null;
+            }
+            // this.nextQuest = () => {
+            //     this.currentPage += 1;
+            //     this.getQuest(this.currentPage);
+            // }
+
+            // this.prevQuest = () => {
+            //     this.currentPage -= 1;
+            //     this.getQuest(this.currentPage);
+            // } page A mettre en paramétre à the getQuest et getQuestions
+
         }]
     })
-
