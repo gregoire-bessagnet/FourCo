@@ -40,9 +40,17 @@
 }
 
                         /*/////////////////// PAGE HOME ///////////////////*/
-
+.tabs{
+    background-color: #E1E1E1;
+}
+body{
+    background-color: #E1E1E1;
+}
 .content{
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+    background-color: #F9FAFA;
+    height: 90px;
+    margin: 5px;
 }
 .content:hover, .content:active{
     font-size: 105%;
@@ -55,6 +63,10 @@
 }
 .title:hover{
     color: #1fa597;
+}
+.likes{
+    float: left;
+    margin: 10px;
 }
 
  /*//////////////////// Page question-réponse ////////////////////*/
@@ -124,7 +136,7 @@
     margin-top: 70px;
 }
 
-/*//////////////////// Page inscription ////////////////////*/
+                        /*//////////////////// Page inscription ////////////////////*/
 .inscris-toi{
     text-align: center;
     color: orange;

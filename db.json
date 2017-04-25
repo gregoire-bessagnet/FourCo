@@ -82,7 +82,7 @@
       "date": "20/04/2017",
       "content": "Qui cum venisset ob haec festinatis itineribus Antiochiam, praestrictis palatii ianuis, contempto Caesare, quem videri decuerat, ad praetorium cum pompa sollemni perrexit morbosque diu causatus nec regiam introiit nec processit in publicum, sed abditus multa in eius moliebatur exitium addens quaedam relationibus supervacua, quas subinde dimittebat ad principem. Qui cum venisset ob haec festinatis itineribus Antiochiam, praestrictis palatii ianuis, contempto Caesare, quem videri decuerat, ad praetorium cum pompa sollemni perrexit morbosque diu causatus nec regiam introiit nec processit in publicum, sed abditus multa in eius moliebatur exitium addens quaedam relationibus supervacua, quas subinde dimittebat ad principem. Qui cum venisset ob haec festinatis itineribus Antiochiam, praestrictis palatii ianuis, contempto Caesare, quem videri decuerat, ad praetorium cum pompa sollemni perrexit morbosque diu causatus nec regiam introiit nec processit in publicum, sed abditus multa in eius moliebatur exitium addens quaedam relationibus supervacua, quas subinde dimittebat ad principem.",
       "userId": 2,
-      "likes": 101,
+      "likes": 102,
       "id": 2
     },
     {
@@ -126,8 +126,24 @@
       "date": "2017-04-21T13:30:36.177Z",
       "content": "Angular",
       "userId": 1,
-      "likes": 1,
+      "likes": 2,
       "id": 9
+    },
+    {
+      "title": "Angularjs",
+      "date": "2017-04-21T14:53:23.730Z",
+      "content": "je poste pour des les services",
+      "userId": 2,
+      "likes": 1,
+      "id": 10
+    },
+    {
+      "title": "Angular 2",
+      "content": "je suis prêt pour le duel",
+      "date": "2017-04-24T15:17:37.536Z",
+      "userId": 2,
+      "likes": 0,
+      "id": 11
     }
   ],
   "answers": [
@@ -202,6 +218,22 @@
       "questionId": 9,
       "likes": 1,
       "id": 14
+    },
+    {
+      "content": "salut salut salut",
+      "userId": 2,
+      "questionId": 10,
+      "date": "2017-04-21T14:53:49.482Z",
+      "likes": 0,
+      "id": 15
+    },
+    {
+      "content": "salut salut salut",
+      "userId": 2,
+      "questionId": 10,
+      "date": "2017-04-21T14:53:52.538Z",
+      "likes": 0,
+      "id": 16
     }
   ],
   "tags": [

@@ -1,5 +1,5 @@
 const URL_QUEST = "http://localhost:3000/questions"
-// const URL_QUEST = "http://localhost:3000/questions?_page="    
+ 
 
 angular.module("services")
 
@@ -10,4 +10,4 @@ angular.module("services")
         }     
     });
 
-   //+ page + "&_limit=15"
+   
