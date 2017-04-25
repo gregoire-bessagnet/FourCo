@@ -25,7 +25,8 @@ angular.module("components")
                     userId: this.currentUser.id,
                     questionId: this.question.id,
                     date: new Date(), 
-                    likes: 0
+                    likes: 0, 
+                    status: false
                 }
                 AnswersService.postAnswers(this.answer)
             }
@@ -34,7 +35,13 @@ angular.module("components")
                 AnswersService.likeQuestion(this.question.id,this.question);
             }
             this.likeAnswer = (answer) => {
-                AnswersService.likeAnswer(answer.id,answer);
+                AnswersService.likeAnswer(answer.id, answer);
+            }
+
+            this.validateAnswer = (answer) => {
+                answer.status = true;
+                AnswersService.validateAnswer(answer.id, answer);
+                console.log(answer.status);
             }
         }
     })

@@ -10,6 +10,9 @@
 <div class="row">
     <div class="question-date">
         <div class="image-user"></div><a ui-sref="profile({userId:$ctrl.question.user.id})" class="question-user">{{$ctrl.question.user.firstname + " " + $ctrl.question.user.lastname}}</a>        , {{$ctrl.question.date}}</div>
+    <div class="tags">
+        {{$ctrl.question.tags}}
+    </div>
     <div class="like">{{$ctrl.question.likes}}
         <a class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeQuestion()"><i class="material-icons">favorite</i></a>
     </div>
@@ -27,6 +30,9 @@
 <div ng-repeat="answer in $ctrl.question.answers | orderBy: 'date' : true">
     <div class="row">
         <div class="image-user"></div><a class="answer-user" ui-sref="profile({userId:answer.user.id})">{{answer.user.firstname + " " + answer.user.lastname}}</a>
+    </div>
+    <div class="validateanswer" ng-if="$ctrl.currentUser.id == $ctrl.question.userId"> 
+        <a class="btn-floating btn-large waves-effect waves-light green" ng-click="$ctrl.validateAnswer(answer)"><i class="material-icons">valide</i></a>
     </div>
     <div class="row">
         <p class="answer-content">{{answer.content}}</p>

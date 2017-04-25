@@ -37,8 +37,12 @@ angular.module("services")
         }
 
         this.likeAnswer = (id, answer) => {
-            $http.put(URL_ANSWER + "answers/" + id, { "date": answer.date, "content": answer.content, "userId": answer.userId,"questionId":answer.questionId, "likes": answer.likes + 1 })
+            $http.put(URL_ANSWER + "answers/" + id, { "date": answer.date, "content": answer.content, "userId": answer.userId,"questionId":answer.questionId, "likes": answer.likes + 1, "status":answer.status })
 
+        }
+
+        this.validateAnswer = (id, answer) => {
+            $http.put(URL_ANSWER + "answers/" + id, { "date": answer.date, "content": answer.content, "userId": answer.userId,"questionId":answer.questionId, "likes": answer.likes + 1, "status":answer.status })
         }
 
     });

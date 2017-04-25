@@ -19,17 +19,13 @@ angular.module("components")
             };
             this.isAuthenticated = AuthService.isAuthenticated();
 
-
             this.getQuest = () => {
-                QuestionService.getQuestions().then((items) => {
-                    this.quest = items.data
+                QuestionService.getQuestions().then((response) => {
+                    this.quest = response.data
                 }).catch((err) => {});
             };
 
-            this.disconnect = () => {
-                AuthService.disconnect();
-                this.isAuthenticated = null;
-            }
+           
             // this.nextQuest = () => {
             //     this.currentPage += 1;
             //     this.getQuest(this.currentPage);
