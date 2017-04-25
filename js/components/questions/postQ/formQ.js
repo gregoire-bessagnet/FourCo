@@ -25,7 +25,7 @@ angular.module("components")
                 formService.valide(submit);
             };
 
-            this.version = textAngularManager.getVersion();
-            this.versioNumber = this.version.substring(1);
+            // this.version = textAngularManager.getVersion();
+            // this.versioNumber = this.version.substring(1);
         }]
     });
