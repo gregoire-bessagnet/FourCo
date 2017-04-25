@@ -20,8 +20,8 @@ angular.module("components")
             this.isAuthenticated = AuthService.isAuthenticated();
 
             this.getQuest = () => {
-                QuestionService.getQuestions().then((response) => {
-                    this.quest = response.data
+                QuestionService.getQuestions().then((items) => {
+                    this.quest = items.data
                 }).catch((err) => {});
             };
 

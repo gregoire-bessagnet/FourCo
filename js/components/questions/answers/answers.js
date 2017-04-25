@@ -8,7 +8,7 @@ angular.module("components")
             question: '<',
         },
 
-        controller: function (AnswersService,AuthService) {
+        controller: function (AnswersService, AuthService) {
 
             this.$onInit = () => {
                 this.isAuthenticated = AuthService.isAuthenticated();
