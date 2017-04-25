@@ -1,5 +1,5 @@
-const URL_QUEST = "http://localhost:3000/questions/?_expand=user"
-// const URL_QUEST = "http://localhost:3000/questions?_page="    
+ const URL_QUEST = "http://localhost:3000/questions/?_expand=user"
+
 
 angular.module("services")
 
@@ -11,4 +11,4 @@ angular.module("services")
         
     });
 
-   //+ page + "&_limit=15"
+   

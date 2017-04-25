@@ -6,15 +6,18 @@ angular.module("components")
 
         bindings: {
             quest: '<',
-
         },
 
         controller: ['QuestionService', 'AuthService', function (QuestionService, AuthService) {
 
 
+
             this.$onInit = () => {
                 this.quest = [];
+                this.currentPage = 1;
+                this.pageSize = 8;
                 this.getQuest();
+                this.pageChangeHandler();
                 console.log(this)
             };
             this.isAuthenticated = AuthService.isAuthenticated();
@@ -22,9 +25,8 @@ angular.module("components")
             this.getQuest = () => {
                 QuestionService.getQuestions().then((items) => {
                     this.quest = items.data
-                }).catch((err) => {});
+                }).catch((err) => { });
             };
-
            
             // this.nextQuest = () => {
             //     this.currentPage += 1;
@@ -36,5 +38,13 @@ angular.module("components")
             //     this.getQuest(this.currentPage);
             // } page A mettre en paramétre à the getQuest et getQuestions
 
+            this.disconnect = () => {
+                AuthService.disconnect();
+                this.isAuthenticated = null;
+            }
+
+            this.pageChangeHandler = (num) => {
+                console.log('quest page changed to ' + num);
+            };
         }]
     })

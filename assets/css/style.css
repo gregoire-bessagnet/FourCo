@@ -15,8 +15,8 @@
 .logo {
     display: inline;
     margin-left: 150px;
-    margin-right:20px;
-    margin-top:10px;
+    margin-right: 20px;
+    margin-top: 10px;
 }
 
 #search {
@@ -41,9 +41,17 @@
 }
 
                         /*/////////////////// PAGE HOME ///////////////////*/
-
+.tabs{
+    background-color: #E1E1E1;
+}
+body{
+    background-color: #E1E1E1;
+}
 .content{
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+    background-color: #F9FAFA;
+    height: 90px;
+    margin: 5px;
 }
 .content:hover, .content:active{
     font-size: 105%;
@@ -57,8 +65,15 @@
 .title:hover{
     color: #1fa597;
 }
+.likes{
+    float: left;
+    margin: 10px;
+}
+.profile{
+    margin: 4px;
+}
 
- /*//////////////////// Page question-réponse ////////////////////*/
+            /*//////////////////// Page question-réponse ////////////////////*/
 
 .question-title {
     text-align: center;
@@ -125,7 +140,7 @@
     margin-top: 70px;
 }
 
-/*//////////////////// Page inscription ////////////////////*/
+                        /*//////////////////// Page inscription ////////////////////*/
 .inscris-toi{
     text-align: center;
     color: orange;

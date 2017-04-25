@@ -2,25 +2,32 @@
     <input type="text" name="query" ng-model="$ctrl.query">
 </div>
 
+
 <div class="filtertabs">
-<div class="row">
-    <div class="col s12">
-      <ul class="tabs">
-        <li class="tab col s6"><a href="#" ng-click="sortBy='date'; reverse=!reverse;">Les plus récentes</a></li>
-        <li class="tab col s6"><a href="#" ng-click="sortBy='likes'; reverse=!reverse;">Les plus pertinentes</a></li>
-      </ul>
+    <div class="row">
+        <div class="col s12">
+            <ul class="tabs">
+                <li class="tab col s6"><a href="#" ng-click="sortBy='date'; reverse=!reverse;">Les plus récentes</a></li>
+                <li class="tab col s6"><a href="#" ng-click="sortBy='likes'; reverse=!reverse;">Les plus pertinentes</a></li>
+            </ul>
+        </div>
     </div>
-</div>
 </div>
 
 <div class="questions">
     <ul>
-        <li class="content" ng-repeat="question in $ctrl.quest | filter : {title : $ctrl.query} | orderBy:sortBy:reverse">
-                    <span class="user"> question de : <a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a></span><a class="title" ui-sref="answers({questionId: question.id})">
-                    {{question.title}}</a><br>{{question.date | date: 'dd.MMM.yyyy HH:mm'}}<span class="likes" ><p>{{$ctrl.question.likes}}<button type="button" ng-click="$ctrl.likeQuestion()">j'aime</button></p>{{question.likes}}</span>
-        </li>
+        <li class="content" dir-paginate="question in $ctrl.quest | filter : {title : $ctrl.query} | orderBy:sortBy:reverse | itemsPerPage: $ctrl.pageSize" current-page="$ctrl.currentPage">
+            <span class="user">de: <a class="profile" ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a></span>
+            <span class="likes"><a class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeQuestion()">{{$ctrl.question.likes}}<i class="material-icons">thumb_up</i>{{question.likes}</a></span>
+            <a class="title" ui-sref="answers({questionId: question.id})">{{question.title}}</a><br>{{question.date | date:'dd.MM.yyyyHH:mm'}}
     </ul>
 </div>
 
 
+<dir-pagination-controls boundary-links="true" on-page-change="$ctrl.pageChangeHandler(newPageNumber)" template-url="node_modules/angular-utils-pagination/dirPagination.tpl.html"></dir-pagination-controls>
 
+
+
+
+
+<!--btn-floating btn-large waves-effect waves-light orange-->
