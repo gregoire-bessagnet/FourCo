@@ -27,8 +27,6 @@ angular.module("components")
                     this.promos = response.data;
                     console.log(this.promos)
                 }).catch((err) => { });
-      
-
             }
 
 

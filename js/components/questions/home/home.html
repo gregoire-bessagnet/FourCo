@@ -24,14 +24,18 @@
 
 <div class="questions">
     <ul>
-        <li class="content" dir-paginate="question in $ctrl.quest | orderBy: date | itemsPerPage: $ctrl.pageSize" current-page="$ctrl.currentPage">
-            <span class="user"><a ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a></span>
-            <span class="likes"><a class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeQuestion()"><i class="material-icons">favorite</i>{{$ctrl.question.likes}}</a></span>
-            <a class="title" ui-sref="answers({questionId: question.id})">{{question.title}}</a><br>{{question.date | date:'dd.MM.yyyy
-            HH:mm'}}
-        </li>
+        <li class="content" dir-paginate="question in $ctrl.quest | filter : {title : $ctrl.query} | orderBy:sortBy:reverse | itemsPerPage: $ctrl.pageSize" current-page="$ctrl.currentPage">
+            <span class="user">de: <a class="profile" ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a></span>
+            <span class="likes"><a class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeQuestion()">{{$ctrl.question.likes}}<i class="material-icons">thumb_up</i></a></span>
+            <a class="title" ui-sref="answers({questionId: question.id})">{{question.title}}</a><br>{{question.date | date:'dd.MM.yyyyHH:mm'}}
     </ul>
 </div>
 
 
 <dir-pagination-controls boundary-links="true" on-page-change="$ctrl.pageChangeHandler(newPageNumber)" template-url="node_modules/angular-utils-pagination/dirPagination.tpl.html"></dir-pagination-controls>
+
+
+
+
+
+<!--btn-floating btn-large waves-effect waves-light orange-->

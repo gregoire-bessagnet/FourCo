@@ -1,5 +1,5 @@
-const URL_QUEST = "http://localhost:3000/questions"
- 
+ const URL_QUEST = "http://localhost:3000/questions/?_expand=user"
+
 
 angular.module("services")
 

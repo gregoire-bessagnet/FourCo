@@ -15,10 +15,10 @@ angular.module("components")
             this.$onInit = () => {
                 this.quest = [];
                 this.currentPage = 1;
-                this.pageSize = 5;
+                this.pageSize = 8;
                 this.getQuest();
                 this.pageChangeHandler();
-                console.log(this.quest)
+                console.log(this)
             };
             this.isAuthenticated = AuthService.isAuthenticated();
 

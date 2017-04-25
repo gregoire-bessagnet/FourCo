@@ -7,7 +7,7 @@ angular.module("components")
             questions: "<"
         },
 
-        controller: ['formService','AuthService', function (formService,AuthService) {
+        controller: ['formService', 'AuthService', 'textAngularManager', function (formService, AuthService, textAngularManager) {
 
             this.$onInit = () => {
                 this.user = AuthService.getCurrentUser();
@@ -20,9 +20,12 @@ angular.module("components")
                     content: this.body,
                     date: new Date(),
                     userId: this.user.id,
-                    likes:0
+                    likes: 0
                 }
                 formService.valide(submit);
             };
+
+            this.version = textAngularManager.getVersion();
+            this.versioNumber = this.version.substring(1);
         }]
     });

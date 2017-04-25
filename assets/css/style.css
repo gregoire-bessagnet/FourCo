@@ -15,8 +15,8 @@
 .logo {
     display: inline;
     margin-left: 150px;
-    margin-right:20px;
-    margin-top:10px;
+    margin-right: 20px;
+    margin-top: 10px;
 }
 
 #search {
@@ -26,6 +26,7 @@
     background-color: white;
     height: 40px;
 }
+
 .menu{
     margin-left: 415px;
     margin-top: -38px;
@@ -68,8 +69,11 @@ body{
     float: left;
     margin: 10px;
 }
+.profile{
+    margin: 4px;
+}
 
- /*//////////////////// Page question-réponse ////////////////////*/
+            /*//////////////////// Page question-réponse ////////////////////*/
 
 .question-title {
     text-align: center;
