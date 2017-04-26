@@ -1,7 +1,7 @@
-                        /*/////////////////// NAVBAR ///////////////////*/
+                                              /*/////////////////// NAVBAR ///////////////////*/
 
 #nav {
-    background-color: #ee6e73;
+    background-color: orange;
     height:70px;
 }
 #title_nav {
@@ -15,8 +15,8 @@
 .logo {
     display: inline;
     margin-left: 150px;
-    margin-right: 20px;
-    margin-top: 10px;
+    margin-right:20px;
+    margin-top:10px;
 }
 
 #search {
@@ -26,7 +26,6 @@
     background-color: white;
     height: 40px;
 }
-
 .menu{
     margin-left: 415px;
     margin-top: -38px;
@@ -40,18 +39,14 @@
     margin-top : 200px;
 }
 
+.img-nav{
+    margin
+}
+
                         /*/////////////////// PAGE HOME ///////////////////*/
-.tabs{
-    background-color: #E1E1E1;
-}
-body{
-    background-color: #E1E1E1;
-}
+
 .content{
-    border-bottom: 2px solid #cccccc;
-    background-color: #F9FAFA;
-    height: 90px;
-    margin: 5px;
+    border-bottom: 1px solid #cccccc;
 }
 .content:hover, .content:active{
     font-size: 105%;
@@ -65,31 +60,28 @@ body{
 .title:hover{
     color: #1fa597;
 }
-.likes{
-    float: left;
-    margin: 10px;
-}
-.profile{
-    margin: 4px;
-}
 
-            /*//////////////////// Page question-réponse ////////////////////*/
+ /*//////////////////// Page question-answer ////////////////////*/
 
-.question-title {
-    text-align: center;
-}
-
-.image-top {
+/*.image-top {
     background-image: url(../img/img1.jpg);
     height: 350px;
     margin-bottom: 40px;
+}*/
+
+.answer-validated{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;   
+    border-right: 1px solid #1fa597;
+    border-left: 1px solid #1fa597;
+    border-top: 1px solid #1fa597;
+    border-radius: 30px;
 }
 
 .image-user{
-    width: 40px;
-    height: 40px;
-    background-color: orange;
-    border-radius: 50px;
+    width: 70px;
+    border-radius: 100px;
 }
 
 .like{
@@ -102,7 +94,7 @@ body{
     float: left;
 }
 
-.ta-reponse{
+.your-answer{
     font-size: 20px;
 }
 
@@ -132,7 +124,7 @@ body{
 
 .bottom-answer{
     border-bottom: 1px solid black;
-    margin-bottom: 70px;
+    margin-top: 50px;
 }
 
 .post-answer{
@@ -140,8 +132,23 @@ body{
     margin-top: 70px;
 }
 
-                        /*//////////////////// Page inscription ////////////////////*/
-.inscris-toi{
+.best-answer{
+   border-radius: 30px;
+}
+
+.answer-novalidate, .answer-validated{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.img-validee{
+    width: 80px;
+    float: right;
+    margin-top: -20px;
+}
+
+/*//////////////////// Page registration ////////////////////*/
+.register, .already-reg{
     text-align: center;
     color: orange;
     margin-bottom: 80px;
@@ -152,7 +159,43 @@ body{
     margin: auto;
 }
 
+
                         /*/////////////////// FORMULAIRE QUESTION ///////////////////*/
 .textA{
     
 }
+
+/*//////////////////// Page profile.html ////////////////////*/
+.container1{
+    margin: 70px;
+}
+
+.avatar{
+    border: 2px solid #1fa597;
+    border-radius: 100%;
+    width: 200px;
+}
+
+.left-profile{
+    border-right: 1px solid black;
+    padding-right: 70px !important;
+}
+
+.right-profile{
+padding-top: 50px !important;
+}
+
+.twitter, .github, .linkedin{
+    margin: 30px;
+}
+
+.user-name{
+    color: orange
+}
+
+.user-bio{
+    border: 1px solid #1fa597;
+    border-radius: 30px;
+    padding: 30px;
+}
+

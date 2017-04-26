@@ -1,26 +1,40 @@
-<div>
-    <ul>
-        <li>Nom : {{$ctrl.user.lastname}}</li>
-        <li>Prénom : {{$ctrl.user.firstname}}</li>
-        <li>Age : {{$ctrl.user.age}}</li>
-    </ul>
-    <ul>
-        <li>social : {{$ctrl.user.social1}}</li>
-        <li>social : {{$ctrl.user.social2}}</li>
-        <li>social : {{$ctrl.user.social3}}</li>
-        <li>mattermost : {{$ctrl.user.mattermost}}</li>
-    </ul>
+<div class="row container1">
+    <div class=" col s6 center-align left-profile">
+        <img class="responsive-img avatar " ng-src="{{$ctrl.user.avatar}}" />
+        <p class="user-name">
+            {{$ctrl.user.firstname}} {{$ctrl.user.lastname}} • {{$ctrl.user.age}} ans
+        </p>
+        <p class="user-bio">
+            {{$ctrl.user.bio}}
+        </p>
+    </div>
 
-    <ul>
-        <li>École : {{$ctrl.user.school["0"].name}}</li>
-        <li>promo : {{$ctrl.user.promo.name}}</li>
-        <li>localisation : {{$ctrl.user.school["0"].location}}</li>
-    </ul>
-
-    <ul>
-        <li>Tags :</li>
-        <li ng-repeat="tag in $ctrl.user.tags">{{tag.tag.name}}</li>
-    </ul>
-
-<a ui-sref="home">retour accueil</a>
+    <div class="col s6 center-align right-profile">
+        <p>
+            École : {{$ctrl.user.school["0"].name}}
+        </p>
+        <p>
+            Promo : {{$ctrl.user.promo.name}}
+        </p>
+        <p>
+            Localisation : {{$ctrl.user.school["0"].location}}
+        </p>
+        <p>
+            <i class="fa fa-twitter fa-2x twitter" aria-hidden="true"></i> {{$ctrl.user.social1}}
+            <i class="fa fa-github fa-2x github" aria-hidden="true"></i> {{$ctrl.user.social2}}
+            <i class="fa fa-linkedin fa-2x linkedin" aria-hidden="true"></i> {{$ctrl.user.social3}}
+        </p>
+        <p>Mattermost : {{$ctrl.user.mattermost}}
+        </p>
+        <br>
+        <h5 class="center-align">
+            Tags
+        </h5>
+        <p ng-repeat="tag in $ctrl.user.tags">
+            {{tag.tag.name}}
+        </p>
+    </div>
 </div>
+
+
+<a ui-sref="home" class="back-home">retour accueil</a>

@@ -2,14 +2,6 @@
     <input type="text" name="query" ng-model="$ctrl.query">
 </div>
 
-<div class="menu">
-    <a ng-if="$ctrl.isAuthenticated != null" ui-sref="formQ" class="waves-effect waves-light btn">Pose ta question</a>
-    <a ui-sref="usersList" class="waves-effect waves-teal btn-flat">Annuaire</a>
-    <a ng-if="$ctrl.isAuthenticated == null" ui-sref="registration" class="waves-effect waves-teal btn-flat">Connexion</a>
-    <a ng-if="$ctrl.isAuthenticated != null" ui-sref="myProfile">Mon Profile</a><br>
-    <button ng-if="$ctrl.isAuthenticated != null" ng-click="$ctrl.disconnect()">Déconnexion</button>
-</div>
-
 
 <div class="filtertabs">
     <div class="row">

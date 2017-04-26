@@ -8,15 +8,18 @@ angular.module("components")
             query: '<'
         }, 
 
-        controller: function (navService) {
+        controller: function (navService, AuthService) {
 
             this.$onInit = () => {
-                console.log(this)
+                this.isAuthenticated = AuthService.isAuthenticated();
+                this.currentUser = AuthService.getCurrentUser();
+            }   
+
+            this.disconnect = () => {
+                AuthService.disconnect();
+                this.isAuthenticated = null;
             }
 
-            this.getSearchquestion = (query)=>{
-                AnswersService.getSearchquestion(this.question.id, this.question);
-            }
     }
 })
     

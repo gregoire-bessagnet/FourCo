@@ -15,7 +15,7 @@ angular.module("components")
             this.$onInit = () => {
                 this.quest = [];
                 this.currentPage = 1;
-                this.pageSize = 8;
+                this.pageSize = 4;
                 this.getQuest();
                 this.pageChangeHandler();
                 console.log(this)
@@ -27,6 +27,16 @@ angular.module("components")
                     this.quest = items.data
                 }).catch((err) => { });
             };
+           
+            // this.nextQuest = () => {
+            //     this.currentPage += 1;
+            //     this.getQuest(this.currentPage);
+            // }
+
+            // this.prevQuest = () => {
+            //     this.currentPage -= 1;
+            //     this.getQuest(this.currentPage);
+            // } page A mettre en paramétre à the getQuest et getQuestions
 
             this.disconnect = () => {
                 AuthService.disconnect();

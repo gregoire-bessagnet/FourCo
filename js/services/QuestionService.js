@@ -8,6 +8,7 @@ angular.module("services")
         this.getQuestions = (page) => {
             return $http.get(URL_QUEST) 
         }     
+        
     });
 
    
