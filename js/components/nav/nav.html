@@ -1,7 +1,14 @@
-<div class="menu">
-    <a ng-if="$ctrl.isAuthenticated != null" ui-sref="formQ" class="waves-effect waves-light btn">Pose ta question</a>
-    <a ui-sref="usersList" class="waves-effect waves-teal btn-flat">Annuaire</a> 
-    <a ng-if="$ctrl.isAuthenticated == null" ui-sref="registration" class="waves-effect waves-teal btn-flat">Connexion</a>
-    <a ng-if="$ctrl.isAuthenticated != null" ui-sref="myProfile">Mon Profile</a><br>
-    <button ng-if="$ctrl.isAuthenticated != null" ng-click="$ctrl.disconnect()">Déconnexion</button>
+<div class="menu nav-wrapper">
+
+    <ul class="right hide-on-med-and-down">
+        <li><a ng-if="$ctrl.isAuthenticated != null" ui-sref="formQ" class="waves-effect waves-light btn">Pose ta question</a></li>
+        <li><a ui-sref="usersList" class="waves-effect waves-teal btn-flat">Annuaire</a> </li>
+        <li class="image-user">
+             <a ng-if="$ctrl.isAuthenticated != null" ui-sref="myProfile"><img class="responsive-img avatar" ng-src="{{$ctrl.currentUser.avatar}}" /></a>
+        </li>
+
+        <li><a ng-if="$ctrl.isAuthenticated == null" ui-sref="registration" class="waves-effect waves-teal btn-flat"><i class="material-icons">power_settings_new</i></a
+        ><a ng-if="$ctrl.isAuthenticated != null" ng-click="$ctrl.disconnect()"><i class="material-icons">power_settings_new</i></a></li>
+      </ul>
+
 </div>
