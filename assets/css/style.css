@@ -15,8 +15,8 @@
 .logo {
     display: inline;
     margin-left: 150px;
-    margin-right:20px;
-    margin-top:10px;
+    margin-right: 20px;
+    margin-top: 10px;
 }
 
 #search {
@@ -40,34 +40,49 @@
 }
 
 .img-nav{
-    margin
 }
 
                         /*/////////////////// PAGE HOME ///////////////////*/
 
 .content{
     border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    height: 150px;    
+    font-size: 18px;
 }
-.content:hover, .content:active{
+.title:hover, .title:active{
     font-size: 105%;
 }
 .user{
-    float: right;
+    margin: 60px auto auto 5px;
+}
+.user:hover, .user:active{
+    font-size: 110%;
 }
 .title{
     color:#58c4b8;
 }
+#total{
+    margin-left: 5px;
+}
 .title:hover{
     color: #1fa597;
 }
-
- /*//////////////////// Page question-answer ////////////////////*/
-
-/*.image-top {
-    background-image: url(../img/img1.jpg);
-    height: 350px;
-    margin-bottom: 40px;
-}*/
+#likes{
+    text-align: center;
+    margin: 10px;
+    float: right;
+}
+.affichage{
+    font-size: 17px;
+}
+#likes:hover, #likes:active{
+    font-size: 105%;
+}
+.date{
+    font-size: 14px;
+}
+                    /*//////////////////// Page question-answer ////////////////////*/
 
 .answer-validated{
     padding-top: 20px;
@@ -147,7 +162,7 @@
     margin-top: -20px;
 }
 
-/*//////////////////// Page registration ////////////////////*/
+                        /*//////////////////// Page registration ////////////////////*/
 .register, .already-reg{
     text-align: center;
     color: orange;
@@ -161,11 +176,9 @@
 
 
                         /*/////////////////// FORMULAIRE QUESTION ///////////////////*/
-.textA{
-    
-}
 
-/*//////////////////// Page profile.html ////////////////////*/
+
+                        /*//////////////////// Page profile.html ////////////////////*/
 .container1{
     margin: 70px;
 }
