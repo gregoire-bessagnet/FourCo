@@ -59,6 +59,20 @@
       "mattermost": "QrisQuar",
       "avatar": "http://images.eonline.com/resize/200/200/images.eonline.com/eol_images/Entire_Site/2015107//rs_1024x759-151107090215-1024.kris-jenner.cm.11715.jpg",
       "id": 4
+    },
+    {
+      "firstname": "Mark",
+      "lastname": "Zuckerberg",
+      "age": "30",
+      "mail": "hello@zuck.co",
+      "social1": "zuck",
+      "promoId": 0,
+      "social2": "zuck",
+      "social3": "zuck",
+      "mattermost": "zuck",
+      "password": "zuck",
+      "password2": "zuck",
+      "id": 5
     }
   ],
   "promos": [
