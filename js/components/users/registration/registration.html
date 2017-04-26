@@ -1,4 +1,4 @@
-<h2 class="inscris-toi">Inscris toi!</h2>
+<h2 class="register">Inscris toi!</h2>
 <div class="row">
     <form class="col s12">
         <div class="row">
@@ -54,11 +54,11 @@
         </div>
         <div class="row">
             <div class="input-field col s5 offset-s1">
-                <input type="text" ng-model="$ctrl.reg.password">
+                <input type="password" ng-model="$ctrl.reg.password">
                 <label>password *</label>
             </div>
             <div class="input-field col s5">
-                <input type="text" ng-model="$ctrl.reg.password2">
+                <input type="password" ng-model="$ctrl.reg.password2">
                 <label>password *</label>
             </div>
         </div>
@@ -71,9 +71,19 @@
 
 
 <p>{{$ctrl.errorMessage}}</p>
-<label>email<input type="text" ng-model="$ctrl.user.email"></label>
-<label>mot de passe<input type="text" ng-model="$ctrl.user.password"></label>
-<button ng-click="$ctrl.submit($ctrl.user)">submit</button>
 
-        <a class="back-home" ui-sref="home">retour accueil</a>
+<h4 class="already-reg">Déjà inscrit?</h4>
+<div class="row">
+    <div class="input-field col s5 offset-s1">
+        <input type="text" ng-model="$ctrl.user.email">
+        <label>email</label>
+    </div>
+    <div class="input-field col s5">
+        <input type="password" ng-model="$ctrl.user.password">
+        <label>mot de passe</label>
+    </div>
+</div>
 
+<a ng-if="$ctrl.user.email && $ctrl.user.password" ng-click="$ctrl.submit($ctrl.user)" class="btn-floating btn-large waves-effect waves-light orange reg-validate"><i class="material-icons">check_circle</i></a>
+
+<a class="back-home" ui-sref="home">retour accueil</a>
