@@ -83,7 +83,12 @@
       "content": "Qui cum venisset ob haec festinatis itineribus Antiochiam, praestrictis palatii ianuis, contempto Caesare, quem videri decuerat, ad praetorium cum pompa sollemni perrexit morbosque diu causatus nec regiam javascript processit in publicum, sed abditus multa in eius moliebatur exitium addens quaedam relationibus supervacua, quas subinde dimittebat ad principem. Qui cum venisset ob haec festinatis itineribus Antiochiam, praestrictis angular, contempto Caesare, quem videri decuerat, ad praetorium cum pompa sollemni perrexit morbosque diu causatus nec regiam introiit nec processit in publicum.",
       "userId": 2,
       "likes": 100,
-      "id": 1
+      "id": 1,
+      "tags": [
+        "JS",
+        "PHP"
+      ]
+
     },
     {
       "title": "[HTML/CSS] - Une méthode simple pour comprendre le position absolute / relative ?",
@@ -91,7 +96,11 @@
       "date": "2017-04-21T12:50:35.620Z",
       "userId": 1,
       "likes": 32,
-      "id": 2
+      "id": 2,
+      "tags": [
+        "JS"
+      ]
+
     },
     {
       "title": "[JS] Vos meilleures ressources en français pour comprendre AngularJS ?",
@@ -99,7 +108,11 @@
       "content": "Saepissime igitur mihi de amicitia cogitanti maxime illud considerandum videri solet, utrum propter imbecillitatem atque inopiam desiderata sit amicitia, ut dandis recipiendisque meritis quod. Angular.",
       "userId": 2,
       "likes": 10,
-      "id": 3
+      "id": 3,
+      "tags": [
+        "JS"
+      ]
+
     },
     {
       "title": "[Angular/CSS] MaterializeCSS ou Angular Material ? Choisissez votre équipe !",
@@ -107,7 +120,11 @@
       "content": "Saepissime igitur mihi de Bootstrap cogitanti maxime illud considerandum videri solet, utrum propter Materialize atque inopiam desiderata sit amicitia, ut dandis recipiendisque meritis quod. Angular.",
       "userId": 3,
       "likes": 37,
-      "id": 4
+      "id": 4,
+      "tags": [
+        "JS"
+      ]
+
     },
     {
       "title": "[JS] Vos meilleures ressources en français pour comprendre AngularJS ?",
@@ -115,7 +132,11 @@
       "content": "Saepissime igitur mihi de amicitia cogitanti maxime illud considerandum videri solet, utrum propter imbecillitatem atque inopiam desiderata sit amicitia, ut dandis recipiendisque meritis quod. Angular.",
       "userId": 1,
       "likes": 58,
-      "id": 5
+      "id": 5,
+      "tags": [
+        "JS"
+      ]
+
     },
     {
       "title": "[PHP] CMS : Quel meilleur choix : Wordpress ou Symphony ?",
@@ -123,7 +144,11 @@
       "content": "Saepissime igitur mihi de amicitia Wordpress cogitanti maxime illud considerandum videri solet, utrum propter Symphony imbecillitatem atque inopiam desiderata sit amicitia, ut dandis recipiendisque meritis quod. PHP",
       "userId": 2,
       "likes": 76,
-      "id": 6
+      "id": 6,
+      "tags": [
+        "JS"
+      ]
+
     },
     {
       "title": "[Ruby] Bloqué pour récupérer les paramètres d'un utiisateur",
@@ -131,7 +156,11 @@
       "content": "Saepissime igitur mihi de amicitia cogitanti maxime illud considerandum videri solet, utrum propter get_params Angular.",
       "userId": 3,
       "likes": 69,
-      "id": 7
+      "id": 7,
+      "tags": [
+        "JS"
+      ]
+
     },
     {
       "title": "[JOB] CDI Développeur Web - Roubaix",
@@ -139,7 +168,33 @@
       "content": "Saepissime igitur mihi de amicitia cogitanti stage maxime illud considerandum videri solet, utrum propter travail imbecillitatem atque inopiam desiderata sit amicitia, ut dandis recipiendisque meritis quod. emploi Angular.",
       "userId": 4,
       "likes": 98,
-      "id": 8
+      "id": 8,
+      "tags": [
+        "JS"
+      ]
+
+    },
+    {
+      "title": "jaja",
+      "content": "aja",
+      "date": "2017-04-26T08:26:46.311Z",
+      "userId": 4,
+      "likes": 0,
+      "id": 9,
+      "tags": [
+        "JS"
+      ]
+    },
+    {
+      "title": "jaja",
+      "content": "lala",
+      "date": "2017-04-26T13:31:27.726Z",
+      "userId": 4,
+      "likes": 0,
+      "tags": [
+        "JS"
+      ],
+      "id": 10
     }
   ],
   "answers": [

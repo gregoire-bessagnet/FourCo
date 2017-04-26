@@ -1,5 +1,5 @@
 <div id="search">
-    <input type="text" name="query" ng-model="$ctrl.query">
+    <input type="text" name="query" ng-model="query">
 </div>
 
 <div class="filtertabs">
@@ -15,9 +15,10 @@
 
 <div class="questions">
     <ul>
-        <li class="content" ng-repeat="question in $ctrl.quest | filter : {title : $ctrl.query} | orderBy:sortBy:reverse">
-                    <span class="user"> question de : <a ui-sref="profile({userId : question.question.userId})">{{question.question.user.firstname + " " + question.question.user.lastname}}</a></span><a class="title" ui-sref="answers({questionId: question.id})">
-             {{question.question.title}}</a><br>{{question.question.date | date: 'dd.MMM.yyyy HH:mm'}}<span class="likes" ><p>{{$ctrl.question.question.likes}}<button type="button" ng-click="$ctrl.likeQuestion()">j'aime</button></p>{{question.question.likes}}</span>
+        <li class="content" ng-repeat="question in $ctrl.quest | tagsFilter:query | orderBy:sortBy:reverse">
+                    <span class="user"> question de : <a ui-sref="profile({userId : question.userId})">{{question.user.firstname + " " + question.user.lastname}}</a></span><a class="title" ui-sref="answers({questionId: question.id})">
+             {{question.title}}</a><br>{{question.date | date: 'dd.MMM.yyyy HH:mm'}}<span class="likes" ><p>{{$ctrl.question.likes}}<button type="button" ng-click="$ctrl.likeQuestion()">j'aime</button></p>{{question.likes}}</span>
+             <span class="tag"ng-repeat="tag in question.tags">[{{tag}}]</span>
         </li>
     </ul>
 </div>

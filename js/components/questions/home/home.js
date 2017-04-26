@@ -24,17 +24,5 @@ angular.module("components")
                     this.quest = response.data
                 }).catch((err) => {});
             };
-
-           
-            // this.nextQuest = () => {
-            //     this.currentPage += 1;
-            //     this.getQuest(this.currentPage);
-            // }
-
-            // this.prevQuest = () => {
-            //     this.currentPage -= 1;
-            //     this.getQuest(this.currentPage);
-            // } page A mettre en paramétre à the getQuest et getQuestions
-
         }]
     })
