@@ -172,6 +172,86 @@
       "userId": 1,
       "likes": 0,
       "id": 18
+    },
+    {
+      "title": "ez",
+      "content": "<blockquote><p>fazrra</p></blockquote>",
+      "date": "2017-04-25T16:04:10.711Z",
+      "userId": 1,
+      "likes": 0,
+      "id": 19
+    },
+    {
+      "title": "Je n'arrive pas à afficher mes likes",
+      "content": "<p>Voici mon code. je n'y comprend rien</p><p><br/></p>",
+      "date": "2017-04-26T09:30:08.178Z",
+      "userId": 1,
+      "likes": 0,
+      "id": 20
+    },
+    {
+      "title": "ahahahaah",
+      "content": "<p>krkrkrkrkrjjrj</p>",
+      "date": "2017-04-26T10:05:35.331Z",
+      "userId": 1,
+      "likes": 0,
+      "id": 21
+    },
+    {
+      "title": "hhhahahah",
+      "content": "<p>uiiiiiiiiiiiiiiiii router</p>",
+      "date": "2017-04-26T10:10:15.518Z",
+      "userId": 1,
+      "likes": 0,
+      "id": 22
+    },
+    {
+      "title": "salut salut salut",
+      "content": "<p>coucouuuuuuuuuu</p>",
+      "date": "2017-04-26T11:41:19.323Z",
+      "userId": 1,
+      "likes": 0,
+      "id": 23
+    },
+    {
+      "title": "youpiiii",
+      "content": "<p>youiiiii</p>",
+      "date": "2017-04-26T11:46:05.999Z",
+      "userId": 1,
+      "likes": 0,
+      "id": 24
+    },
+    {
+      "title": "helllloooo",
+      "content": "<p>hellllo</p>",
+      "date": "2017-04-26T11:46:54.642Z",
+      "userId": 1,
+      "likes": 0,
+      "id": 25
+    },
+    {
+      "title": "saluuuuuuuuuuuuutttttttttt",
+      "content": "<p>saluuuuuuuuuuuuuuuuuuuutttttttttttttt</p>",
+      "date": "2017-04-26T12:34:10.161Z",
+      "userId": 1,
+      "likes": 0,
+      "id": 26
+    },
+    {
+      "title": "looooool",
+      "content": "<p>saluuuuuuuuuuuuttttttttttttttttttttt</p>",
+      "date": "2017-04-26T12:34:38.536Z",
+      "userId": 1,
+      "likes": 0,
+      "id": 27
+    },
+    {
+      "title": "ahahahahaha",
+      "content": "<h1></h1><h3 style=\"text-align: center;\">​Salut <b>Sacha </b></h3>",
+      "date": "2017-04-26T12:35:32.579Z",
+      "userId": 1,
+      "likes": 0,
+      "id": 28
     }
   ],
   "answers": [
