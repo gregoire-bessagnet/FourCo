@@ -1,14 +1,4 @@
-    body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
-  main {
-    flex: 1 0 auto;
-  }
-  
-  #main {
+#main {
     margin-top : 200px;
 }  
                             /*/////////////////// NAVBAR ///////////////////*/
@@ -99,7 +89,6 @@ nav ul a .loginlogout {
     border-bottom: 1px solid #cccccc;
     border-top: 1px solid #cccccc;    
     font-size: 18px;
-    padding-top: 30px;
 }
 
 .content:hover, .content:active{
@@ -112,8 +101,7 @@ nav ul a .loginlogout {
 }
 
 .title{
-    color:#1fa597 ;
-    font-weight: bold;
+    color:#58c4b8;
 }
 #total{
     margin-left: 10px;
@@ -121,7 +109,7 @@ nav ul a .loginlogout {
     margin-bottom: 15px;
 }
 .title:hover{
-    color: #58c4b8;
+    color: #1fa597;
 }
 
 .filters {
@@ -154,14 +142,6 @@ span.badge.new {
     font-size: 14px;
 }
 
-.profile-home{
-    color: orange;
-}
-
-.tab{
-    color: gray !important;
-}
-
 .avatar-home {
     width: 30px;
     border: 2px solid #1fa597;
@@ -170,8 +150,8 @@ span.badge.new {
 }
 
 
-
                 /*//////////////////// Page question-answer ////////////////////*/
+
 
 .answer-validated{
     padding-top: 20px;
@@ -184,7 +164,7 @@ span.badge.new {
 }
 
 .image-user{
-    width: 70px !important;
+    width: 75px;
     border-radius: 100px;
     margin-top: 10px;
 }
@@ -270,15 +250,12 @@ span.badge.new {
 
 .text-angular{
     color: gray;
+
 }
 
                         /*//////////////////// Page profile.html ////////////////////*/
 .container1{
-    margin: 60px;
-}
-
-.wild-profile, .h5-tags, .fa-genderless{
-    color: #1fa597;
+    margin: 70px;
 }
 
 .avatar{
@@ -300,7 +277,7 @@ padding-top: 50px !important;
     margin: 30px;
 }
 
-.user-name, b{
+.user-name{
     color: orange
 }
 
@@ -310,72 +287,3 @@ padding-top: 50px !important;
     padding: 30px;
 }
 
-
-/*/////////////////// PAGE HOME ///////////////////*/
-
-.page-footer{
-    background-color: #b9184d;
-    margin-top: 50px;
-}
-
-.centerdiv {
-margin-left: 35% !important;
-margin-right: 35% !important;
-width: 250px !important;
-text-align: left !important;
-}
-
-.wild-profile{
-    font-size: 35px;
-}
-
-.mattermost-pseudo, .cursus{
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    padding: 30px;
-}
-
-.modifier-profil{
-    border-radius: 30px;
-}
-
-.btn-modifier{
-    margin-left: 35% !important;
-    margin-right: 35% !important;
-
-}
-
-/*//////////////////// userList ////////////////////*/
-
-.annuaire{
-    padding-left: 80px;
-    padding-top: 60px;
-}
-
-.userlist-image{
-    margin-bottom: 60px;
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
-}
-
-.avatar1{
-    border-radius: 100%;
-}
-
-.userlist{
-    margin: 60px;
-    border-bottom: 1px solid #1fa597;
-    padding-bottom: 20px;
-}
-
-.li-user{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-
-/*//////////////////// myProfile ////////////////////*/
-.labal-myProfile{
-    color: #1fa597;
-
-}
