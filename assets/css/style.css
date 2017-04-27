@@ -265,7 +265,7 @@ text-align: left !important;
 
 .userlist{
     margin: 60px;
-    /*border-bottom: 1px solid #1fa597;*/
+    border-bottom: 1px solid #1fa597;
     padding-bottom: 20px;
 }
 

@@ -54,7 +54,7 @@ angular.module("app")
         resolve: {
           users: function (UsersService, $stateParams) {
             return UsersService.getUsers();
-          }
+          },
         }
       })
 
@@ -73,7 +73,7 @@ angular.module("app")
       .state({
         name: 'formQ',
         url: '/formQ',
-        authenticate:true,
+        authenticate: true,
         component: 'postQuestion'
       })
 

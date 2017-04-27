@@ -59,31 +59,6 @@
       "mattermost": "QrisQuar",
       "avatar": "http://images.eonline.com/resize/200/200/images.eonline.com/eol_images/Entire_Site/2015107//rs_1024x759-151107090215-1024.kris-jenner.cm.11715.jpg",
       "id": 4
-    },
-    {
-      "firstname": "Mark",
-      "lastname": "Zuckerberg",
-      "age": "30",
-      "mail": "hello@zuck.co",
-      "social1": "zuck",
-      "promoId": 0,
-      "social2": "zuck",
-      "social3": "zuck",
-      "mattermost": "zuck",
-      "password": "zuck",
-      "password2": "zuck",
-      "id": 5
-    },
-    {
-      "firstname": "greg",
-      "lastname": "chen",
-      "age": "24",
-      "mail": "greg@greg.fr",
-      "social1": "",
-      "promoId": 0,
-      "password": "greg",
-      "password2": "greg",
-      "id": 6
     }
   ],
   "promos": [
@@ -574,10 +549,10 @@
       "id": 44
     },
     {
+      "date": "2017-04-25T22:14:04.676Z",
       "content": "Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.",
       "userId": 4,
       "questionId": 2,
-      "date": "2017-04-25T22:14:04.676Z",
       "likes": 30,
       "status": false,
       "id": 45
