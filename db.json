@@ -80,9 +80,9 @@
       "age": "24",
       "mail": "greg@greg.fr",
       "social1": "",
-      "promoId": 0,
       "password": "greg",
-      "password2": "greg",
+      "promoId": 0,
+      "avatar": "http://findicons.com/files/icons/1072/face_avatars/300/a04.png",
       "id": 6
     }
   ],
