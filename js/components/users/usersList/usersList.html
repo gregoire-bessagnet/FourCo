@@ -1,6 +1,8 @@
-<div id="search">
-  <input type="text" name="query" ng-model="$ctrl.query">
+<div id="search-field" class="input-field">
+  <input id="search" type="search" name="query" ng-model="$ctrl.query">
+  <label class="label-icon loupe" for="search"><i class="material-icons">search</i></label>
 </div>
+
 <div ng-repeat="user in $ctrl.users | filter : $ctrl.query">
   <div class="row userlist">
     <div class="col s1">
