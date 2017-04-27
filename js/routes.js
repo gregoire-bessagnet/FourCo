@@ -58,6 +58,12 @@ angular.module("app")
         }
       })
 
+       .state({
+        name: 'rules',
+        url: '/rules',
+        component: 'rules',
+      })
+
       .state({
         name: 'registration',
         url: '/registration',
