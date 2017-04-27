@@ -16,12 +16,10 @@ angular.module("filters",[])
       else if (title.indexOf(query) > -1){
         filtered.push(item)
       } 
-      else { item.tags.forEach(function(element) {
-        if (element.indexOf(query.toUpperCase()) > -1){
-          filtered.push(item)
-        }}
-        )}
+      else if (item.tags.indexOf(query.toUpperCase()) > -1){
+        filtered.push(item)
       }
-      return filtered
     }
-  });
+    return filtered
+  }
+});
