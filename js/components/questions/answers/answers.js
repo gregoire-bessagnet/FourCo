@@ -19,6 +19,10 @@ angular.module("components")
                 this.postAnswers();
             }
 
+            this.table = [this.answer];
+            this.currentPage = 1;
+            this.pageSize = 4;
+
             this.postAnswers = () => {
                 this.answer = {
                     content: this.answer.content,
@@ -49,5 +53,9 @@ angular.module("components")
                     AnswersService.validateAnswer(answer.id, answer);
                 }
             }
+
+            this.pageChangeHandler = (num) => {
+                console.log('quest page changed to ' + num);
+            };
         }
     })

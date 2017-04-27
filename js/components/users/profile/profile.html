@@ -36,16 +36,9 @@
             </p>
         </div>
         <br>
-
-        <div class="centerdiv">
-            <h5 class="h5-tags centerdiv">
-                Tags
-            </h5>
-            <div ng-repeat="tag in $ctrl.user.tags">
-                {{tag.tag.name}}
-            </div>
-        </div>
-
+        <div class="center-align btn-modifier">
+        <a ui-sref="myProfile" class="waves-effect waves-light btn modifier-profil" ng-if="$ctrl.currentUser.id == $ctrl.user.id">Modifier</a>
+    </div>
     </div>
 </div>
 
