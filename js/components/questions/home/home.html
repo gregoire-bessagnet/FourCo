@@ -16,7 +16,7 @@
 
 <div class="questions">
     <ul>
-        <li class="content" dir-paginate="question in $ctrl.quest | tagsFilter:query | filter : {title : $ctrl.query} | orderBy:sortBy:reverse | itemsPerPage: $ctrl.pageSize"
+        <li class="content" dir-paginate="question in $ctrl.quest | tagsFilter:query | orderBy:sortBy:reverse | itemsPerPage: $ctrl.pageSize"
             current-page="$ctrl.currentPage">
 
             <div id="likes"> <button class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeQuestion(question)" ng-disabled="$ctrl.isAuthenticated != true"><i class="material-icons">favorite</i></button></br>
