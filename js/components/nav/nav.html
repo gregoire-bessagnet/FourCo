@@ -7,7 +7,7 @@
         <li><a ng-if="$ctrl.isAuthenticated != null" ui-sref="usersList" class="waves-effect waves-teal btn-flat">Annuaire</a> </li>
         
         <li class="image-user">
-             <a ng-if="$ctrl.isAuthenticated != null" ui-sref="myProfile"><img class="responsive-img avatar" ng-src="{{$ctrl.currentUser.avatar}}"/></a>
+             <a ng-if="$ctrl.isAuthenticated != null" ui-sref="profile({userId:$ctrl.currentUser.id})"><img class="responsive-img avatar" ng-src="{{$ctrl.currentUser.avatar}}"/></a>
         </li>
 
         <li><a ng-if="$ctrl.isAuthenticated == null" ui-sref="registration" class="waves-effect waves-teal btn-flat"> <div class="loginlogout">Se connecter / S'inscrire <i class="material-icons">power_settings_new</i></div></a
@@ -15,4 +15,3 @@
       </ul>
 
 </div>
-

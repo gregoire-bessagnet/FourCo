@@ -88,28 +88,30 @@ nav ul a .loginlogout {
                         /*/////////////////// PAGE HOME ///////////////////*/
 
 .content{
-    border-bottom: 1px solid #cccccc;
-    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid black;
     height: 150px;    
     font-size: 18px;
+    padding-top: 30px;
 }
 .title:hover, .title:active{
     font-size: 105%;
 }
 .user{
     margin: 60px auto auto 5px;
+    color: gray;
 }
 .user:hover, .user:active{
     font-size: 110%;
 }
 .title{
-    color:#58c4b8;
+    color:#1fa597 ;
+    font-weight: bold;
 }
 #total{
     margin-left: 5px;
 }
 .title:hover{
-    color: #1fa597;
+    color: #58c4b8;
 }
 
 #likes{
@@ -127,8 +129,16 @@ nav ul a .loginlogout {
     font-size: 14px;
 }
 
-                /*//////////////////// Page question-answer ////////////////////*/
+.profile-home{
+    color: orange;
+}
 
+.tab{
+    color: gray !important;
+}
+
+
+                /*//////////////////// Page question-answer ////////////////////*/
 
 .answer-validated{
     padding-top: 20px;
@@ -141,7 +151,7 @@ nav ul a .loginlogout {
 }
 
 .image-user{
-    width: 75px;
+    width: 70px !important;
     border-radius: 100px;
     margin-top: 10px;
 }
@@ -227,12 +237,15 @@ nav ul a .loginlogout {
 
 .text-angular{
     color: gray;
-
 }
 
                         /*//////////////////// Page profile.html ////////////////////*/
 .container1{
-    margin: 70px;
+    margin: 60px;
+}
+
+.wild-profile, .h5-tags, .fa-genderless{
+    color: #1fa597;
 }
 
 .avatar{
@@ -254,7 +267,7 @@ padding-top: 50px !important;
     margin: 30px;
 }
 
-.user-name{
+.user-name, b{
     color: orange
 }
 
@@ -270,4 +283,66 @@ padding-top: 50px !important;
 .page-footer{
     background-color: #b9184d;
     margin-top: 50px;
+}
+
+.centerdiv {
+margin-left: 35% !important;
+margin-right: 35% !important;
+width: 250px !important;
+text-align: left !important;
+}
+
+.wild-profile{
+    font-size: 35px;
+}
+
+.mattermost-pseudo, .cursus{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 30px;
+}
+
+.modifier-profil{
+    border-radius: 30px;
+}
+
+.btn-modifier{
+    margin-left: 35% !important;
+    margin-right: 35% !important;
+
+}
+
+/*//////////////////// userList ////////////////////*/
+
+.annuaire{
+    padding-left: 80px;
+    padding-top: 60px;
+}
+
+.userlist-image{
+    margin-bottom: 60px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.avatar1{
+    border-radius: 100%;
+}
+
+.userlist{
+    margin: 60px;
+    border-bottom: 1px solid #1fa597;
+    padding-bottom: 20px;
+}
+
+.li-user{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*//////////////////// myProfile ////////////////////*/
+.labal-myProfile{
+    color: #1fa597;
+
 }

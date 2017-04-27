@@ -9,30 +9,36 @@
         </p>
     </div>
 
-    <div class="col s6 center-align right-profile">
-        <p>
-            École : {{$ctrl.user.school["0"].name}}
-        </p>
-        <p>
-            Promo : {{$ctrl.user.promo.name}}
-        </p>
-        <p>
-            Localisation : {{$ctrl.user.school["0"].location}}
-        </p>
-        <p>
+    <div class="col s6 right-profile">
+        <div class="centerdiv wild-profile">
+            <h4 class="centerdiv">Wilder</h4>
+        </div>
+        <div class="centerdiv cursus">
+            <p>
+                <b>École</b> : {{$ctrl.user.school["0"].name}}
+            </p>
+            <p>
+                <b>Promo</b> : {{$ctrl.user.promo.name}}
+            </p>
+            <p>
+                <b>Localisation</b> : {{$ctrl.user.school["0"].location}}
+            </p>
+        </div>
+
+        <p class="center-align">
             <i class="fa fa-twitter fa-2x twitter" aria-hidden="true"></i> {{$ctrl.user.social1}}
             <i class="fa fa-github fa-2x github" aria-hidden="true"></i> {{$ctrl.user.social2}}
             <i class="fa fa-linkedin fa-2x linkedin" aria-hidden="true"></i> {{$ctrl.user.social3}}
         </p>
-        <p>Mattermost : {{$ctrl.user.mattermost}}
-        </p>
+        <div class="centerdiv">
+            <p class="mattermost-pseudo">
+                <b>Mattermost:</b> {{$ctrl.user.mattermost}}
+            </p>
+        </div>
         <br>
-        <h5 class="center-align">
-            Tags
-        </h5>
-        <p ng-repeat="tag in $ctrl.user.tags">
-            {{tag.tag.name}}
-        </p>
+        <div class="center-align btn-modifier">
+        <a ui-sref="myProfile" class="waves-effect waves-light btn modifier-profil" ng-if="$ctrl.currentUser.id == $ctrl.user.id">Modifier</a>
+    </div>
     </div>
 </div>
 

@@ -10,7 +10,8 @@ angular.module("services")
 
       $http.get(URL_USERS + "users/?_expand=promo").then((response) => {
         var users = response.data;
-        console.log(users);
+
+   console.log(users);
         defer.resolve(users);
       }).catch((response) => {
         defer.reject(response.statusText);
@@ -18,4 +19,5 @@ angular.module("services")
       console.log(defer.promise)
       return defer.promise
     }
+
   })

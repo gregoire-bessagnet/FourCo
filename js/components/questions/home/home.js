@@ -8,7 +8,7 @@ angular.module("components")
             quest: '<',
         },
 
-        controller: ['QuestionService', 'AuthService','AnswersService', function (QuestionService, AuthService, AnswersService) {
+        controller: ['QuestionService', 'AuthService', 'AnswersService', function (QuestionService, AuthService, AnswersService) {
 
 
 
@@ -28,7 +28,7 @@ angular.module("components")
                 }).catch((err) => { });
             };
 
-             this.likeQuestion = (question) => {
+            this.likeQuestion = (question) => {
                 AnswersService.likeQuestion(question.id, question);
             }
 

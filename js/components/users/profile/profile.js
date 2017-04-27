@@ -8,9 +8,10 @@ angular.module("components")
             user: '<',
         },
         
-        controller: function () {
+        controller: function (AuthService) {
 
             this.$onInit = () => {
+                this.currentUser = AuthService.getCurrentUser();
                 console.log(this)
             }
         }

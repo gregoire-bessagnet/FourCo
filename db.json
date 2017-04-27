@@ -50,14 +50,14 @@
       "lastname": "Quardashian",
       "age": "61",
       "mail": "Qris@Quardashian",
-      "bio": "Cuius acerbitati uxor grave accesserat incentivum, germanitate Augusti turgida supra modum, quam Hannibaliano regi fratris filio antehac Constantinus iunxerat pater, Megaera quaedam mortalis, inflammatrix saevientis adsidua, humani cruoris avida nihil mitius quam maritus; qui paulatim eruditiores facti processu temporis ad nocendum per clandestinos versutosque rumigerulos conpertis leviter addere quaedam male suetos falsa et placentia sibi discentes, adfectati regni vel artium nefandarum calumnias insontibus adfligebant.",
       "social1": "twitter",
-      "promoId": 2,
       "social2": "github",
       "social3": "linkedin",
-      "password": "lala",
       "mattermost": "QrisQuar",
+      "password": "lala",
+      "promoId": 2,
       "avatar": "http://images.eonline.com/resize/200/200/images.eonline.com/eol_images/Entire_Site/2015107//rs_1024x759-151107090215-1024.kris-jenner.cm.11715.jpg",
+      "bio": "Cuius acerbitati uxor grave accesserat incentivum, germanitate Augusti turgida supra modum, quam Hannibaliano regi fratris filio antehac Constantinus iunxerat pater, Megaera quaedam mortalis, inflammatrix saevientis adsidua, humani cruoris avida nihil mitius quam maritus; qui paulatim eruditiores facti processu temporis ad nocendum per clandestinos versutosque rumigerulos conpertis leviter addere quaedam male suetos falsa et placentia sibi discentes, adfectati regni vel artium nefandarum calumnias insontibus adfligebant.",
       "id": 4
     },
     {
@@ -72,17 +72,21 @@
       "mattermost": "zuck",
       "password": "zuck",
       "password2": "zuck",
-      "id": 5
+      "id": 5,
+      "avatar": ""
     },
     {
       "firstname": "greg",
       "lastname": "chen",
       "age": "24",
       "mail": "greg@greg.fr",
-      "social1": "",
-      "promoId": 0,
+      "social1": "github",
+      "social2": "linkedin",
+      "social3": "linkedin",
       "password": "greg",
-      "password2": "greg",
+      "promoId": 0,
+      "avatar": "https://img4.hostingpics.net/thumbs/mini_393100IMG6206.jpg",
+      "bio": "Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.",
       "id": 6
     }
   ],
@@ -609,10 +613,10 @@
       "id": 44
     },
     {
+      "date": "2017-04-25T22:14:04.676Z",
       "content": "Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.",
       "userId": 4,
       "questionId": 2,
-      "date": "2017-04-25T22:14:04.676Z",
       "likes": 30,
       "status": false,
       "id": 45
@@ -823,6 +827,15 @@
       "likes": 2,
       "status": false,
       "id": 68
+    },
+    {
+      "content": "Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.",
+      "userId": 6,
+      "questionId": 6,
+      "date": "2017-04-27T11:35:55.321Z",
+      "likes": 0,
+      "status": false,
+      "id": 69
     }
   ],
   "tags": [
@@ -833,34 +846,6 @@
     {
       "id": 2,
       "name": "PHP"
-    }
-  ],
-  "user_tag": [
-    {
-      "userId": 1,
-      "tagId": 1
-    },
-    {
-      "userId": 2,
-      "tagId": 1
-    },
-    {
-      "userId": 2,
-      "tagId": 2
-    }
-  ],
-  "question_tag": [
-    {
-      "questionId": 1,
-      "tagId": 1
-    },
-    {
-      "questionId": 1,
-      "tagId": 2
-    },
-    {
-      "questionId": 2,
-      "tagId": 2
     }
   ]
 }
