@@ -1,5 +1,5 @@
 <div id="search-field" class="input-field">
-    <input id="search" type="search" name="query" ng-model="$ctrl.query">
+    <input id="search" type="search"  name="query" ng-model="query">
     <label class="label-icon loupe" for="search"><i class="material-icons">search</i></label>
 </div>
 
@@ -16,14 +16,16 @@
 
 <div class="questions">
     <ul>
-        <li class="content" dir-paginate="question in $ctrl.quest | filter : {title : $ctrl.query} | orderBy:sortBy:reverse | itemsPerPage: $ctrl.pageSize"
+        <li class="content" dir-paginate="question in $ctrl.quest | tagsFilter:query | orderBy:sortBy:reverse | itemsPerPage: $ctrl.pageSize"
             current-page="$ctrl.currentPage">
-            <div id="likes"> <button class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeQuestion(question)"><i class="material-icons">thumb_up</i></button></br>
+            <div id="likes"> <button class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeQuestion(question)" ng-disabled="$ctrl.isAuthenticated != true"><i class="material-icons">favorite</i></button></br>
                 <span class="affichage">{{question.likes}}</span>
             </div>
             <div id="total"><a class="title" ui-sref="answers({questionId: question.id})">{{question.title}}</a><br></div>
             <div class="user"><a class="profile" ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a>
-            <span class="date">{{question.date | date:'dd.MM.yyyy HH:mm'}}</span></div>
+            <span class="date">{{question.date | date:'dd.MM.yyyy HH:mm'}}</span>
+            <span class="tag"ng-repeat="tag in question.tags">[{{tag}}]</span>
+            </div>
     </ul>
 </div>
 
