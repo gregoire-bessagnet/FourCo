@@ -70,7 +70,7 @@
 }
 #likes{
     text-align: center;
-    margin: 10px;
+    margin: 20px 10px auto auto ;
     float: right;
 }
 .affichage{
@@ -163,6 +163,7 @@
 }
 
                         /*//////////////////// Page registration ////////////////////*/
+
 .register, .already-reg{
     text-align: center;
     color: orange;
@@ -177,6 +178,10 @@
 
                         /*/////////////////// FORMULAIRE QUESTION ///////////////////*/
 
+.text-angular{
+    color: gray;
+
+}
 
                         /*//////////////////// Page profile.html ////////////////////*/
 .container1{
