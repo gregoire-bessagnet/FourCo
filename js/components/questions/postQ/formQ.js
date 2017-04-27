@@ -7,7 +7,7 @@ angular.module("components")
         questions: "<"
     },
     
-    controller: ['formService','AuthService','textAngularManager', function (formService,AuthService,textAngularManager) {
+    controller: ['formService','AuthService', function (formService,AuthService) {
         
         this.$onInit = () => {
             this.user = AuthService.getCurrentUser();
