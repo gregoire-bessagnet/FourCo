@@ -1,3 +1,14 @@
+  
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  
                             /*/////////////////// NAVBAR ///////////////////*/
 
 #nav {
@@ -253,3 +264,10 @@ padding-top: 50px !important;
     padding: 30px;
 }
 
+
+/*/////////////////// PAGE HOME ///////////////////*/
+
+.page-footer{
+    background-color: #b9184d;
+    margin-top: 50px;
+}
