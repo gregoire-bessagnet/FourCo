@@ -18,7 +18,7 @@
     <ul>
         <li class="content" dir-paginate="question in $ctrl.quest | tagsFilter:query | orderBy:sortBy:reverse | itemsPerPage: $ctrl.pageSize"
             current-page="$ctrl.currentPage">
-            <div id="likes"> <button class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeQuestion(question)"><i class="material-icons">thumb_up</i></button></br>
+            <div id="likes"> <button class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeQuestion(question)" ng-disabled="$ctrl.isAuthenticated != true"><i class="material-icons">favorite</i></button></br>
                 <span class="affichage">{{question.likes}}</span>
             </div>
             <div id="total"><a class="title" ui-sref="answers({questionId: question.id})">{{question.title}}</a><br></div>

@@ -116,12 +116,8 @@
       "date": "2017-04-22T13:30:36.177Z",
       "content": "Qui cum venisset ob haec festinatis itineribus Antiochiam, praestrictis palatii ianuis, contempto Caesare, quem videri decuerat, ad praetorium cum pompa sollemni perrexit morbosque diu causatus nec regiam javascript processit in publicum, sed abditus multa in eius moliebatur exitium addens quaedam relationibus supervacua, quas subinde dimittebat ad principem. Qui cum venisset ob haec festinatis itineribus Antiochiam, praestrictis angular, contempto Caesare, quem videri decuerat, ad praetorium cum pompa sollemni perrexit morbosque diu causatus nec regiam introiit nec processit in publicum.",
       "userId": 2,
-      "likes": 100,
-      "id": 1,
-      "tags": [
-        "JS",
-        "PHP"
-      ]
+      "likes": 102,
+      "id": 1
     },
     {
       "title": "[HTML/CSS] - Une méthode simple pour comprendre le position absolute / relative ?",
@@ -210,13 +206,10 @@
     },
     {
       "title": "jaja",
-      "content": "lala",
       "date": "2017-04-26T13:31:27.726Z",
+      "content": "lala",
       "userId": 4,
-      "likes": 0,
-      "tags": [
-        "JS"
-      ],
+      "likes": 1,
       "id": 10
     }
   ],
@@ -825,11 +818,11 @@
       "id": 67
     },
     {
+      "date": "2017-04-27T08:06:09.262Z",
       "content": "salut",
       "userId": 4,
       "questionId": 1,
-      "date": "2017-04-27T08:06:09.262Z",
-      "likes": 0,
+      "likes": 2,
       "status": false,
       "id": 68
     }
