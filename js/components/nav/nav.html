@@ -3,5 +3,5 @@
     <a ui-sref="usersList" class="waves-effect waves-teal btn-flat">Annuaire</a> 
     <a ng-if="$ctrl.isAuthenticated == null" ui-sref="registration" class="waves-effect waves-teal btn-flat">Connexion</a>
     <a ng-if="$ctrl.isAuthenticated != null" ui-sref="myProfile">Mon Profile</a><br>
-    <button ng-if="$ctrl.isAuthenticated != null" ng-click="$ctrl.disconnect()">Déconnexion</button>
+    <!--<button ng-if="$ctrl.isAuthenticated != null" ng-click="$ctrl.disconnect()">Déconnexion</button>-->
 </div>

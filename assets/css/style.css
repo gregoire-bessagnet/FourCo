@@ -61,13 +61,8 @@
     color: #1fa597;
 }
 
- /*//////////////////// Page question-answer ////////////////////*/
 
-/*.image-top {
-    background-image: url(../img/img1.jpg);
-    height: 350px;
-    margin-bottom: 40px;
-}*/
+ /*//////////////////// Page question-answer ////////////////////*/
 
 .answer-validated{
     padding-top: 20px;
@@ -80,7 +75,7 @@
 }
 
 .image-user{
-    width: 70px;
+    width: 70px !important;
     border-radius: 100px;
 }
 
@@ -159,15 +154,18 @@
     margin: auto;
 }
 
-
-                        /*/////////////////// FORMULAIRE QUESTION ///////////////////*/
+ /*/////////////////// FORMULAIRE QUESTION ///////////////////*/
 .textA{
     
 }
 
 /*//////////////////// Page profile.html ////////////////////*/
 .container1{
-    margin: 70px;
+    margin: 60px;
+}
+
+.wild-profile, .h5-tags, .fa-genderless{
+    color: #1fa597;
 }
 
 .avatar{
@@ -189,7 +187,7 @@ padding-top: 50px !important;
     margin: 30px;
 }
 
-.user-name{
+.user-name, b{
     color: orange
 }
 
@@ -199,3 +197,47 @@ padding-top: 50px !important;
     padding: 30px;
 }
 
+.centerdiv {
+margin-left: 35% !important;
+margin-right: 35% !important;
+width: 250px !important;
+text-align: left !important;
+}
+
+.wild-profile{
+    font-size: 35px;
+}
+
+.mattermost-pseudo, .cursus{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 30px;
+}
+
+/*//////////////////// userList ////////////////////*/
+
+.annuaire{
+    padding-left: 80px;
+    padding-top: 60px;
+}
+
+.userlist-image{
+    margin-bottom: 60px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.avatar1{
+    border-radius: 100%;
+}
+
+.userlist{
+    margin: 60px;
+    /*border-bottom: 1px solid #1fa597;*/
+    padding-bottom: 20px;
+}
+
+.li-user{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
