@@ -6,9 +6,9 @@
 <div class="filtertabs">
     <div class="row">
         <div class="col s12">
-            <ul class="tabs">
-                <li class="tab col s6"><a class="tab" href="#" ng-click="sortBy='date'; reverse=!reverse;">Les plus récentes</a></li>
-                <li class="tab col s6"><a class="tab" href="#" ng-click="sortBy='likes'; reverse=!reverse;">Les plus pertinentes</a></li>
+            <ul class="tabs filters">
+                <li class="tab col s6"><a href="#" ng-click="sortBy='date'; reverse=!reverse;"> <i class="material-icons">trending_up</i> Les plus récentes</a></li>
+                <li class="tab col s6"><a href="#" ng-click="sortBy='likes'; reverse=!reverse;"> <i class="material-icons">thumb_up</i> Les plus pertinentes</a></li>
             </ul>
         </div>
     </div>
@@ -16,17 +16,27 @@
 
 <div class="questions">
     <ul>
-        <li class="content" dir-paginate="question in $ctrl.quest | tagsFilter:query | orderBy:sortBy:reverse | itemsPerPage: $ctrl.pageSize"
+        <li class="content" dir-paginate="question in $ctrl.quest | tagsFilter:query | filter : {title : $ctrl.query} | orderBy:sortBy:reverse | itemsPerPage: $ctrl.pageSize"
             current-page="$ctrl.currentPage">
-        <div id="likes"> <button class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeQuestion(question)" ng-disabled="$ctrl.isAuthenticated != true"><i class="material-icons">favorite</i></button></br>
-            <span class="affichage">{{question.likes}}</span>
-        </div>
-        <div id="total"><a class="title" ui-sref="answers({questionId: question.id})">{{question.title}}</a><br></div>
-        <div class="user"><a class="profile-home" ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a>
-            <span class="date">{{question.date | date:'dd.MM.yyyy HH:mm'}}</span>
-            <span class="tag" ng-repeat="tag in question.tags">[{{tag}}]</span>
-        </div>
-        </li>
+
+            <div id="likes"> <button class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeQuestion(question)" ng-disabled="$ctrl.isAuthenticated != true"><i class="material-icons">favorite</i></button></br>
+                <span class="affichage">{{question.likes}}</span>
+            </div>
+            <div id="total"><a class="title" ui-sref="answers({questionId: question.id})">{{question.title}}</a><br></div>
+            
+
+             <div class="image-user">
+            <img class="responsive-img avatar-home" ui-sref="profile({userId:$ctrl.question.user.id})"  ng-src="{{question.user.avatar}}" />
+            </div>
+
+            <div class="user">
+            <a class="profile" ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a>
+            <span class="date">{{question.date | date:'dd.MM.yyyy'}}</span>
+            <span class="new badge blue tags" ng-repeat="tag in question.tags" data-badge-caption="{{tag}}"></span>
+            <!--<span class="tag badge" ng-repeat="tag in question.tags">[{{tag}}]</span>-->
+            </div>
+
+       
     </ul>
 </div>
 </div>

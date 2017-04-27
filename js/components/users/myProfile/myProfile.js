@@ -25,6 +25,7 @@ angular.module("components")
           "social3": "",
           "mattermost": "",
           "password": "",
+          "avatar":"",
           "promoId": this.user.promoId,
           "id": this.user.id,
           "avatar": "" 

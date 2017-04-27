@@ -1,5 +1,4 @@
-  
-  body {
+    body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -9,6 +8,9 @@
     flex: 1 0 auto;
   }
   
+  #main {
+    margin-top : 200px;
+}  
                             /*/////////////////// NAVBAR ///////////////////*/
 
 #nav {
@@ -16,12 +18,10 @@
     height:70px;
 }
 
-
 .nav-material {
     margin-top: -60px;
     height: 90px;
 }
-
 
 #title_nav {
     font-size:1.4em;
@@ -36,7 +36,7 @@
     display: inline;
     margin-left: 150px;
     margin-right: 20px;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 #search {
@@ -47,14 +47,14 @@
     height: 40px;
 }
 
-.loupe {
-    margin-left: 165px;
-    margin-top: -1px;
-}
-
 #search-field {
     margin-top: 13px;
     margin-bottom: 50px;
+}
+
+.loupe {
+    margin-left: 165px;
+    margin-top: -1px;
 }
 
 nav i.material-icons {
@@ -66,6 +66,13 @@ nav i.material-icons {
 
 nav .menu-right {
     margin-top: -8px;
+}
+
+nav ul li a{
+  color: orange;
+}    
+  nav ul li:hover {
+   background-color: orange;
 }
 
 .waves-effect {
@@ -85,33 +92,40 @@ nav ul a .loginlogout {
     margin-left: 10px;
 }
 
+
                         /*/////////////////// PAGE HOME ///////////////////*/
 
 .content{
-    border-bottom: 1px solid black;
-    height: 150px;    
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;    
     font-size: 18px;
     padding-top: 30px;
 }
-.title:hover, .title:active{
-    font-size: 105%;
+
+.content:hover, .content:active{
+    background-color: #fff3e0;
 }
-.user{
-    margin: 60px auto auto 5px;
-    color: gray;
+
+.user {
+    margin: -36px auto 35px 50px;
+    font-size:0.8em;
 }
-.user:hover, .user:active{
-    font-size: 110%;
-}
+
 .title{
     color:#1fa597 ;
     font-weight: bold;
 }
 #total{
-    margin-left: 5px;
+    margin-left: 10px;
+    margin-top:15px;
+    margin-bottom: 15px;
 }
 .title:hover{
     color: #58c4b8;
+}
+
+.filters {
+    display: inline;
 }
 
 #likes{
@@ -119,9 +133,20 @@ nav ul a .loginlogout {
     margin: 20px 10px auto auto ;
     float: right;
 }
-.affichage{
-    font-size: 17px;
+
+span.badge.new {
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #fff;
+    background-color: #26a69a;
+    border-radius: 5px;
+    padding: 5px;
+    padding-bottom: 25px;
+    margin-right:20px;
+    margin-top: -22px;
+    display: inline;
 }
+
 #likes:hover, #likes:active{
     font-size: 105%;
 }
@@ -136,6 +161,14 @@ nav ul a .loginlogout {
 .tab{
     color: gray !important;
 }
+
+.avatar-home {
+    width: 30px;
+    border: 2px solid #1fa597;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
 
 
                 /*//////////////////// Page question-answer ////////////////////*/
@@ -252,7 +285,7 @@ nav ul a .loginlogout {
     border: 2px solid #1fa597;
     border-radius: 100%;
     width: 200px;
-}
+} 
 
 .left-profile{
     border-right: 1px solid black;
