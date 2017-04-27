@@ -24,6 +24,7 @@ angular.module("components")
           "social3": "",
           "mattermost": "",
           "password": "",
+          "avatar":"",
           "promoId": this.user.promoId,
           "id": this.user.id
         }
@@ -55,6 +56,9 @@ angular.module("components")
         }
         if (this.change.password == "") {
           this.change.password = this.user.password;
+        }
+        if (this.change.avatar == "") {
+          this.change.avatar = this.user.avatar;
         }
         console.log(this.change)
         MyProfileService.modif(this.user, this.change);
