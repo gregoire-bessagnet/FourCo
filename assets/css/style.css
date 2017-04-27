@@ -1,3 +1,6 @@
+#main {
+    margin-top : 200px;
+}  
                             /*/////////////////// NAVBAR ///////////////////*/
 
 #nav {
@@ -5,12 +8,10 @@
     height:70px;
 }
 
-
 .nav-material {
     margin-top: -60px;
     height: 90px;
 }
-
 
 #title_nav {
     font-size:1.4em;
@@ -36,14 +37,14 @@
     height: 40px;
 }
 
-.loupe {
-    margin-left: 165px;
-    margin-top: -1px;
-}
-
 #search-field {
     margin-top: 13px;
     margin-bottom: 50px;
+}
+
+.loupe {
+    margin-left: 165px;
+    margin-top: -1px;
 }
 
 nav i.material-icons {
@@ -55,6 +56,13 @@ nav i.material-icons {
 
 nav .menu-right {
     margin-top: -8px;
+}
+
+nav ul li a{
+  color: orange;
+}    
+  nav ul li:hover {
+   background-color: orange;
 }
 
 .waves-effect {
@@ -74,6 +82,7 @@ nav ul a .loginlogout {
     margin-left: 10px;
 }
 
+
                         /*/////////////////// PAGE HOME ///////////////////*/
 
 .content{
@@ -82,25 +91,30 @@ nav ul a .loginlogout {
     font-size: 18px;
     padding-top: 30px;
 }
-.title:hover, .title:active{
-    font-size: 105%;
+
+.content:hover, .content:active{
+    background-color: #fff3e0;
 }
-.user{
-    margin: 60px auto auto 5px;
-    color: gray;
+
+.user {
+    margin: -36px auto 35px 50px;
+    font-size:0.8em;
 }
-.user:hover, .user:active{
-    font-size: 110%;
-}
+
 .title{
-    color:#1fa597 ;
-    font-weight: bold;
+    color:#58c4b8;
 }
 #total{
-    margin-left: 5px;
+    margin-left: 10px;
+    margin-top:15px;
+    margin-bottom: 15px;
 }
 .title:hover{
-    color: #58c4b8;
+    color: #1fa597;
+}
+
+.filters {
+    display: inline;
 }
 
 #likes{
@@ -108,9 +122,20 @@ nav ul a .loginlogout {
     margin: 20px 10px auto auto ;
     float: right;
 }
-.affichage{
-    font-size: 17px;
+
+span.badge.new {
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #fff;
+    background-color: #26a69a;
+    border-radius: 5px;
+    padding: 5px;
+    padding-bottom: 25px;
+    margin-right:20px;
+    margin-top: -22px;
+    display: inline;
 }
+
 #likes:hover, #likes:active{
     font-size: 105%;
 }
@@ -118,16 +143,16 @@ nav ul a .loginlogout {
     font-size: 14px;
 }
 
-.profile-home{
-    color: orange;
-}
-
-.tab{
-    color: gray !important;
+.avatar-home {
+    width: 30px;
+    border: 2px solid #1fa597;
+    border-radius: 100%;
+    margin-left: 10px;
 }
 
 
                 /*//////////////////// Page question-answer ////////////////////*/
+
 
 .answer-validated{
     padding-top: 20px;
@@ -140,7 +165,7 @@ nav ul a .loginlogout {
 }
 
 .image-user{
-    width: 70px !important;
+    width: 75px;
     border-radius: 100px;
     margin-top: 10px;
 }
@@ -232,22 +257,19 @@ nav ul a .loginlogout {
 
 .text-angular{
     color: gray;
+
 }
 
                         /*//////////////////// Page profile.html ////////////////////*/
 .container1{
-    margin: 60px;
-}
-
-.wild-profile, .h5-tags, .fa-genderless{
-    color: #1fa597;
+    margin: 70px;
 }
 
 .avatar{
     border: 2px solid #1fa597;
     border-radius: 100%;
     width: 200px;
-}
+} 
 
 .left-profile{
     border-right: 1px solid black;
@@ -262,7 +284,7 @@ padding-top: 50px !important;
     margin: 30px;
 }
 
-.user-name, b{
+.user-name{
     color: orange
 }
 
@@ -272,63 +294,3 @@ padding-top: 50px !important;
     padding: 30px;
 }
 
-.centerdiv {
-margin-left: 35% !important;
-margin-right: 35% !important;
-width: 250px !important;
-text-align: left !important;
-}
-
-.wild-profile{
-    font-size: 35px;
-}
-
-.mattermost-pseudo, .cursus{
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    padding: 30px;
-}
-
-.modifier-profil{
-    border-radius: 30px;
-}
-
-.btn-modifier{
-    margin-left: 35% !important;
-    margin-right: 35% !important;
-
-}
-
-/*//////////////////// userList ////////////////////*/
-
-.annuaire{
-    padding-left: 80px;
-    padding-top: 60px;
-}
-
-.userlist-image{
-    margin-bottom: 60px;
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
-}
-
-.avatar1{
-    border-radius: 100%;
-}
-
-.userlist{
-    margin: 60px;
-    border-bottom: 1px solid #1fa597;
-    padding-bottom: 20px;
-}
-
-.li-user{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-
-/*//////////////////// myProfile ////////////////////*/
-.labal-myProfile{
-    color: #1fa597;
-}
