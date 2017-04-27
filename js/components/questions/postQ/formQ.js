@@ -7,7 +7,7 @@ angular.module("components")
         questions: "<"
     },
     
-    controller: ['formService','AuthService', function (formService,AuthService) {
+    controller: ['formService','AuthService','textAngularManager', function (formService,AuthService,textAngularManager) {
         
         this.$onInit = () => {
             this.user = AuthService.getCurrentUser();
@@ -31,7 +31,7 @@ angular.module("components")
         
         this.selection = [];
         
-       this.toggleSelection = function toggleSelection(tags) {
+        this.toggleSelection = function toggleSelection(tags) {
             var idx = this.selection.indexOf(tags);
             
             if (idx > -1) {
@@ -40,6 +40,9 @@ angular.module("components")
             
             else {
                 this.selection.push(tags);
-            }}
-        }]
-    });
+                
+            }
+        };
+    }]
+    
+})

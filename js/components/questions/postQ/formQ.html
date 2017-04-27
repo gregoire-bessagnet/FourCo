@@ -1,9 +1,14 @@
-<h2><b>Ecrit ton sujet</b></h2>
+<div id="search-field" class="input-field">
+    <input id="search" type="search" name="query" ng-model="$ctrl.query">
+    <label class="label-icon loupe" for="search"><i class="material-icons">search</i></label>
+</div>
 
-<input type="text" ng-model="$ctrl.name" ng-value="{{$ctrl.selection}}"/>
+<h2><b>Ecris ton sujet</b></h2>
 
-<h2><b>pose ta question</b></h2>
-<textarea type="text" ng-model="$ctrl.body"></textarea>
+<input type="text" ng-model="$ctrl.name" />
+
+<h2><b>Pose ta question</b></h2>
+<div class="textA" text-angular="text-angular" ng-model="$ctrl.body" ta-disabled='disabled'></div>
 
 <h2><b>Tags</b></h2>
 

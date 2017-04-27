@@ -13,6 +13,7 @@ angular.module("components")
             this.$onInit = () => {
                 this.isAuthenticated = AuthService.isAuthenticated();
                 this.currentUser = AuthService.getCurrentUser();
+                console.log(this.currentUser);
             }   
 
             this.disconnect = () => {
