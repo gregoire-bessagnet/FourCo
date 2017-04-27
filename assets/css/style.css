@@ -221,6 +221,12 @@ nav ul a .loginlogout {
     margin: auto;
 }
 
+.register:hover{
+    font-size: 105%;
+    color: #1fa597;
+    cursor: pointer;
+}
+
 
                         /*/////////////////// FORMULAIRE QUESTION ///////////////////*/
 
