@@ -58,6 +58,13 @@ nav .menu-right {
     margin-top: -8px;
 }
 
+nav ul li a{
+  color: orange;
+}    
+  nav ul li:hover {
+   background-color: orange;
+}
+
 .waves-effect {
     color:white;
 }
@@ -75,26 +82,19 @@ nav ul a .loginlogout {
     margin-left: 10px;
 }
 
-.waves-effect {
-    color:white;
-}
-
-
-
 
                         /*/////////////////// PAGE HOME ///////////////////*/
 
 .content{
     border-bottom: 1px solid #cccccc;
-    border-top: 1px solid #cccccc;
-    height: 150px;    
+    border-top: 1px solid #cccccc;    
     font-size: 18px;
 }
 .title:hover, .title:active{
     font-size: 105%;
 }
-.user{
-    margin: 60px auto auto 5px;
+.user {
+    margin: -36px auto 25px 50px;;
 }
 .user:hover, .user:active{
     font-size: 110%;
@@ -103,7 +103,9 @@ nav ul a .loginlogout {
     color:#58c4b8;
 }
 #total{
-    margin-left: 5px;
+    margin-left: 10px;
+    margin-top:15px;
+    margin-bottom: 15px;
 }
 .title:hover{
     color: #1fa597;
@@ -127,6 +129,14 @@ nav ul a .loginlogout {
 .date{
     font-size: 14px;
 }
+
+.avatar-home {
+    width: 30px;
+    border: 2px solid #1fa597;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
 
                 /*//////////////////// Page question-answer ////////////////////*/
 
@@ -240,7 +250,7 @@ nav ul a .loginlogout {
     border: 2px solid #1fa597;
     border-radius: 100%;
     width: 200px;
-}
+} 
 
 .left-profile{
     border-right: 1px solid black;

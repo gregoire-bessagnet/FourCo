@@ -121,21 +121,18 @@
     },
     {
       "title": "[HTML/CSS] - Une méthode simple pour comprendre le position absolute / relative ?",
-      "content": "je suis perdu, je ne cmprends pas le position en CSS. Si vois pouviez m'aider s'il-vous-plait.",
       "date": "2017-04-21T12:50:35.620Z",
+      "content": "je suis perdu, je ne cmprends pas le position en CSS. Si vois pouviez m'aider s'il-vous-plait.",
       "userId": 1,
-      "likes": 32,
-      "id": 2,
-      "tags": [
-        "JS"
-      ]
+      "likes": 34,
+      "id": 2
     },
     {
       "title": "[JS] Vos meilleures ressources en français pour comprendre AngularJS ?",
       "date": "2017-04-20T13:30:36.177Z",
       "content": "Saepissime igitur mihi de amicitia cogitanti maxime illud considerandum videri solet, utrum propter imbecillitatem atque inopiam desiderata sit amicitia, ut dandis recipiendisque meritis quod. Angular.",
       "userId": 2,
-      "likes": 11,
+      "likes": 14,
       "id": 3
     },
     {
