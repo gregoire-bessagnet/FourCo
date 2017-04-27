@@ -25,8 +25,8 @@
 .logo {
     display: inline;
     margin-left: 150px;
-    margin-right:20px;
-    margin-top:10px;
+    margin-right: 20px;
+    margin-top: 10px;
 }
 
 #search {
@@ -58,6 +58,14 @@ nav .menu-right {
     margin-top: -8px;
 }
 
+.waves-effect {
+    color:white;
+}
+
+#main {
+    margin-top : 200px;
+}
+
 nav ul a .logoutbutton {
     margin-top: -16px;
 }
@@ -78,15 +86,24 @@ nav ul a .loginlogout {
 
 .content{
     border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    height: 150px;    
+    font-size: 18px;
 }
-.content:hover, .content:active{
+.title:hover, .title:active{
     font-size: 105%;
 }
 .user{
-    float: right;
+    margin: 60px auto auto 5px;
+}
+.user:hover, .user:active{
+    font-size: 110%;
 }
 .title{
     color:#58c4b8;
+}
+#total{
+    margin-left: 5px;
 }
 .title:hover{
     color: #1fa597;
@@ -96,14 +113,23 @@ nav ul a .loginlogout {
     display: inline;
 }
 
+#likes{
+    text-align: center;
+    margin: 20px 10px auto auto ;
+    float: right;
+}
+.affichage{
+    font-size: 17px;
+}
+#likes:hover, #likes:active{
+    font-size: 105%;
+}
+.date{
+    font-size: 14px;
+}
 
                 /*//////////////////// Page question-answer ////////////////////*/
 
-/*.image-top {
-    background-image: url(../img/img1.jpg);
-    height: 350px;
-    margin-bottom: 40px;
-}*/
 
 .answer-validated{
     padding-top: 20px;
@@ -184,7 +210,8 @@ nav ul a .loginlogout {
     margin-top: -20px;
 }
 
-/*//////////////////// Page registration ////////////////////*/
+                        /*//////////////////// Page registration ////////////////////*/
+
 .register, .already-reg{
     text-align: center;
     color: orange;
@@ -198,11 +225,13 @@ nav ul a .loginlogout {
 
 
                         /*/////////////////// FORMULAIRE QUESTION ///////////////////*/
-.textA{
-    
+
+.text-angular{
+    color: gray;
+
 }
 
-/*//////////////////// Page profile.html ////////////////////*/
+                        /*//////////////////// Page profile.html ////////////////////*/
 .container1{
     margin: 70px;
 }

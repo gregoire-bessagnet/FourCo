@@ -4,5 +4,6 @@ angular.module("app", [
     "textAngular",
     "components",
     "services",
+    "filters",
     "ngCookies"
 ])
