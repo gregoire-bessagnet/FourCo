@@ -31,7 +31,8 @@
             <div class="user">
             <a class="profile" ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a>
             <span class="date">{{question.date | date:'dd.MM.yyyy'}}</span>
-            <span class="tag badge" ng-repeat="tag in question.tags">[{{tag}}]</span>
+            <span class="new badge blue tags" ng-repeat="tag in question.tags" data-badge-caption="{{tag}}"></span>
+            <!--<span class="tag badge" ng-repeat="tag in question.tags">[{{tag}}]</span>-->
             </div>
 
        

@@ -90,15 +90,16 @@ nav ul a .loginlogout {
     border-top: 1px solid #cccccc;    
     font-size: 18px;
 }
-.title:hover, .title:active{
-    font-size: 105%;
+
+.content:hover, .content:active{
+    background-color: #fff3e0;
 }
+
 .user {
-    margin: -36px auto 25px 50px;;
+    margin: -36px auto 35px 50px;
+    font-size:0.8em;
 }
-.user:hover, .user:active{
-    font-size: 110%;
-}
+
 .title{
     color:#58c4b8;
 }
@@ -120,9 +121,20 @@ nav ul a .loginlogout {
     margin: 20px 10px auto auto ;
     float: right;
 }
-.affichage{
-    font-size: 17px;
+
+span.badge.new {
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #fff;
+    background-color: #26a69a;
+    border-radius: 5px;
+    padding: 5px;
+    padding-bottom: 25px;
+    margin-right:20px;
+    margin-top: -22px;
+    display: inline;
 }
+
 #likes:hover, #likes:active{
     font-size: 105%;
 }
@@ -136,7 +148,6 @@ nav ul a .loginlogout {
     border-radius: 100%;
     margin-left: 10px;
 }
-
 
                 /*//////////////////// Page question-answer ////////////////////*/
 
