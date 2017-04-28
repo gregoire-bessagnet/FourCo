@@ -19,21 +19,27 @@
         <li class="content" dir-paginate="question in $ctrl.quest | tagsFilter:query | orderBy:sortBy:reverse | itemsPerPage: $ctrl.pageSize"
             current-page="$ctrl.currentPage">
 
-            <div id="likes"> <button class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeQuestion(question)" ng-disabled="$ctrl.isAuthenticated != true"><i class="material-icons">favorite</i></button></br>
-                <span class="affichage">{{question.likes}}</span>
-            </div>
             <div id="total"><a class="title" ui-sref="answers({questionId: question.id})">{{question.title}}</a><br></div>
             
-
              <div class="image-user">
-            <img class="responsive-img avatar-home" ui-sref="profile({userId:$ctrl.question.user.id})"  ng-src="{{question.user.avatar}}" />
+            <img class="responsive-img avatar1" ui-sref="profile({userId:$ctrl.question.user.id})"  ng-src="{{question.user.avatar}}" />
             </div>
 
             <div class="user">
-            <a class="profile" ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a>
+            <a class="profile-home" ui-sref="profile({userId : question.user.id})">{{question.user.firstname + " " + question.user.lastname}}</a>
             <span class="date">{{question.date | date:'dd.MM.yyyy'}}</span>
-            <span class="new badge blue tags" ng-repeat="tag in question.tags" data-badge-caption="{{tag}}"></span>
-            <!--<span class="tag badge" ng-repeat="tag in question.tags">[{{tag}}]</span>-->
+
+            <div id="likes"> <button class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeQuestion(question)" ng-disabled="$ctrl.isAuthenticated != true"><i class="material-icons">favorite</i></button></br>
+                <span class="affichage">{{question.likes}}</span>
+            </div>
+
+            <div id="tags">
+                <span class="new badge blue tags" ng-repeat="tag in question.tags" data-badge-caption="{{tag}}"></span>
+                <!--<span class="tag badge" ng-repeat="tag in question.tags">[{{tag}}]</span>-->
+            </div>
+
+            
+            
             </div>
 
        

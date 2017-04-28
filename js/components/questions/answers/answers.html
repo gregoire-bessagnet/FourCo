@@ -17,7 +17,7 @@
 
 
         <div class="image-user">
-            <img class="responsive-img avatar" ng-if="$ctrl.isAuthenticated == null" ui-sref="profile({userId:$ctrl.question.user.id})"  ng-src="{{$ctrl.question.user.avatar}}" />
+            <img class="responsive-img avatar1" ng-if="$ctrl.isAuthenticated == null" ui-sref="profile({userId:$ctrl.question.user.id})"  ng-src="{{$ctrl.question.user.avatar}}" />
         </div>
 
 
@@ -62,7 +62,7 @@
         <div class="row">
             <div class="col s6">
                 <div class="image-user">
-                    <img class="responsive-img avatar " ng-src="{{answer.user.avatar}}" />
+                    <img class="responsive-img avatar1" ng-src="{{answer.user.avatar}}" />
                 </div>
                 <a class="answer-user" ui-sref="profile({userId:answer.user.id})">{{answer.user.firstname + " " + answer.user.lastname}}</a>
             </div>
