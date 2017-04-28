@@ -1,5 +1,3 @@
-                            /*/////////////////// NAVBAR ///////////////////*/
-
 #nav {
     background-color: orange;
     height:70px;
@@ -254,6 +252,11 @@ nav ul a .loginlogout {
     color: gray;
 }
 
+.formQ-title{
+   text-align: center;
+   color: orange;
+   margin-top: 45px;
+}
 
                         /*//////////////////// Page profile.html ////////////////////*/
 .container1{
@@ -276,7 +279,7 @@ nav ul a .loginlogout {
 }
 
 .right-profile{
-padding-top: 50px !important;
+    padding-top: 50px !important;
 }
 
 .twitter, .github, .linkedin{
@@ -351,5 +354,11 @@ text-align: left !important;
 
 /*//////////////////// myProfile ////////////////////*/
 .labal-myProfile{
+    color: #1fa597;
+}
+
+.register:hover{
+    cursor: pointer;
+    font-size: 105%;
     color: #1fa597;
 }
