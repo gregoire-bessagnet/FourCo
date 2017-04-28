@@ -1,6 +1,7 @@
 #nav {
     background: rgba(221, 96, 0, 0.6); 
     height:70px;
+    z-index: 0;
 }
 
 
@@ -32,6 +33,7 @@
     margin-left: 170px;
     background-color: white;
     height: 40px;
+    border-radius: 5px;
 }
 
 .loupe {
@@ -380,4 +382,5 @@ text-align: left !important;
 /*////////////////////footer ////////////////////*/
 .page-footer{
     background: #35383a;
+    z-index: 1;
 }

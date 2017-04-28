@@ -3,14 +3,15 @@
   <label class="label-icon loupe" for="search"><i class="material-icons">search</i></label>
 </div>
 
-<h3 class="formQ-title">Ecris ton sujet</h3>
+<div class="home-img">
+  <h3 class="formQ-title">Ecris ton sujet</h3>
 
-<input type="text" class="" ng-model="$ctrl.name" />
+  <input type="text" class="" ng-model="$ctrl.name" />
 
-<h3 class="formQ-title"><b>Pose ta question</b></h3>
-<div class="text-angular" text-angular="text-angular" ng-model="$ctrl.body" ta-disabled='disabled'></div>
+  <h3 class="formQ-title"><b>Pose ta question</b></h3>
+  <div class="text-angular" text-angular="text-angular" ng-model="$ctrl.body" ta-disabled='disabled'></div>
 
-<h3>Tags</h3>
+  <h3>Tags</h3>
   <label ng-repeat="tag in $ctrl.tags">
   <input type="checkbox"     id="{{tag}}"
     name="selectedTags[]"
@@ -20,8 +21,9 @@
       <label for="{{tag}}">{{tag}}</label>
   <br>
   </label>
-<br>
-<br>
-<button type="submit" ui-sref="home" ng-click="$ctrl.add($ctrl.questions)" ng-disabled="!$ctrl.name || !$ctrl.body || !$ctrl.selection">Valider</button>
+  <br>
+  <br>
+  <button type="submit" ui-sref="home" ng-click="$ctrl.add($ctrl.questions)" ng-disabled="!$ctrl.name || !$ctrl.body || !$ctrl.selection">Valider</button>
 
-<button type="submit" ui-sref="home">Retour à l'acceuil</button>
+  <button type="submit" ui-sref="home">Retour à l'acceuil</button>
+</div>
