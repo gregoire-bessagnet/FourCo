@@ -80,14 +80,15 @@
       "lastname": "Bessagnet",
       "age": "28",
       "mail": "gregoire@gregoi.re",
-      "social1": "",
-      "promoId": 1,
+      "social1": "gregoire",
+      "social2": "gregoirer",
+      "social3": "gregoire",
       "mattermost": "gregoire",
       "password": "greg",
-      "password2": "greg",
-      "id": 7,
-      "avatar":"https://avatars0.githubusercontent.com/u/401994?v=3&s=400",
-      "bio": "Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur,nominia senatus."
+      "promoId": 1,
+      "avatar": "https://avatars0.githubusercontent.com/u/401994?v=3&s=400",
+      "bio": "Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur,nominia senatus.",
+      "id": 7
     },
     {
       "firstname": "Enzo",
@@ -99,11 +100,11 @@
       "mattermost": "enzo",
       "password": "enzo",
       "password2": "enzo",
-      "id": 8, 
-      "avatar":"https://puu.sh/vyO9C/c61f05820a.png",
+      "id": 8,
+      "avatar": "https://puu.sh/vyO9C/c61f05820a.png",
       "bio": "Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consoexitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus."
-    }, 
-        {
+    },
+    {
       "firstname": "Mathias",
       "lastname": "Fillon",
       "age": "24",
@@ -113,9 +114,20 @@
       "mattermost": "mathias",
       "password": "mathias",
       "password2": "mathias",
-      "id": 9, 
-      "avatar":"https://puu.sh/vyO9C/c61f05820a.png",
+      "id": 9,
+      "avatar": "https://puu.sh/vyO9C/c61f05820a.png",
       "bio": "Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consoexitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus."
+    },
+    {
+      "firstname": "lala",
+      "lastname": "lala",
+      "age": "lala",
+      "mail": "lala@lala",
+      "social1": "",
+      "promoId": 0,
+      "password": "lala",
+      "password2": "lala",
+      "id": 10
     }
   ],
   "promos": [
@@ -149,7 +161,10 @@
       "content": "je suis perdu, je ne cmprends pas le position en CSS. Si vois pouviez m'aider s'il-vous-plait.",
       "userId": 1,
       "likes": 36,
-      "id": 2
+      "id": 2,
+      "tags": [
+        "HTML"
+      ]
     },
     {
       "title": "[JS] Vos meilleures ressources en français pour comprendre AngularJS ?",
@@ -174,8 +189,8 @@
       ]
     },
     {
-      "title": "Test 5",
-      "content": "Haec igitur Epicuri non probo, inquam. De cetero vellem equidem aut ipse doctrinis fuisset instructior est enim, quod tibi ita videri necesse est, non satis politus iis artibus, quas qui tenent, eruditi appellantur aut ne deterruisset alios a studiis. quamquam te quidem video minime esse deterritum.Haec igitur Epicuri non probo, inquam. De cetero vellem equidem aut ipse doctrinis fuisset instructior est enim, quod tibi ita videri necesse est, non satis politus iis artibus, quas qui tenent, eruditi appellantur aut ne deterruisset alios a studiis. quamquam te quidem video minime esse deterritum.",
+      "title": "Quelle est la meilleure formation AngularJS ?",
+      "content": "Je cherche une super formation pour coder !",
       "date": "2017-04-18T12:52:39.606Z",
       "id": 5,
       "userId": 1,
@@ -192,7 +207,7 @@
       "likes": 77,
       "id": 6,
       "tags": [
-        "JS"
+        "PHP"
       ]
     },
     {
@@ -217,6 +232,18 @@
         "JS"
       ]
     },
+    {
+      "title": "lala",
+      "content": "<p>lala</p>",
+      "date": "2017-04-28T14:08:10.839Z",
+      "userId": 7,
+      "likes": 0,
+      "tags": [
+        "PHP",
+        "ANGULARJS"
+      ],
+      "id": 9
+    }
   ],
   "answers": [
     {
@@ -688,12 +715,12 @@
       "id": 52
     },
     {
+      "date": "2017-04-26T13:15:43.076Z",
       "content": "bonjour bonjour bonjour",
       "userId": 4,
       "questionId": 9,
-      "date": "2017-04-26T13:15:43.076Z",
       "likes": 0,
-      "status": false,
+      "status": true,
       "id": 53
     },
     {
@@ -740,6 +767,15 @@
       "likes": 1,
       "status": true,
       "id": 70
+    },
+    {
+      "content": "lala",
+      "userId": 7,
+      "questionId": 3,
+      "date": "2017-04-28T14:09:08.585Z",
+      "likes": 0,
+      "status": false,
+      "id": 71
     }
   ],
   "tags": [

@@ -7,15 +7,17 @@
   </div>
 </div>
 
-<div ng-repeat="user in $ctrl.users | filter : $ctrl.query">
-  <div class="row userlist">
-    <div class="col s1">
-      <img class="responsive-img avatar1" ng-src="{{user.avatar}}" />
-    </div>
-    <div class="col s6 li-user">
-      {{user.firstname +" "+ user.lastname}}, <b>{{user.promo.name}}</b>
+<div class="home-img">
+  <div ng-repeat="user in $ctrl.users | filter : $ctrl.query">
+    <div class="row userlist">
+      <div class="col s1">
+        <img class="responsive-img avatar1" ng-src="{{user.avatar}}" />
+      </div>
+      <div class="col s6 li-user">
+        {{user.firstname +" "+ user.lastname}}, <b>{{user.promo.name}}</b>
+      </div>
     </div>
   </div>
-</div>
 
-<a ui-sref="home" class="back-home">accueil</a>
+  <a ui-sref="home" class="back-home">accueil</a>
+</div>
