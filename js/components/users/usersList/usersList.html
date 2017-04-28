@@ -1,10 +1,17 @@
 <div id="search-field" class="input-field">
-    <input id="search" type="search" name="query" ng-model="$ctrl.query">
-    <label class="label-icon loupe" for="search"><i class="material-icons">search</i></label>
+  <input id="search" type="search" name="query" ng-model="$ctrl.query">
+  <label class="label-icon loupe" for="search"><i class="material-icons">search</i></label>
 </div>
-<ul ng-repeat="user in $ctrl.users | filter : $ctrl.query">
-  <li>{{user.firstname +" "+ user.lastname}}</li>
-  <li>{{user.age}}</li>
-  <li>{{user.promo.name}}</li>
-</ul>
-<a ui-sref="home">accueil</a>
+
+<div ng-repeat="user in $ctrl.users | filter : $ctrl.query">
+  <div class="row userlist">
+    <div class="col s1">
+      <img class="responsive-img avatar1" ng-src="{{user.avatar}}" />
+    </div>
+    <div class="col s6 li-user">
+      {{user.firstname +" "+ user.lastname}}, <b>{{user.promo.name}}</b>
+    </div>
+  </div>
+</div>
+
+<a ui-sref="home" class="back-home">accueil</a>

@@ -15,7 +15,9 @@ angular.module("app")
         "social3": changes.social3,
         "mattermost": changes.mattermost,
         "password": changes.password,
-        "promoId":id.promoId
+        "promoId":id.promoId,
+        "avatar":changes.avatar,
+        "bio": changes.bio
       })
     }
   });

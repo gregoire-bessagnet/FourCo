@@ -9,13 +9,7 @@ angular.module("app")
         url: '/home',
         component: 'home'
       })
-
-      // .state({
-      //   name: 'nav',
-      //   url: '/nav',
-      //   component: 'nav'
-      // })
-
+      
       .state({
         name: 'answers',
         url: '/answers/:questionId',
@@ -54,8 +48,14 @@ angular.module("app")
         resolve: {
           users: function (UsersService, $stateParams) {
             return UsersService.getUsers();
-          }
+          },
         }
+      })
+
+       .state({
+        name: 'rules',
+        url: '/rules',
+        component: 'rules',
       })
 
       .state({
@@ -73,7 +73,7 @@ angular.module("app")
       .state({
         name: 'formQ',
         url: '/formQ',
-        authenticate:true,
+        authenticate: true,
         component: 'postQuestion'
       })
 

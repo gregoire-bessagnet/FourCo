@@ -8,14 +8,14 @@ angular.module("components")
             quest: '<',
         },
 
-        controller: ['QuestionService', 'AuthService','AnswersService', function (QuestionService, AuthService, AnswersService) {
+        controller: ['QuestionService', 'AuthService', 'AnswersService', function (QuestionService, AuthService, AnswersService) {
 
 
 
             this.$onInit = () => {
                 this.quest = [];
                 this.currentPage = 1;
-                this.pageSize = 4;
+                this.pageSize = 5;
                 this.getQuest();
                 this.pageChangeHandler();
                 console.log(this)
@@ -28,7 +28,7 @@ angular.module("components")
                 }).catch((err) => { });
             };
 
-             this.likeQuestion = (question) => {
+            this.likeQuestion = (question) => {
                 AnswersService.likeQuestion(question.id, question);
             }
 

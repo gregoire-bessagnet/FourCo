@@ -50,14 +50,14 @@
       "lastname": "Quardashian",
       "age": "61",
       "mail": "Qris@Quardashian",
-      "bio": "Cuius acerbitati uxor grave accesserat incentivum, germanitate Augusti turgida supra modum, quam Hannibaliano regi fratris filio antehac Constantinus iunxerat pater, Megaera quaedam mortalis, inflammatrix saevientis adsidua, humani cruoris avida nihil mitius quam maritus; qui paulatim eruditiores facti processu temporis ad nocendum per clandestinos versutosque rumigerulos conpertis leviter addere quaedam male suetos falsa et placentia sibi discentes, adfectati regni vel artium nefandarum calumnias insontibus adfligebant.",
       "social1": "twitter",
-      "promoId": 2,
       "social2": "github",
       "social3": "linkedin",
-      "password": "lala",
       "mattermost": "QrisQuar",
+      "password": "lala",
+      "promoId": 2,
       "avatar": "http://images.eonline.com/resize/200/200/images.eonline.com/eol_images/Entire_Site/2015107//rs_1024x759-151107090215-1024.kris-jenner.cm.11715.jpg",
+      "bio": "Cuius acerbitati uxor grave accesserat incentivum, germanitate Augusti turgida supra modum, quam Hannibaliano regi fratris filio antehac Constantinus iunxerat pater, Megaera quaedam mortalis, inflammatrix saevientis adsidua, humani cruoris avida nihil mitius quam maritus; qui paulatim eruditiores facti processu temporis ad nocendum per clandestinos versutosque rumigerulos conpertis leviter addere quaedam male suetos falsa et placentia sibi discentes, adfectati regni vel artium nefandarum calumnias insontibus adfligebant.",
       "id": 4
     },
     {
@@ -72,16 +72,21 @@
       "mattermost": "zuck",
       "password": "zuck",
       "password2": "zuck",
-      "id": 5
+      "id": 5,
+      "avatar": ""
     },
     {
       "firstname": "greg",
       "lastname": "chen",
       "age": "24",
       "mail": "greg@greg.fr",
-      "social1": "",
+      "social1": "github",
+      "social2": "linkedin",
+      "social3": "linkedin",
       "password": "greg",
       "promoId": 0,
+      "avatar": "https://img4.hostingpics.net/thumbs/mini_393100IMG6206.jpg",
+      "bio": "Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.",
       "id": 6
     }
   ],
@@ -115,7 +120,7 @@
       "date": "2017-04-21T12:50:35.620Z",
       "content": "je suis perdu, je ne cmprends pas le position en CSS. Si vois pouviez m'aider s'il-vous-plait.",
       "userId": 1,
-      "likes": 33,
+      "likes": 36,
       "id": 2
     },
     {
@@ -124,7 +129,10 @@
       "content": "Saepissime igitur mihi de amicitia cogitanti maxime illud considerandum videri solet, utrum propter imbecillitatem atque inopiam desiderata sit amicitia, ut dandis recipiendisque meritis quod. Angular.",
       "userId": 2,
       "likes": 12,
-      "id": 3
+      "id": 3,
+      "tags": [
+        "JS"
+      ]
     },
     {
       "title": "[Angular/CSS] MaterializeCSS ou Angular Material ? Choisissez votre équipe !",
@@ -153,7 +161,7 @@
       "date": "2017-03-03T13:30:36.177Z",
       "content": "Saepissime igitur mihi de amicitia Wordpress cogitanti maxime illud considerandum videri solet, utrum propter Symphony imbecillitatem atque inopiam desiderata sit amicitia, ut dandis recipiendisque meritis quod. PHP",
       "userId": 2,
-      "likes": 76,
+      "likes": 77,
       "id": 6,
       "tags": [
         "JS"
@@ -175,7 +183,7 @@
       "date": "2017-04-21T13:30:36.177Z",
       "content": "Haec igitur Epicuri non probo, inquam. De cetero vellem equidem aut ipse doctrinis fuisset instructior est enim, quod tibi ita videri necesse est, non satis politus iis artibus, quas qui tenent, eruditi appellantur aut ne deterruisset alios a studiis. quamquam te quidem video minime esse deterritum.",
       "userId": 4,
-      "likes": 98,
+      "likes": 99,
       "id": 8,
       "tags": [
         "JS"
@@ -198,7 +206,18 @@
       "content": "lala",
       "userId": 4,
       "likes": 1,
-      "id": 10
+      "id": 10,
+      "tags": [
+        "JS"
+      ]
+    },
+    {
+      "title": "Javascrit",
+      "date": "2017-04-27T21:30:56.397Z",
+      "content": "<p>je comprend rien de rien </p>",
+      "userId": 6,
+      "likes": 1,
+      "id": 11
     }
   ],
   "answers": [
@@ -401,11 +420,11 @@
       "id": 22
     },
     {
+      "date": "2017-04-25T22:14:29.468Z",
       "content": "Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.",
       "userId": 3,
       "questionId": 5,
-      "date": "2017-04-25T22:14:29.468Z",
-      "likes": 50,
+      "likes": 51,
       "status": false,
       "id": 23
     },
@@ -599,10 +618,10 @@
       "id": 44
     },
     {
+      "date": "2017-04-25T22:14:04.676Z",
       "content": "Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.",
       "userId": 4,
       "questionId": 2,
-      "date": "2017-04-25T22:14:04.676Z",
       "likes": 30,
       "status": false,
       "id": 45
@@ -651,6 +670,78 @@
       "likes": 20,
       "status": false,
       "id": 50
+    },
+    {
+      "content": "bonjour bonjour bonjour",
+      "userId": 4,
+      "questionId": 9,
+      "date": "2017-04-26T13:15:34.276Z",
+      "likes": 0,
+      "status": false,
+      "id": 51
+    },
+    {
+      "content": "bonjour bonjour bonjour",
+      "userId": 4,
+      "questionId": 9,
+      "date": "2017-04-26T13:15:39.644Z",
+      "likes": 0,
+      "status": false,
+      "id": 52
+    },
+    {
+      "content": "bonjour bonjour bonjour",
+      "userId": 4,
+      "questionId": 9,
+      "date": "2017-04-26T13:15:43.076Z",
+      "likes": 0,
+      "status": false,
+      "id": 53
+    },
+    {
+      "date": "2017-04-26T13:15:43.336Z",
+      "content": "bonjour bonjour bonjour",
+      "userId": 4,
+      "questionId": 9,
+      "likes": 1,
+      "status": false,
+      "id": 54
+    },
+    {
+      "date": "2017-04-26T13:15:43.546Z",
+      "content": "bonjour bonjour bonjour",
+      "userId": 4,
+      "questionId": 9,
+      "likes": 1,
+      "status": false,
+      "id": 55
+    },
+    {
+      "date": "2017-04-27T08:06:09.262Z",
+      "content": "salut",
+      "userId": 4,
+      "questionId": 1,
+      "likes": 2,
+      "status": false,
+      "id": 68
+    },
+    {
+      "content": "Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.",
+      "userId": 6,
+      "questionId": 6,
+      "date": "2017-04-27T11:35:55.321Z",
+      "likes": 0,
+      "status": false,
+      "id": 69
+    },
+    {
+      "date": "2017-04-27T21:31:15.860Z",
+      "content": "C'est quoi que tu comprend pas",
+      "userId": 6,
+      "questionId": 11,
+      "likes": 1,
+      "status": true,
+      "id": 70
     }
   ],
   "tags": [
@@ -661,34 +752,6 @@
     {
       "id": 2,
       "name": "PHP"
-    }
-  ],
-  "user_tag": [
-    {
-      "userId": 1,
-      "tagId": 1
-    },
-    {
-      "userId": 2,
-      "tagId": 1
-    },
-    {
-      "userId": 2,
-      "tagId": 2
-    }
-  ],
-  "question_tag": [
-    {
-      "questionId": 1,
-      "tagId": 1
-    },
-    {
-      "questionId": 1,
-      "tagId": 2
-    },
-    {
-      "questionId": 2,
-      "tagId": 2
     }
   ]
 }
