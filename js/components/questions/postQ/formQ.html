@@ -3,7 +3,7 @@
   <label class="label-icon loupe" for="search"><i class="material-icons">search</i></label>
 </div>
 
-<h3 class="formQ-title">Ecris ton sujet</h3>
+<h3 class="formQ-title"><b>Ecris ton sujet</b></h3>
 
 <input type="text" class="" ng-model="$ctrl.name" />
 
@@ -12,7 +12,7 @@
 
 <div class="text-angular" text-angular="text-angular" ng-model="$ctrl.body" ta-disabled='disabled'></div>
 
-<h3>Tags</h3>
+<h3><b>Tags</b></h3>
   <label ng-repeat="tag in $ctrl.tags">
   <input type="checkbox"     id="{{tag}}"
     name="selectedTags[]"
