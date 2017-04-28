@@ -66,7 +66,7 @@
       "age": "30",
       "mail": "hello@zuck.co",
       "social1": "zuck",
-      "promoId": 0,
+      "promoId": 2,
       "social2": "zuck",
       "social3": "zuck",
       "mattermost": "zuck",
@@ -76,18 +76,46 @@
       "avatar": ""
     },
     {
-      "firstname": "greg",
-      "lastname": "chen",
-      "age": "24",
-      "mail": "greg@greg.fr",
-      "social1": "github",
-      "social2": "linkedin",
-      "social3": "linkedin",
+      "firstname": "Grégoire",
+      "lastname": "Bessagnet",
+      "age": "28",
+      "mail": "gregoire@gregoi.re",
+      "social1": "",
+      "promoId": 1,
+      "mattermost": "gregoire",
       "password": "greg",
-      "promoId": 0,
-      "avatar": "https://img4.hostingpics.net/thumbs/mini_393100IMG6206.jpg",
-      "bio": "Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.",
-      "id": 6
+      "password2": "greg",
+      "id": 7,
+      "avatar":"https://avatars0.githubusercontent.com/u/401994?v=3&s=400",
+      "bio": "Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur,nominia senatus."
+    },
+    {
+      "firstname": "Enzo",
+      "lastname": "Mollenthiel",
+      "age": "20",
+      "mail": "enzo@en.zo",
+      "social1": "",
+      "promoId": 1,
+      "mattermost": "enzo",
+      "password": "enzo",
+      "password2": "enzo",
+      "id": 8, 
+      "avatar":"https://puu.sh/vyO9C/c61f05820a.png",
+      "bio": "Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consoexitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus."
+    }, 
+        {
+      "firstname": "Mathias",
+      "lastname": "Fillon",
+      "age": "24",
+      "mail": "mathias@mathi.as",
+      "social1": "",
+      "promoId": 2,
+      "mattermost": "mathias",
+      "password": "mathias",
+      "password2": "mathias",
+      "id": 9, 
+      "avatar":"https://puu.sh/vyO9C/c61f05820a.png",
+      "bio": "Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consoexitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus."
     }
   ],
   "promos": [
@@ -168,7 +196,7 @@
       ]
     },
     {
-      "title": "Test 7",
+      "title": "[AngularJS] Framework : Quel meilleur version d'Angular chosir ?",
       "content": "Haec igitur Epicuri non probo, inquam. De cetero vellem equidem aut ipse doctrinis fuisset instructior est enim, quod tibi ita videri necesse est, non satis politus iis artibus, quas qui tenent, eruditi appellantur aut ne deterruisset alios a studiis. quamquam te quidem video minime esse deterritum.",
       "date": "2017-04-21T12:50:35.620Z",
       "userId": 3,
@@ -179,7 +207,7 @@
       ]
     },
     {
-      "title": "Test 8",
+      "title": "[Vue JS] Framework : Quel meilleure version de VueJS chosir ?",
       "date": "2017-04-21T13:30:36.177Z",
       "content": "Haec igitur Epicuri non probo, inquam. De cetero vellem equidem aut ipse doctrinis fuisset instructior est enim, quod tibi ita videri necesse est, non satis politus iis artibus, quas qui tenent, eruditi appellantur aut ne deterruisset alios a studiis. quamquam te quidem video minime esse deterritum.",
       "userId": 4,
@@ -189,36 +217,6 @@
         "JS"
       ]
     },
-    {
-      "title": "jaja",
-      "content": "aja",
-      "date": "2017-04-26T08:26:46.311Z",
-      "userId": 4,
-      "likes": 0,
-      "id": 9,
-      "tags": [
-        "JS"
-      ]
-    },
-    {
-      "title": "jaja",
-      "date": "2017-04-26T13:31:27.726Z",
-      "content": "lala",
-      "userId": 4,
-      "likes": 1,
-      "id": 10,
-      "tags": [
-        "JS"
-      ]
-    },
-    {
-      "title": "Javascrit",
-      "date": "2017-04-27T21:30:56.397Z",
-      "content": "<p>je comprend rien de rien </p>",
-      "userId": 6,
-      "likes": 1,
-      "id": 11
-    }
   ],
   "answers": [
     {

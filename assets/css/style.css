@@ -362,3 +362,19 @@ text-align: left !important;
     font-size: 105%;
     color: #1fa597;
 }
+
+/*//////// RULES /////////*/
+
+.rules {
+    font-size:1.2em;
+    line-height: 1.8em;
+}
+
+.intro {
+    line-height: 1.8em;
+}
+
+.ordered {
+    line-height: 2em;
+    font-size: 1.4em;
+}
