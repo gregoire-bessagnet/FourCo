@@ -15,7 +15,7 @@ angular.module("components")
             this.$onInit = () => {
                 this.quest = [];
                 this.currentPage = 1;
-                this.pageSize = 4;
+                this.pageSize = 5;
                 this.getQuest();
                 this.pageChangeHandler();
                 console.log(this)

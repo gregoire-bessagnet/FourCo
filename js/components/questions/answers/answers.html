@@ -1,5 +1,3 @@
-<!--<div class="image-top">
-</div>-->
 
 <div id="search-field" class="input-field">
     <input id="search" type="search" name="query" ng-model="$ctrl.query">
@@ -19,11 +17,9 @@
         <div class="image-user">
             <img class="responsive-img avatar1" ng-if="$ctrl.isAuthenticated == null" ui-sref="profile({userId:$ctrl.question.user.id})"  ng-src="{{$ctrl.question.user.avatar}}" />
         </div>
-
-
-        <a ui-sref="profile({userId:$ctrl.question.user.id})" class="question-user">{{$ctrl.question.user.firstname + " " + $ctrl.question.user.lastname}}</a>        , {{$ctrl.question.date}}</div>
+        <a ui-sref="profile({userId:$ctrl.question.user.id})" class="question-user">{{$ctrl.question.user.firstname + " " + $ctrl.question.user.lastname}}</a>{{$ctrl.question.date}}</div>
     <div class="like">{{$ctrl.question.likes}}
-        <a class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeQuestion()"ng-disabled="$ctrl.isAuthenticated != true"><i class="material-icons">favorite</i></a>
+        <a class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeQuestion()" ng-disabled="$ctrl.isAuthenticated != true"><i class="material-icons">favorite</i></a>
     </div>
 </div>
 
@@ -73,7 +69,7 @@
         <div class="row bottom-answer">
             <p class="answer-date">{{answer.date | date: 'dd/MM/yyyy HH:mm'}}</p>
             <p class="like">{{answer.likes}}
-                <a class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeAnswer(answer)" ng-if="$ctrl.isAuthenticated != null"><i class="material-icons">favorite</i></a>
+                <a class="btn-floating btn-large waves-effect waves-light orange" ng-click="$ctrl.likeAnswer(answer)" ng-disabled="$ctrl.isAuthenticated != true"><i class="material-icons">favorite</i></a>
             </p>
         </div>
         <a class="waves-effect waves-light btn best-answer" ng-if="$ctrl.currentUser.id == $ctrl.question.userId && answer.status == false"

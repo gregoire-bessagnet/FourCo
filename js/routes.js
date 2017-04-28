@@ -9,13 +9,7 @@ angular.module("app")
         url: '/home',
         component: 'home'
       })
-
-      // .state({
-      //   name: 'nav',
-      //   url: '/nav',
-      //   component: 'nav'
-      // })
-
+      
       .state({
         name: 'answers',
         url: '/answers/:questionId',
