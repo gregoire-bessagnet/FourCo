@@ -1,5 +1,5 @@
 #nav {
-    background-color: orange;
+    background: rgba(221, 96, 0, 0.6); 
     height:70px;
 }
 
@@ -72,7 +72,20 @@ nav ul a .loginlogout {
     margin-left: 10px;
 }
 
+/*/////////////////// PAGE imgNavbar ///////////////////*/
+
+.background-nav{
+    height: 250px;
+    background-image: url("http://i.imgur.com/RCT5g0f.jpg");
+    background-position-y: 25%;
+    background-position-x: 40%;
+    background-size: 80%;
+}
+
                         /*/////////////////// PAGE HOME ///////////////////*/
+.home-img{
+    margin-top: 270px;
+}
 
 .tabs .tab a {
     color: grey;
@@ -363,6 +376,7 @@ text-align: left !important;
     color: #1fa597;
 }
 
+
 /*//////// RULES /////////*/
 
 .rules {
@@ -377,4 +391,9 @@ text-align: left !important;
 .ordered {
     line-height: 2em;
     font-size: 1.4em;
+}
+
+/*////////////////////footer ////////////////////*/
+.page-footer{
+    background: #35383a;
 }
