@@ -128,6 +128,17 @@
       "password": "lala",
       "password2": "lala",
       "id": 10
+    },
+    {
+      "firstname": "Gregoire",
+      "lastname": "Bessagnet",
+      "age": "24",
+      "mail": "greg@greg.fr",
+      "social1": "",
+      "promoId": 0,
+      "password": "greg",
+      "password2": "greg",
+      "id": 11
     }
   ],
   "promos": [
